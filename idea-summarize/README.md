@@ -16,6 +16,7 @@
 8. [08 — Tổng rà soát quyết định & edge case](./08-consolidated-review.md): checklist để người dùng review và chốt tất cả vấn đề còn mở.
 9. [09 — Session Correction, Question Incidents & Response Time](./09-session-correction-question-incidents-and-response-time.md): phụ huynh sửa phiên học, xử lý câu hỏi sai hàng loạt và diễn giải thời gian.
 10. [10 — Learning Evidence & Mastery Assessment](./10-learning-evidence-and-mastery-assessment.md): ba phương án C, Skill/Confidence/Review Status, và các edge case EV-01…EV-08 đã **CONFIRMED**.
+11. [11 — Mastery Assessment Engine & Learning Decision](./11-mastery-assessment-engine-and-learning-decisions.md): các quyết định MA-D01…03 và MA-01…08 **CONFIRMED**.
 
 ## Quy ước theo dõi lâu dài
 
@@ -26,7 +27,7 @@
 
 Khi thảo luận thay đổi, cập nhật tài liệu chủ đề và `06-decisions-and-open-questions.md`, nêu ngày, lý do, tác động. Không xóa âm thầm các quyết định cũ; đánh dấu **SUPERSEDED** nếu thay thế.
 
-**Ưu tiên tra cứu trạng thái:** [08 — review đã CONFIRMED](./08-consolidated-review.md), [10 — Learning Evidence đã CONFIRMED](./10-learning-evidence-and-mastery-assessment.md) và [06 — Decision Log mục K](./06-decisions-and-open-questions.md). Các nhãn PROPOSED/OPEN trong tài liệu thảo luận cũ được giữ để bảo toàn lịch sử và có thể đã được supersede bằng quyết định mới.
+**Ưu tiên tra cứu trạng thái:** [08 — review đã CONFIRMED](./08-consolidated-review.md), [10 — Learning Evidence đã CONFIRMED](./10-learning-evidence-and-mastery-assessment.md) và [06 — Decision Log mục L](./06-decisions-and-open-questions.md). Các nhãn PROPOSED/OPEN trong tài liệu thảo luận cũ được giữ để bảo toàn lịch sử và có thể đã được supersede bằng quyết định mới.
 
 ## Nguyên tắc không được nhầm
 
