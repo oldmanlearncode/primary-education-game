@@ -1,6 +1,6 @@
 # 06 — Decision Log, giả thuyết và câu hỏi mở
 
-> **Nguồn tra cứu đầu tiên trước mỗi buổi thảo luận mới.**  
+> **Nguồn tra cứu đầu tiên trước mỗi buổi thảo luận mới.** **CẬP NHẬT 2026-11-23: mục J và tài liệu 08 là trạng thái quyết định hiện hành; các bảng PROPOSED/OPEN ở mục C–I là snapshot lịch sử trước lúc duyệt.**  
 > Mốc ghi nhận: **2026-11-23**. Chỉ gọi là **CONFIRMED** khi người dùng đã đồng ý rõ ràng; những suy luận hoặc tư vấn của trợ lý là **PROPOSED**.
 
 ## A. Đã thống nhất (CONFIRMED)
@@ -130,3 +130,24 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | P-024 | Không coi time-to-first-action là thời gian đọc thực; dùng hai bước đọc dữ kiện và giải bài khi cần. | **PROPOSED** |
 
 **OPEN:** thời hạn sửa session, xung đột người giám hộ, mức ảnh hưởng đến mastery, threshold mass-incident, giao tiếp đính chính, cách sử dụng cross-subject evidence.
+
+
+## J. CONFIRMED — duyệt toàn bộ recommendations & edge cases (2026-11-23)
+
+**Người ra quyết định:** Product owner (người dùng), xác nhận rõ: “Tôi hoàn toàn đồng ý với các đề xuất/khuyến nghị ... 08-consolidated-review.md ... Các EC còn lại cũng theo ông đề xuất. Đánh dấu CONFIRM luôn.”
+
+| ID | Phạm vi quyết định | Trạng thái |
+|---|---|---|
+| D-013 | **Tất cả 53 khuyến nghị** có mã `PF-01…06`, `AL-01…11`, `AI-01…14`, `PA-01…12`, `GM-01…10` thuộc [08](./08-consolidated-review.md) | **CONFIRMED** (cấp nguyên tắc/định hướng) |
+| D-014 | **Tất cả EC-01…EC-45** theo hướng xử lý đề xuất trong [08](./08-consolidated-review.md) và mô tả mở rộng [09](./09-session-correction-question-incidents-and-response-time.md) | **CONFIRMED** (cấp hướng xử lý) |
+| D-015 | **10 hướng khám phá** mục D file 08 | **CONFIRMED as exploration direction**, không phải cam kết triển khai/MVP |
+| D-016 | Cách diễn giải các quyết định: không coi con số ngưỡng, thuật toán, chính sách pháp lý cần kiểm chứng hoặc kế hoạch giao hàng là đã chốt | **CONFIRMED as documentation boundary** |
+
+**SUPERSEDED (về trạng thái, không xóa nội dung lịch sử):** Các nhãn `PROPOSED`/câu hỏi `OPEN` trong phần C, D, G, I của chính file này **khi trùng khuyến nghị đã ghi trong 08/09** được thay bằng `CONFIRMED` ở cấp định hướng. Chúng chỉ còn có giá trị giải thích nguồn gốc thảo luận. Các chi tiết `how much/which algorithm/which regulation/how tested` vẫn chưa được xác định.
+
+**Quyết định cần theo dõi về implementation/validation (không làm mất trạng thái CONFIRMED của nguyên tắc):**
+- Ngưỡng thành thạo, độ tin cậy và lịch ôn học theo chuyên môn/kiểm thử.
+- Mốc hết hạn phê duyệt 3 hay 7 ngày và cấu hình exact policy; nguyên tắc chỉ auto-apply khi đã có opt-in rõ ràng cho tác động thấp **đã chốt**.
+- Quy tắc phát hiện incident theo severity, batch quarantine và tiêu chí invalidation.
+- Chi tiết thiết kế UI/UX, curriculum do ai phê duyệt, kiểm chứng quyền riêng tư/pháp luật, benchmark AI.
+- Phạm vi/schedule/budget/tech stack của MVP: **vẫn chưa có plans**.
