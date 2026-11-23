@@ -12,6 +12,7 @@
 4. [04 — UI/UX & phụ huynh](./04-ui-ux-parent-portal.md): các màn hình thiết kế, liên kết Figma, dashboard đa môn.
 5. [05 — Module đầu tiên: Phép nhân](./05-first-module-multiplication.md): nội dung học, màn chơi, vertical slice.
 6. [06 — Decision Log & Open Questions](./06-decisions-and-open-questions.md): **nguồn sự thật** về điều đã thống nhất, giả thuyết, và điểm chưa chốt.
+7. [07 — Parent-Guided Adaptive Learning](./07-parent-guided-adaptive-learning.md): phụ huynh đánh giá ban đầu, báo lỗi câu hỏi, phê duyệt lộ trình và học cùng con.
 
 ## Quy ước theo dõi lâu dài
 
