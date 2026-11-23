@@ -14,6 +14,7 @@
 6. [06 — Decision Log & Open Questions](./06-decisions-and-open-questions.md): **nguồn sự thật** về điều đã thống nhất, giả thuyết, và điểm chưa chốt.
 7. [07 — Parent-Guided Adaptive Learning](./07-parent-guided-adaptive-learning.md): phụ huynh đánh giá ban đầu, báo lỗi câu hỏi, phê duyệt lộ trình và học cùng con.
 8. [08 — Tổng rà soát quyết định & edge case](./08-consolidated-review.md): checklist để người dùng review và chốt tất cả vấn đề còn mở.
+9. [09 — Session Correction, Question Incidents & Response Time](./09-session-correction-question-incidents-and-response-time.md): phụ huynh sửa phiên học, xử lý câu hỏi sai hàng loạt và diễn giải thời gian.
 
 ## Quy ước theo dõi lâu dài
 
