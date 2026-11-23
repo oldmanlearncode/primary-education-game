@@ -1,6 +1,6 @@
 # Little Explorers — Kho lưu trữ ý tưởng
 
-> **Trạng thái:** Brainstorming / Product Discovery (CHƯA phải kế hoạch triển khai, PRD được phê duyệt hay đặc tả kỹ thuật).  
+> **Trạng thái:** Brainstorming / Product Discovery — **đã chốt nguyên tắc trong review 08 ngày 2026-11-23**, nhưng CHƯA phải kế hoạch triển khai, PRD hoàn chỉnh hoặc đặc tả kỹ thuật.  
 > **Cập nhật:** 2026-11-23  
 > **Phạm vi:** Nền tảng trò chơi giáo dục cho học sinh tiểu học Việt Nam lớp 1–5, **đa môn học**.
 
@@ -18,12 +18,14 @@
 
 ## Quy ước theo dõi lâu dài
 
-- **CONFIRMED**: người dùng đã đồng ý rõ ràng.
+- **CONFIRMED**: người dùng đã đồng ý rõ ràng (có thể là nguyên tắc sản phẩm, **không mặc định chốt chi tiết implementation**).
 - **PROPOSED**: đề xuất đang thảo luận, **không coi là quyết định**.
 - **OPEN**: cần lựa chọn hoặc nghiên cứu/kiểm thử.
 - **EXPERIMENT**: giả thuyết cần kiểm chứng với trẻ em/phụ huynh.
 
 Khi thảo luận thay đổi, cập nhật tài liệu chủ đề và `06-decisions-and-open-questions.md`, nêu ngày, lý do, tác động. Không xóa âm thầm các quyết định cũ; đánh dấu **SUPERSEDED** nếu thay thế.
+
+**Ưu tiên tra cứu trạng thái:** [08 — review đã CONFIRMED](./08-consolidated-review.md) và [06 — Decision Log mục J](./06-decisions-and-open-questions.md). Các nhãn PROPOSED/OPEN trong tài liệu thảo luận cũ được giữ để bảo toàn lịch sử và có thể đã được supersede bằng quyết định mới.
 
 ## Nguyên tắc không được nhầm
 
