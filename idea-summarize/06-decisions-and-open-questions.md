@@ -170,3 +170,19 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 **Lưu ý để tránh hiểu nhầm:** M0…M5 và 5 chiều Accuracy/Independence/Consistency/Transfer/Retention là mô hình tham chiếu được đồng ý nghiên cứu; chưa chốt **số mức cuối cùng**, ngưỡng phần trăm, công thức trọng số, thuật toán confidence hay lịch ôn. Đây là giai đoạn idea/product discovery, không phải plans.
 
 **Ưu tiên tài liệu mới:** Nếu nhãn `PROPOSED` cũ trùng các quyết định mới ở trên thì dùng trạng thái **CONFIRMED của mục K**; không xóa dữ liệu thảo luận lịch sử.
+
+
+## L. CONFIRMED — Mastery Assessment Engine & Learning Decision (2026-11-23)
+
+**Người dùng:** “Tôi đồng ý các phương án trên”, xác nhận cả ba quyết định và các khuyến nghị xử lý edge case trong buổi thảo luận tiếp theo.
+
+**Tài liệu chính:** [11 — Mastery Assessment Engine & Learning Decision](./11-mastery-assessment-engine-and-learning-decisions.md).
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-022 / MA-D01 | **Mastery Policy theo từng kỹ năng/nhóm kỹ năng**; mỗi lĩnh vực có tiêu chí thành thạo phù hợp, không một công thức áp dụng cứng cho mọi môn. | **CONFIRMED** |
+| D-023 / MA-D02 | **Evidence Aggregation có tính đa dạng**: điều chỉnh giá trị bằng chứng theo chất lượng, mức hỗ trợ, question family, phiên học và thời điểm; không tính lặp như evidence độc lập. | **CONFIRMED** |
+| D-024 / MA-D03 | **Tách Mastery Assessment khỏi Learning Decision**; engine quyết định lộ trình theo mastery, confidence, prerequisites, recall và Parent-Guided Policy. | **CONFIRMED** |
+| D-025 / MA-01…MA-08 | **Toàn bộ tám edge case** và cách xử lý tại tài liệu 11 đã được người dùng chấp nhận. | **CONFIRMED** |
+
+**Ranh giới:** Đã xác nhận nguyên tắc; chưa lựa chọn thuật toán rule-based/BKT/IRT, ngưỡng evidence và confidence, số bậc mastery cuối cùng, cách hiệu chỉnh mô hình hoặc timeline/MVP. Tài liệu vẫn nằm trong `idea-summarize/`.
