@@ -21,7 +21,7 @@
 | D-008 | Chỉ là **ideas**, chưa phải plans |
 | D-009 | **Phụ huynh định hướng mục tiêu, Learning Engine đảm bảo trải nghiệm phù hợp và hỗ trợ khi cần** (Parent-Guided option C) |
 
-## B. Danh sách cần chốt — 48 câu hỏi có mã (OPEN)
+## B. Danh sách cần chốt — 53 câu hỏi có mã (OPEN)
 
 ### B1. Product foundation & curriculum
 | ID | P | Câu hỏi / các lựa chọn | Khuyến nghị hiện tại |
