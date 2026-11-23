@@ -114,3 +114,19 @@ Mỗi lần có quyết định mới: thêm ID, ngày, người quyết định
 | D-009 | **Parent-Guided Learning Path — phương án C:** Phụ huynh định hướng mục tiêu; Learning Engine duy trì trải nghiệm phù hợp và hỗ trợ khi cần. | **CONFIRMED (người dùng đồng ý rõ)** | Trẻ có thể khám phá nâng cao có hỗ trợ, nhưng bằng chứng `SUPPORTED` không tự đổi thành thành thạo `INDEPENDENT`. Cơ chế approval, timeout, quyền phụ huynh vẫn **OPEN**. |
 
 Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tập trung các vấn đề chưa quyết định và edge case.
+
+
+## I. Bổ sung EC-02 / EC-03 / EC-12 — 2026-11-23
+
+**Người dùng đồng ý về định hướng** các đề xuất đã thảo luận (Adaptive Learning, Parent-Guided option C) và nêu ba điều chỉnh cụ thể; các tiêu chí/ngưỡng vận hành còn OPEN. Chi tiết trong [09 — Session Correction, Question Incident & Response Time](./09-session-correction-question-incidents-and-response-time.md).
+
+| ID | Quyết định ở cấp ý tưởng | Trạng thái |
+|---|---|---|
+| D-010 | **EC-02:** Phụ huynh có quyền sửa phân loại `Tự học / Có hỗ trợ` của phiên, dữ liệu phiên được lưu và có lịch sử chỉnh sửa; phụ huynh chịu trách nhiệm xác nhận ngữ cảnh tham gia. | **CONFIRMED — chủ trương người dùng**; quy tắc re-evaluate/giới hạn quyền chi tiết vẫn OPEN |
+| D-011 | **EC-03:** Khi câu hỏi đã dùng bị xác minh sai: cần đính chính/thông báo (bao gồm email nếu phù hợp), tính lại kết quả bị ảnh hưởng; phải có phương án cho **bộ nhiều câu sai**. | **CONFIRMED — chủ trương người dùng**; severity/quarantine/triage vẫn OPEN |
+| D-012 | **EC-12:** Thu thập ngầm các mốc tương tác để tham khảo thời gian tiếp nhận và trả lời; có thể đối chiếu với kỹ năng Tiếng Việt, không cần hiện đồng hồ cho trẻ. | **CONFIRMED — chủ trương người dùng**; cách đo/diễn giải cần thử nghiệm |
+| P-022 | Giữ immutable raw attempts; parent được sửa context và reweight learning evidence thay vì sửa đáp án gốc. | **PROPOSED** |
+| P-023 | Question incident theo 3 cấp + `SESSION_ASSESSMENT_INVALIDATED` khi không còn đủ bằng chứng. | **PROPOSED** |
+| P-024 | Không coi time-to-first-action là thời gian đọc thực; dùng hai bước đọc dữ kiện và giải bài khi cần. | **PROPOSED** |
+
+**OPEN:** thời hạn sửa session, xung đột người giám hộ, mức ảnh hưởng đến mastery, threshold mass-incident, giao tiếp đính chính, cách sử dụng cross-subject evidence.
