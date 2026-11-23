@@ -151,3 +151,22 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 - Quy tắc phát hiện incident theo severity, batch quarantine và tiêu chí invalidation.
 - Chi tiết thiết kế UI/UX, curriculum do ai phê duyệt, kiểm chứng quyền riêng tư/pháp luật, benchmark AI.
 - Phạm vi/schedule/budget/tech stack của MVP: **vẫn chưa có plans**.
+
+
+## K. CONFIRMED — Learning Evidence Model & Mastery Assessment (2026-11-23)
+
+**Người dùng:** “Tôi đồng ý hoàn toàn. Hãy ghi lại idea và các phương án xử lý EC lại và ghi chú đã CONFIRM.”
+
+**Tài liệu chi tiết:** [10 — Learning Evidence & Mastery Assessment](./10-learning-evidence-and-mastery-assessment.md).
+
+| ID | Quyết định mới | Trạng thái |
+|---|---|---|
+| D-017 | **Mastery Model — phương án C:** đánh giá mức thành thạo và confidence độc lập, diễn giải trạng thái dễ hiểu cho trẻ/phụ huynh. | **CONFIRMED** |
+| D-018 | **Mastery Reassessment — phương án C:** có thể điều chỉnh mức thành thạo dựa trên đủ bằng chứng; Review Status độc lập với Mastery Level; không hạ vì một phiên lỗi. | **CONFIRMED** |
+| D-019 | **Evidence Value — phương án C:** trọng lượng và ý nghĩa của bằng chứng phụ thuộc mục tiêu đánh giá, phân biệt independent/supported/transfer/retention. | **CONFIRMED** |
+| D-020 | **EV-01…EV-08:** xác nhận toàn bộ khuyến nghị xử lý các edge case được mô tả tại tài liệu 10. | **CONFIRMED** |
+| D-021 | **Learning Evidence Framework:** dữ liệu tương tác gốc có lịch sử, Learning Profile suy ra từ Evidence và có thể đánh giá lại; đa môn dùng cùng framework nhưng rubric riêng. | **CONFIRMED** (nguyên tắc sản phẩm) |
+
+**Lưu ý để tránh hiểu nhầm:** M0…M5 và 5 chiều Accuracy/Independence/Consistency/Transfer/Retention là mô hình tham chiếu được đồng ý nghiên cứu; chưa chốt **số mức cuối cùng**, ngưỡng phần trăm, công thức trọng số, thuật toán confidence hay lịch ôn. Đây là giai đoạn idea/product discovery, không phải plans.
+
+**Ưu tiên tài liệu mới:** Nếu nhãn `PROPOSED` cũ trùng các quyết định mới ở trên thì dùng trạng thái **CONFIRMED của mục K**; không xóa dữ liệu thảo luận lịch sử.
