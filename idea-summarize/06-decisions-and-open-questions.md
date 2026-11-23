@@ -105,3 +105,12 @@ Mỗi lần có quyết định mới: thêm ID, ngày, người quyết định
 | P-021 | Parent Action Center với hành động cần xác nhận/gợi ý/nhắc nhẹ, không spam | **PROPOSED** |
 
 **Cần chốt ưu tiên:** cấu hình mức phê duyệt, deadline và hành vi khi hết hạn; xác định nội dung cần kiểm duyệt thủ công; cách cập nhật lại các kết quả bị ảnh hưởng bởi câu hỏi lỗi; nội dung onboarding cho phụ huynh.
+
+
+## H. Quyết định xác nhận 2026-11-23
+
+| ID | Quyết định | Trạng thái | Hệ quả |
+|---|---|---|---|
+| D-009 | **Parent-Guided Learning Path — phương án C:** Phụ huynh định hướng mục tiêu; Learning Engine duy trì trải nghiệm phù hợp và hỗ trợ khi cần. | **CONFIRMED (người dùng đồng ý rõ)** | Trẻ có thể khám phá nâng cao có hỗ trợ, nhưng bằng chứng `SUPPORTED` không tự đổi thành thành thạo `INDEPENDENT`. Cơ chế approval, timeout, quyền phụ huynh vẫn **OPEN**. |
+
+Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tập trung các vấn đề chưa quyết định và edge case.
