@@ -170,3 +170,32 @@
 ```
 
 **Chú ý:** không nên chốt các chỉ số như số ngày recall, % mastery hoặc điểm tự tin bằng trực giác; cần thử nghiệm và phản biện chuyên môn giáo dục. Chính sách pháp lý/bảo vệ dữ liệu trẻ em phải được xác minh trước vận hành, không suy ra từ ý tưởng.
+
+
+## G. Bổ sung EC-02 / EC-03 / EC-12 sau vòng review ngày 2026-11-23
+
+**Chủ trương người dùng đã xác nhận**:
+- EC-02: Phụ huynh được đổi phân loại phiên học đã ghi nhầm, lưu toàn bộ dữ liệu và lịch sử chỉnh sửa.
+- EC-03: Có thông báo/email đính chính và điều chỉnh kết quả; xử lý cả tình huống **nhiều câu hỏi sai cùng bộ**.
+- EC-12: Ghi nhận các mốc thời gian ngầm, tham khảo kỹ năng Tiếng Việt để diễn giải bài Toán có lời văn.
+
+**Không coi các lựa chọn xử lý chi tiết là đã chốt**: raw event bất biến + editable context, mass-incident severity, invalidation và cơ chế suy luận response time là các đề xuất để duyệt.
+
+### Edge case bổ sung (EC-31…EC-45)
+- EC-31: Sửa mode phiên muộn sau khi đã nâng level.
+- EC-32: Hai người giám hộ sửa phân loại mâu thuẫn.
+- EC-33: Sửa mode nhưng đã có recall độc lập sau đó.
+- EC-34: Lạm dụng chỉnh session để nâng mastery.
+- EC-35: Câu sai được phát hiện sau nhiều tháng, tác động dây chuyền.
+- EC-36: Câu sai hàng loạt không cùng nguyên nhân.
+- EC-37: Hủy nhiều câu làm phiên không còn ý nghĩa đánh giá.
+- EC-38: Email không gửi được/không được đọc.
+- EC-39: Câu thay đổi giữa phiên đang làm.
+- EC-40: Re-score ảnh hưởng đề xuất đã được phụ huynh phê duyệt.
+- EC-41: Không tách được chính xác đọc vs suy nghĩ chỉ từ thời gian.
+- EC-42: Phụ huynh giải thích trong giai đoạn đọc.
+- EC-43: Ứng dụng chậm, tạm dừng, đổi tab.
+- EC-44: Đọc chậm hoặc thao tác chậm nhưng hiểu tốt.
+- EC-45: Năng lực Tiếng Việt bị lạm dụng để chặn tiến trình Toán.
+
+**Tài liệu chi tiết:** [09 — Session Correction, Question Incidents & Response Time](./09-session-correction-question-incidents-and-response-time.md). Tổng số edge case đã ghi: **45**; 53 câu hỏi quyết định trong nhóm B ban đầu không bao gồm các câu hỏi mới ở file 09.
