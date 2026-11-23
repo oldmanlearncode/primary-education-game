@@ -86,3 +86,22 @@
 Mỗi lần có quyết định mới: thêm ID, ngày, người quyết định, trạng thái và lý do; nếu thay đổi quyết định cũ hãy đánh dấu **SUPERSEDED → ID mới**. Không chuyển đề xuất thành CONFIRMED vì trợ lý đã từng gợi ý hoặc vì có UI minh họa.
 
 **Đề xuất trọng tâm thảo luận tiếp:** adaptive learning, quy trình tạo/kiểm duyệt câu AI, cách định nghĩa năng lực cho từng môn, game loop và ranh giới MVP.
+
+
+## G. Bổ sung 2026-11-23 — Parent-Guided Adaptive Learning
+
+> Đây là **USER IDEA + PROPOSED**, không tự động coi các chi tiết thiết kế là CONFIRMED. Xem [tài liệu chuyên đề 07](./07-parent-guided-adaptive-learning.md).
+
+| ID | Ý tưởng / vấn đề | Trạng thái |
+|---|---|---|
+| U-003 | Phụ huynh trả lời câu hỏi khi tạo hồ sơ để xác lập năng lực ban đầu, tránh bắt đầu quá thấp; kết quả được điều chỉnh theo năng lực thực tế | **USER IDEA — cần chốt cách đánh giá** |
+| U-004 | Phụ huynh review câu hỏi con đã gặp, báo mơ hồ/đáp án sai/nội dung chưa đúng; là một lớp phản hồi bổ sung | **USER IDEA — cần quy trình xác minh** |
+| U-005 | Phụ huynh tham gia xác nhận đề xuất nâng/hạ độ khó; cân nhắc hết hạn 3–7 ngày, auto xử lý và audit log | **USER IDEA — chính sách auto-accept CHƯA CHỐT** |
+| U-006 | Phụ huynh tham gia học cùng trẻ, hỗ trợ tiếp cận thử thách nhỉnh hơn mức đang tự làm được | **USER IDEA** |
+| P-017 | Parent Assessment + Discovery Assessment: khai báo ban đầu là thông tin tham khảo, có bằng chứng trực tiếp kiểm chứng | **PROPOSED** |
+| P-018 | Parent Question Report → review/quarantine/versioning → hiệu chỉnh learning evidence nếu câu bị xác nhận lỗi | **PROPOSED** |
+| P-019 | Parent approval theo 3 mức ảnh hưởng và chế độ parental control; im lặng không mặc nhiên là đồng ý nếu chưa opt-in | **PROPOSED** |
+| P-020 | Learn Together: phân biệt năng lực độc lập và có hỗ trợ | **PROPOSED** |
+| P-021 | Parent Action Center với hành động cần xác nhận/gợi ý/nhắc nhẹ, không spam | **PROPOSED** |
+
+**Cần chốt ưu tiên:** cấu hình mức phê duyệt, deadline và hành vi khi hết hạn; xác định nội dung cần kiểm duyệt thủ công; cách cập nhật lại các kết quả bị ảnh hưởng bởi câu hỏi lỗi; nội dung onboarding cho phụ huynh.
