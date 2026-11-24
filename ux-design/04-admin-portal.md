@@ -244,3 +244,8 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 ## 14. A-06 + A-07 approval update (2026-11-24)
 
 User explicitly approved both wireframes and the associated AW suggestions. **A-07 / AW-17…20: CONFIRMED (D-063). A-06 / AW-22…25: CONFIRMED (D-064).** Both remain HTML low-fi only; Figma frames not created. **Offline unsynced learning-session handling remains OPEN** and must not be treated as approved simply because the warning UX was approved. Next: A-08 Admin User & Role Management.
+
+
+## 15. A-08 Admin Users & Roles — HTML draft (2026-11-24)
+
+[UX spec — A-08](./13-admin-user-role-management-wireframe.md). Standalone interactive HTML low-fi created: Super Admin-only create/disable and assign/revoke Admin roles, multi-role, target confirmation, reason/audit mock, viewer role simulation, last active Super Admin guard, concurrency/MFA/permission-revoked states. **AW-26…AW-29 PROPOSED**. **Demo does not set final Admin activation or MFA technical policies.** Figma A-08 NOT CREATED; no actual backend or audit persistence.
