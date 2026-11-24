@@ -219,3 +219,20 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-033 / UX-05 | Cho phép trẻ đổi giữa hồ sơ đã được cấp quyền trên thiết bị, có xác nhận; cấu hình và quản lý hồ sơ cần Adult Gate. | **CONFIRMED** |
 
 **Nguồn chi tiết:** [ux-design/01-sitemap-information-architecture.md](../ux-design/01-sitemap-information-architecture.md). **Chưa coi Phase 2 hoàn tất:** các user flow chi tiết và các wireframe/interaction còn cần review.
+
+
+## O. CONFIRMED — Admin-managed onboarding & Admin Portal (2026-11-24)
+
+**Người dùng:** “Tôi nghĩ cần thêm một bộ flow và màn hình cho admin, hiện tại về phần quản lý ngươi dùng sẽ do admin phụ trách chưa mở rộng tự đăng ký. Phần tự đăng ký sẽ được phát triển khi sản phẩm đã hoàn thiện hơn và hạ tầng cho phép nhiều truy cập. Còn các phần còn lại tôi đề đồng ý.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-034 / UX-06 | Onboarding ngắn theo các bước, có thể bỏ qua thông tin không thiết yếu. | **CONFIRMED** |
+| D-035 / UX-07 | Parent Assessment theo **Progressive Profiling** (đánh giá chung trước, bổ sung từng môn/module khi cần). | **CONFIRMED** |
+| D-036 / UX-08 | Ý tưởng **Guest Preview + public self-registration** của đề xuất trước đây **không sử dụng giai đoạn đầu**; chỉ xem xét khi sản phẩm và hạ tầng sẵn sàng. | **DEFERRED / SUPERSEDED for initial rollout** |
+| D-037 / UX-09 | Child Profiles do phụ huynh quản lý trong family/parent account, yêu cầu dữ liệu tối thiểu. | **CONFIRMED** |
+| D-038 / UX-10 | **Admin cấp phát và quản lý tài khoản phụ huynh ban đầu**; không có public self-registration. | **CONFIRMED** |
+| D-039 / UX-11 | **Thêm Admin Portal** cùng với Parent Portal và Child World; có sitemap, admin flows và screen inventory. | **CONFIRMED** |
+| D-040 / ON-01…ON-12 | Đồng ý hướng xử lý 12 onboarding edge cases đã đề xuất; áp dụng trong bối cảnh tài khoản do admin cấp, không theo public sign-up. | **CONFIRMED** (cấp nguyên tắc) |
+
+**Ranh giới:** Admin chịu trách nhiệm cấp/quản lý account; phụ huynh vẫn có thể tự tạo/cập nhật **child profile** trong account đã cấp. Các phương thức invitation, recovery, admin roles, content reviewer và bảo mật vận hành trong [Admin Portal draft](../ux-design/04-admin-portal.md) còn **OPEN/PROPOSED**, chưa chốt cụ thể.
