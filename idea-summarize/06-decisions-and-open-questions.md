@@ -316,3 +316,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-058 / AW-APP-01 | **Phê duyệt hai low-fi wireframe A-01 Admin Login và A-02 Admin Dashboard** theo bố cục đã dựng ở [Figma](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). | **CONFIRMED — WIREFRAME APPROVED** |
 
 **Phạm vi:** Duyệt hai màn hình hiện có, **không** suy rộng sang các màn MFA, error/loading/session, role-specific variants, responsive hoặc prototype chưa vẽ. [UX detail](../ux-design/06-admin-login-dashboard-wireframes.md).
+
+
+## V. CONFIRMED — A-03 Parent Account List HTML wireframe (2026-11-24)
+
+**Người dùng:** “Okay tôi nghĩ như vậy ổn rồi. Tiếp tục thôi.” — chấp thuận wireframe A-03 và các hướng AW-05…AW-08 được đề nghị ngay trước đó.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-059 / AW-APP-02** | Phê duyệt **A-03 HTML low-fi**: sidebar + search/filter toolbar + table; không khóa/khôi phục one-click; metadata tối thiểu; tìm kiếm/lọc/sort/phân trang theo scope, đồng ý AW-05…AW-08. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Giới hạn:** Không khẳng định có A-03 Figma frame (MCP tool limit); không duyệt sẵn A-04. [Spec A-03](../ux-design/07-admin-parent-account-list-wireframe.md).
