@@ -233,9 +233,14 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 
 ## 12. A-07 Invitation Management — HTML draft (2026-11-24)
 
-[A-07 UX spec](./10-admin-invitation-management-wireframe.md). Interactive HTML mock exists: invitation list, distinct account/token/delivery statuses, controlled resend/revoke, reason confirmation, role/scope simulator, mock audit and negative states. **AW-17…AW-20 PROPOSED**, awaiting user review. **Figma A-07 NOT CREATED**, no real mail, tokens, backend authorization or persistence.
+[A-07 UX spec](./10-admin-invitation-management-wireframe.md). Interactive HTML mock exists: invitation list, distinct account/token/delivery statuses, controlled resend/revoke, reason confirmation, role/scope simulator, mock audit and negative states. **AW-17…AW-20 CONFIRMED, A-07 HTML low-fi APPROVED (2026-11-24)**. **Figma A-07 NOT CREATED**, no real mail, tokens, backend authorization or persistence.
 
 
 ## 13. A-06 Suspend / Restore Confirmation — HTML draft (2026-11-24)
 
-[UX specification](./12-admin-suspend-restore-confirmation-wireframe.md). A-06 is a confirmation state launched from A-05, with target/status, mandatory reason, acknowledgement, action audit preview and test scenarios. **AW-22…AW-25 PROPOSED**, not yet approved. Offline synchronization response in the demo is illustrative and **not a confirmed final policy**. Figma frame not created; no backend action exists.
+[UX specification](./12-admin-suspend-restore-confirmation-wireframe.md). A-06 is a confirmation state launched from A-05, with target/status, mandatory reason, acknowledgement, action audit preview and test scenarios. **AW-22…AW-25 CONFIRMED, A-06 HTML low-fi APPROVED (2026-11-24)**. Offline synchronization response in the demo is illustrative and **not a confirmed final policy**. Figma frame not created; no backend action exists.
+
+
+## 14. A-06 + A-07 approval update (2026-11-24)
+
+User explicitly approved both wireframes and the associated AW suggestions. **A-07 / AW-17…20: CONFIRMED (D-063). A-06 / AW-22…25: CONFIRMED (D-064).** Both remain HTML low-fi only; Figma frames not created. **Offline unsynced learning-session handling remains OPEN** and must not be treated as approved simply because the warning UX was approved. Next: A-08 Admin User & Role Management.
