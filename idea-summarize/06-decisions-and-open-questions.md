@@ -361,3 +361,17 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **AW-21** | Data Tables tránh giật cột: nút icon xem chi tiết kích thước ổn định, dùng highlight cho dòng đang xem, giữ chiều rộng cột; có nhãn và tương tác bàn phím. | **CONFIRMED** |
 
 **Chi tiết và acceptance checklist:** [11 — Global Layout Stability Guidelines](../ux-design/11-global-layout-stability-guidelines.md). **AW-17…AW-20 vẫn PROPOSED**, vì người dùng chỉ xác nhận AW-21 và rule toàn dự án. Không suy diễn rằng mọi màn đã đạt kiểm thử CLS.
+
+
+## Z. CONFIRMED — A-06 and A-07 HTML low-fi wireframes (2026-11-24)
+
+**Người dùng:** “Okay. Tôi đồng ý toàn bộ A06, các đề xuất AW-22 đến AW-25, tôi cũng đồng ý tất cả, các phần của A-07.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-063 / AW-APP-05** | Duyệt **toàn bộ A-07 Invitation Management HTML low-fi**, gồm **AW-17…AW-20**: KPI + invitation table + detail/audit; tách account/token/delivery status; thao tác resend/revoke có quyền hợp lệ, xác nhận và lý do; resend tránh hai token còn hiệu lực, send failure giữ account. Những quyết định nền tảng AP-D01/AP-02/AP-09 vẫn áp dụng. | **CONFIRMED** |
+| **D-064 / AW-APP-06** | Duyệt **toàn bộ A-06 Suspend/Restore Confirmation HTML low-fi**, gồm **AW-22…AW-25**: modal xác nhận trong A-05, định danh trạng thái rõ, reason + acknowledgement bắt buộc; thông báo riêng lỗi quyền/concurrency/network; cảnh báo phiên học active hoặc offline chưa đồng bộ. | **CONFIRMED** |
+
+**Ranh giới:** A-06/A-07 chưa có Figma frame, không có API hay backend thật. **Quy tắc xử lý khi thiết bị offline chưa đồng bộ là OPEN**; AW-25 duyệt cảnh báo và xử lý UX thận trọng, không chốt chính sách chặn/hoãn/cho phép thao tác. Các quyết định kỹ thuật rate-limit, token retry/reissue và transaction boundary vẫn OPEN.
+
+**Specs:** [A-06](../ux-design/12-admin-suspend-restore-confirmation-wireframe.md) · [A-07](../ux-design/10-admin-invitation-management-wireframe.md).
