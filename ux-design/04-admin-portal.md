@@ -15,6 +15,53 @@
 | ADM-04 | **Secure account activation bằng lời mời thay vì gửi mật khẩu** là hướng UX đã được chọn. Kênh gửi, expiry, token design và recovery vẫn cần quyết định. | **CONFIRMED — direction** |
 | ADM-05 | **Tách account admin và content reviewer**: quyền quản lý người dùng không tự động kèm quyền duyệt câu hỏi/chương trình học. | **CONFIRMED** |
 
+## 0.1. Permission Architecture — ADM-D01…ADM-D04 CONFIRMED (2026-11-24)
+
+| ID | Quyết định đã chốt | Trạng thái |
+|---|---|---|
+| **ADM-D01** | **Bốn role ban đầu:** `SUPER_ADMIN`, `ACCOUNT_ADMIN`, `CONTENT_REVIEWER`, `SUPPORT_OPERATOR`. Role đảm nhiệm nghiệp vụ riêng; role Super Admin không mặc nhiên được đọc dữ liệu học tập nhạy cảm. | **CONFIRMED** |
+| **ADM-D02** | **RBAC + Resource Scope + Context Policy**: quyền thao tác còn phụ thuộc tài nguyên cụ thể, phạm vi quản lý và điều kiện nghiệp vụ. | **CONFIRMED** |
+| **ADM-D03** | Một tài khoản quản trị **có thể giữ nhiều role**; quyền tổng hợp vẫn phải kiểm tra resource scope, context và giới hạn dữ liệu. | **CONFIRMED** |
+| **ADM-D04** | **Chỉ Super Admin được quản lý role/tài khoản Admin**; quyền nhạy cảm với dữ liệu học sinh yêu cầu kiểm tra chính sách riêng, không tự động suy từ role. | **CONFIRMED** |
+
+**Để tránh nhầm:** bốn quyết định là nguyên tắc kiến trúc phân quyền. Các quyền cụ thể theo từng hành động trong các bảng bên dưới là **PROPOSED** cho UX review, chưa được phê duyệt.
+
+### Permission matrix — bản đề xuất để review (NOT CONFIRMED)
+
+Ký hiệu: ✅ được đề xuất cấp, ❌ không cấp, 🔒 chỉ được phép nếu có authorization/scope/context phù hợp.
+
+| Hành động | SUPER_ADMIN | ACCOUNT_ADMIN | CONTENT_REVIEWER | SUPPORT_OPERATOR |
+|---|:---:|:---:|:---:|:---:|
+| Tạo tài khoản phụ huynh | ✅ | ✅ | ❌ | ❌ |
+| Gửi lại lời mời | ✅ | ✅ | ❌ | 🔒 |
+| Khóa/khôi phục tài khoản phụ huynh | ✅ | ✅ | ❌ | ❌ |
+| Tạo/vô hiệu hóa tài khoản Admin | ✅ | ❌ | ❌ | ❌ |
+| Cấp/thu hồi role Admin | ✅ | ❌ | ❌ | ❌ |
+| Xem và triage lỗi câu hỏi | 🔒 | ❌ | ✅ | 🔒 |
+| Duyệt nội dung giáo dục | 🔒 | ❌ | ✅ | ❌ |
+| Xem dữ liệu học tập trẻ | 🔒 | ❌ | 🔒 | 🔒 |
+| Sửa trực tiếp raw attempts hoặc mastery | ❌ | ❌ | ❌ | ❌ |
+| Xem audit theo phạm vi | 🔒 | 🔒 | 🔒 | 🔒 |
+
+Không được coi vai trò quản trị cao nhất là quyền vượt mọi chính sách đối với dữ liệu trẻ. Việc phê duyệt học liệu cần đúng thẩm quyền chuyên môn. Server cần thực thi permission/scope/context thực sự — ẩn nút trong UI không đủ để bảo vệ.
+
+### Edge cases AD-01…AD-12 — PROPOSED, chưa được người dùng xác nhận
+
+| ID | Trường hợp | Phương án đang đề xuất | Trạng thái |
+|---|---|---|---|
+| AD-01 | Super Admin cuối cùng bị khóa/mất quyền | Bảo vệ hệ thống khỏi mất Super Admin cuối cùng; recovery có kiểm soát | **PROPOSED** |
+| AD-02 | Admin tự nâng role | Không cho tự nâng quyền | **PROPOSED** |
+| AD-03 | Một Admin có nhiều role | Gộp quyền nhưng vẫn kiểm tra scope/context | **PROPOSED** |
+| AD-04 | Hai Admin sửa đồng thời một account | Version check / conflict handling, tránh ghi đè | **PROPOSED** |
+| AD-05 | Account bị khóa khi bé đang chơi | Kết thúc phiên ở checkpoint an toàn theo risk policy | **PROPOSED** |
+| AD-06 | Invitation được sử dụng lần hai | Từ chối dùng lại; hỗ trợ tạo lời mời mới | **PROPOSED** |
+| AD-07 | Invitation hết hạn | Từ chối kích hoạt và cho admin gửi lại | **PROPOSED** |
+| AD-08 | Support xem dữ liệu ngoài ticket | Từ chối theo resource scope; audit truy cập | **PROPOSED** |
+| AD-09 | Reviewer sửa quyền account | Từ chối thao tác ngoài quyền | **PROPOSED** |
+| AD-10 | Admin bị thu quyền trong phiên đăng nhập | Revalidate quyền, vô hiệu session khi cần | **PROPOSED** |
+| AD-11 | Admin khóa nhầm account | Quy trình phục hồi có lý do và audit | **PROPOSED** |
+| AD-12 | Yêu cầu xóa dữ liệu của trẻ | Tách thành privacy workflow có xác minh, không xóa tùy tiện | **PROPOSED** |
+
 ## 1. Product boundaries
 
 Little Explorers gồm ba trải nghiệm:
@@ -145,7 +192,7 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 - Plan transition for public registration **without** re-creating existing parent accounts.
 
 ## 6. OPEN for detailed admin UX (principles ADM-01…05 already CONFIRMED)
-1. Đã chốt Super Admin + Admin có phân quyền. Còn OPEN: số lượng Super Admin, cách bootstrap, ai được cấp/thu hồi role, quy tắc bảo vệ quản trị viên cuối cùng; ma trận permissions.
+1. Đã chốt **bốn role**, chỉ Super Admin quản lý role Admin, RBAC + scope/context và hỗ trợ multi-role. Còn OPEN: số lượng Super Admin, bootstrap, cơ chế khôi phục quản trị viên cuối cùng, **chi tiết từng permission trong matrix (PROPOSED)**.
 2. Đã chọn nguyên tắc **lời mời kích hoạt an toàn, không gửi password**. Còn OPEN: kênh gửi (email/private link), hạn sử dụng, lời mời hết hạn/thu hồi và resend.
 3. Whether parent can recover password independently after admin provisioning.
 4. Who can link a child profile to another guardian?
