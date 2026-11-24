@@ -3,6 +3,7 @@
 > **Phase 2 UX Design · 2026-11-24 · DRAFT**  
 > **CONFIRMED:** Có Admin Portal; giai đoạn đầu tài khoản phụ huynh do admin cấp phát/quản lý; không mở tự đăng ký công khai.  
 > **✅ CONFIRMED 2026-11-24:** Super Admin + Admin có phân quyền; least privilege đối với dữ liệu học sinh; audit thay đổi tài khoản/quyền; hướng kích hoạt bằng lời mời an toàn thay vì gửi mật khẩu; tách quyền account administration và content review.  
+> **✅ CONFIRMED:** Hướng xử lý toàn bộ edge case **AD-01…AD-12** (nguyên tắc; chưa chốt exact policy/technical thresholds).  
 > **PROPOSED:** Permission matrix cụ thể, kênh và vòng đời lời mời, UI chi tiết và triển khai xác thực vẫn cần review.
 
 ## 0. Admin decisions — CONFIRMED
@@ -45,22 +46,22 @@ Ký hiệu: ✅ được đề xuất cấp, ❌ không cấp, 🔒 chỉ đư�
 
 Không được coi vai trò quản trị cao nhất là quyền vượt mọi chính sách đối với dữ liệu trẻ. Việc phê duyệt học liệu cần đúng thẩm quyền chuyên môn. Server cần thực thi permission/scope/context thực sự — ẩn nút trong UI không đủ để bảo vệ.
 
-### Edge cases AD-01…AD-12 — PROPOSED, chưa được người dùng xác nhận
+### Edge cases AD-01…AD-12 — ✅ CONFIRMED (2026-11-24)
 
 | ID | Trường hợp | Phương án đang đề xuất | Trạng thái |
 |---|---|---|---|
-| AD-01 | Super Admin cuối cùng bị khóa/mất quyền | Bảo vệ hệ thống khỏi mất Super Admin cuối cùng; recovery có kiểm soát | **PROPOSED** |
-| AD-02 | Admin tự nâng role | Không cho tự nâng quyền | **PROPOSED** |
-| AD-03 | Một Admin có nhiều role | Gộp quyền nhưng vẫn kiểm tra scope/context | **PROPOSED** |
-| AD-04 | Hai Admin sửa đồng thời một account | Version check / conflict handling, tránh ghi đè | **PROPOSED** |
-| AD-05 | Account bị khóa khi bé đang chơi | Kết thúc phiên ở checkpoint an toàn theo risk policy | **PROPOSED** |
-| AD-06 | Invitation được sử dụng lần hai | Từ chối dùng lại; hỗ trợ tạo lời mời mới | **PROPOSED** |
-| AD-07 | Invitation hết hạn | Từ chối kích hoạt và cho admin gửi lại | **PROPOSED** |
-| AD-08 | Support xem dữ liệu ngoài ticket | Từ chối theo resource scope; audit truy cập | **PROPOSED** |
-| AD-09 | Reviewer sửa quyền account | Từ chối thao tác ngoài quyền | **PROPOSED** |
-| AD-10 | Admin bị thu quyền trong phiên đăng nhập | Revalidate quyền, vô hiệu session khi cần | **PROPOSED** |
-| AD-11 | Admin khóa nhầm account | Quy trình phục hồi có lý do và audit | **PROPOSED** |
-| AD-12 | Yêu cầu xóa dữ liệu của trẻ | Tách thành privacy workflow có xác minh, không xóa tùy tiện | **PROPOSED** |
+| AD-01 | Super Admin cuối cùng bị khóa/mất quyền | Bảo vệ hệ thống khỏi mất Super Admin cuối cùng; recovery có kiểm soát | **CONFIRMED** |
+| AD-02 | Admin tự nâng role | Không cho tự nâng quyền | **CONFIRMED** |
+| AD-03 | Một Admin có nhiều role | Gộp quyền nhưng vẫn kiểm tra scope/context | **CONFIRMED** |
+| AD-04 | Hai Admin sửa đồng thời một account | Version check / conflict handling, tránh ghi đè | **CONFIRMED** |
+| AD-05 | Account bị khóa khi bé đang chơi | Kết thúc phiên ở checkpoint an toàn theo risk policy | **CONFIRMED** |
+| AD-06 | Invitation được sử dụng lần hai | Từ chối dùng lại; hỗ trợ tạo lời mời mới | **CONFIRMED** |
+| AD-07 | Invitation hết hạn | Từ chối kích hoạt và cho admin gửi lại | **CONFIRMED** |
+| AD-08 | Support xem dữ liệu ngoài ticket | Từ chối theo resource scope; audit truy cập | **CONFIRMED** |
+| AD-09 | Reviewer sửa quyền account | Từ chối thao tác ngoài quyền | **CONFIRMED** |
+| AD-10 | Admin bị thu quyền trong phiên đăng nhập | Revalidate quyền, vô hiệu session khi cần | **CONFIRMED** |
+| AD-11 | Admin khóa nhầm account | Quy trình phục hồi có lý do và audit | **CONFIRMED** |
+| AD-12 | Yêu cầu xóa dữ liệu của trẻ | Tách thành privacy workflow có xác minh, không xóa tùy tiện | **CONFIRMED** |
 
 ## 1. Product boundaries
 
@@ -196,8 +197,8 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 2. Đã chọn nguyên tắc **lời mời kích hoạt an toàn, không gửi password**. Còn OPEN: kênh gửi (email/private link), hạn sử dụng, lời mời hết hạn/thu hồi và resend.
 3. Whether parent can recover password independently after admin provisioning.
 4. Who can link a child profile to another guardian?
-5. Account suspension behavior for ongoing child session and offline device.
-6. How much support visibility admin has into child learning data, subject to legal/privacy safeguards.
+5. Đã CONFIRMED hướng kết thúc phiên an toàn khi khóa tài khoản (AD-05); còn OPEN: chi tiết xử lý session đang chạy, offline, đồng bộ và mức độ khẩn cấp.
+6. Đã CONFIRMED từ chối truy cập ngoài phạm vi ticket (AD-08); còn OPEN: dữ liệu nào được phép xem trong ticket, thời hạn truy cập, approval và privacy/legal review.
 7. Whether Content Reviewer belongs inside same admin app or separate console.
 
 These questions do **not** reopen the confirmed decision: **admin-provisioned accounts first, no open sign-up at launch**.
