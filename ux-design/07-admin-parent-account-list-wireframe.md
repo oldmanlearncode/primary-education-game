@@ -1,6 +1,6 @@
 # 07 — A-03 Parent Account List: UX Wireframe & Interaction Spec
 
-> **2026-11-24 · LOW-FIDELITY UX DRAFT · NEEDS USER REVIEW**  
+> **2026-11-24 · ✅ LOW-FIDELITY HTML WIREFRAME APPROVED**  
 > Figma hiện không thể cập nhật vì công cụ thông báo **Starter plan MCP tool-call limit**. Không tuyên bố đã tạo frame Figma.  
 > Đã tạo bản demo HTML độc lập có filter/search/pagination và quick-detail panel để review; không phải giao diện sản phẩm đã triển khai.
 
@@ -82,7 +82,7 @@ A-02 Dashboard → A-03 Parent Account List
 - **AP-01:** tạo parent email trùng xử lý ở A-04, không tạo trùng ở A-03.
 - **AP-D01:** filter status account khác trạng thái delivery/invitation.
 
-## 6. Proposal to confirm after review (NEW; not CONFIRMED)
+## 6. AW-05…AW-08 — ✅ CONFIRMED (A-03 wireframe approved 2026-11-24)
 
 | ID | Quyết định đề xuất |
 |---|---|
@@ -96,7 +96,12 @@ A-02 Dashboard → A-03 Parent Account List
 ## 7. Deliverable status
 
 - **A-01 / A-02**: Figma low-fi **APPROVED**.
-- **A-03**: HTML interactive wireframe **DRAFT FOR REVIEW**; **Figma frame NOT CREATED** vì tool limit.
-- **A-04 / A-05 / A-07**: NOT STARTED.
+- **A-03**: HTML interactive wireframe **APPROVED (2026-11-24)**; **Figma frame NOT CREATED** vì tool limit.
+- **A-04**: HTML interactive draft created, awaiting review; **A-05 / A-07**: NOT STARTED. See [08 — A-04](./08-admin-create-parent-account-wireframe.md).
 
 Sau khi có khả năng ghi Figma trở lại, cần chuyển A-03 sang các layer Figma chỉnh sửa được, liên kết frame vào [Screen Inventory](./03-screen-inventory.md), rồi review trực quan.
+
+
+## 8. Approval record
+
+**D-059 / AW-APP-02 CONFIRMED (2026-11-24):** Người dùng: “Okay tôi nghĩ như vậy ổn rồi. Tiếp tục thôi.” — phê duyệt **A-03 HTML low-fi** và bốn đề xuất **AW-05…AW-08** vừa được đưa ra để review. **Không đồng nghĩa Figma A-03 đã được tạo**, và không duyệt trước A-04.
