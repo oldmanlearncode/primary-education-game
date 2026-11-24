@@ -1,6 +1,6 @@
 # 12 — A-06 Suspend / Restore Confirmation: UX Wireframe
 
-> **Phase 2 — 2026-11-24 · HTML LOW-FIDELITY DRAFT / NEEDS REVIEW**  
+> **Phase 2 — 2026-11-24 · ✅ HTML LOW-FI APPROVED — AW-22…AW-25 CONFIRMED**  
 > A-06 is an explicit **confirmation interaction for actions initiated at A-05**, not a new full administrator workflow. Local interactive demo: `A-06-suspend-restore-confirmation.html` (conversation file). **Figma frame NOT CREATED**; no real backend, authorization or audit persistence.
 
 ## 1. Established decisions, not reopened
@@ -63,21 +63,21 @@ User can choose account states, admin roles and scenarios (normal, active child 
 
 The demo takes a **conservative illustrative choice** to block when offline data is unsynced. **This is not a confirmed product rule:** precise offline suspension semantics remain OPEN under AD-05.
 
-## 5. New proposals for explicit review — NOT CONFIRMED
+## 5. Approved UX decisions — CONFIRMED (2026-11-24)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-22** | A-06 is a dedicated **modal confirmation state reachable from A-05**, with an unambiguous account target, state transition and reason field; no unnecessary page navigation in production. | **PROPOSED** |
-| **AW-23** | In addition to mandatory reason, require an explicit **“I checked the correct account and understand the impact”** acknowledgement. | **PROPOSED** |
-| **AW-24** | Provide distinct feedback for **permission revoked / concurrent update / uncertain network result**, with safe recovery instead of auto-retrying. | **PROPOSED** UI (underlying AD-04/AD-10 CONFIRMED) |
-| **AW-25** | When a child session is active or offline, show **checkpoint/sync risk warning** and prevent implying immediate safe termination; offline resolution strategy stays OPEN. | **PROPOSED** UI (underlying AD-05 CONFIRMED) |
+| **AW-22** | A-06 is a dedicated **modal confirmation state reachable from A-05**, with an unambiguous account target, state transition and reason field; no unnecessary page navigation in production. | **CONFIRMED** |
+| **AW-23** | In addition to mandatory reason, require an explicit **“I checked the correct account and understand the impact”** acknowledgement. | **CONFIRMED** |
+| **AW-24** | Provide distinct feedback for **permission revoked / concurrent update / uncertain network result**, with safe recovery instead of auto-retrying. | **CONFIRMED** UI (underlying AD-04/AD-10 CONFIRMED) |
+| **AW-25** | When a child session is active or offline, show **checkpoint/sync risk warning** and prevent implying immediate safe termination; offline resolution strategy stays OPEN. | **CONFIRMED** UI (underlying AD-05 CONFIRMED) |
 
 ## 6. Existing approval states
 
 - **A-01/A-02:** Figma low-fi approved.
 - **A-03/A-04/A-05:** HTML low-fi approved; Figma frames not created.
-- **A-06:** **HTML draft, pending approval**, Figma frame not created.
-- **A-07:** HTML draft. **User approved the A-03/A-07 layout-stability corrections only**; **AW-17…AW-20 still proposed**, so no blanket A-07 approval is inferred from that message.
+- **A-06:** **HTML low-fi APPROVED**, Figma frame not created.
+- **A-07:** **HTML low-fi APPROVED** by the user's later explicit approval; **AW-17…AW-20 CONFIRMED**. The earlier limited approval of Layout Shift corrections was superseded by a full A-07 UX approval.
 - Global layout stability **D-062 + AW-21** confirmed.
 
 ## 7. Links
@@ -87,3 +87,10 @@ The demo takes a **conservative illustrative choice** to block when offline data
 - [Admin Portal & permissions](./04-admin-portal.md)
 - [Global layout-stability guideline](./11-global-layout-stability-guidelines.md)
 - [Decision log](../idea-summarize/06-decisions-and-open-questions.md)
+
+
+## 8. Final approval record — 2026-11-24
+
+**D-064 / AW-APP-06 — CONFIRMED:** User explicitly approves **all A-06 HTML wireframe and AW-22…AW-25**. A-06 will remain a confirmation/modal state within A-05; account identity and state are explicit; reason and acknowledgement required; separate feedback for permission/concurrency/network; warnings for active/offline child sessions. **Precise policy for offline unsynced child progress remains OPEN**—confirmation of the warning UX does not mean the illustrative demo blocking behavior is product policy.
+
+**Not implemented:** Figma A-06, production server permissions, locking, session protection or audit persistence.
