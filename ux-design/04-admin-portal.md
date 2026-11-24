@@ -209,3 +209,8 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 ## 7. Phase 2.4 — Account Provisioning UX decisions
 
 **AP-D01…AP-D05 + AP-01…AP-10 đã CONFIRMED** (2026-11-24). Trạng thái tài khoản và invitation độc lập; form tạo parent account chỉ bắt buộc email; dashboard theo permission; invitation hết hạn mặc định 72 giờ (có thể cấu hình), single-use; MFA bắt buộc cho Super Admin, Admin khác MFA tối thiểu khi thao tác nhạy cảm. Mười trường hợp AP-01…10 có hướng xử lý được chấp thuận. **Nguồn chuẩn:** [05 — Admin Account Provisioning UX & Parent Activation](./05-admin-account-provisioning.md).
+
+
+## 8. Wireframe update — A-01 & A-02 (2026-11-24)
+
+**Initial editable Figma low-fi frames created:** [A-01 Admin Login + A-02 Admin Dashboard](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). [UX interaction specification](./06-admin-login-dashboard-wireframes.md). **Needs review**; MFA, error, and other-role UI variants still pending. No product code/prototype created.
