@@ -90,16 +90,21 @@
 
 ## Phase 2.4 — A-07 Invitation Management (2026-11-24)
 
-**A-07 standalone interactive HTML low-fi CREATED — DRAFT / AWAITING REVIEW.** Search and filter separate token/delivery states, role-aware resend/revoke, confirmation reason, audit history, simulator for email delivery failure/concurrency/permission revocation/network. [A-07 UX specification](./10-admin-invitation-management-wireframe.md). **AW-17…AW-20 PROPOSED, not CONFIRMED**. Linked A-03/A-04/A-05 HTML demos now navigate to A-07. **Figma frame A-07 NOT CREATED**; previous Starter MCP tool quota issue remains unresolved. A-01…A-05 approvals unchanged.
+**A-07 standalone interactive HTML low-fi CREATED — DRAFT / AWAITING REVIEW.** Search and filter separate token/delivery states, role-aware resend/revoke, confirmation reason, audit history, simulator for email delivery failure/concurrency/permission revocation/network. [A-07 UX specification](./10-admin-invitation-management-wireframe.md). **AW-17…AW-20 CONFIRMED on 2026-11-24 (D-063)**. Linked A-03/A-04/A-05 HTML demos now navigate to A-07. **Figma frame A-07 NOT CREATED**; previous Starter MCP tool quota issue remains unresolved. A-01…A-05 approvals unchanged.
 
 
 ## Global UX rule — layout stability (2026-11-24)
 
-**D-062 / UX-GLOBAL-01 + AW-21 CONFIRMED.** Avoid unexpected Layout Shift across Child World, Parent Portal and Admin Portal. A-07/A-03 HTML table demos updated with fixed-size icon button and stable columns. [Full guidance and acceptance criteria](./11-global-layout-stability-guidelines.md). **AW-17…AW-20 are still PROPOSED; A-07 still AWAITING REVIEW.**
+**D-062 / UX-GLOBAL-01 + AW-21 CONFIRMED.** Avoid unexpected Layout Shift across Child World, Parent Portal and Admin Portal. A-07/A-03 HTML table demos updated with fixed-size icon button and stable columns. [Full guidance and acceptance criteria](./11-global-layout-stability-guidelines.md). **A-07 HTML low-fi APPROVED; AW-17…AW-20 CONFIRMED (D-063).**
 
 
 ## Phase 2.4 — A-06 Confirmation wireframe (2026-11-24)
 
-**A-06 standalone HTML interactive draft created**, accessible from A-05 demo; [UX specification](./12-admin-suspend-restore-confirmation-wireframe.md). Test suspend/restore, required reason and acknowledgment, concurrent edit, revoked permission, network unknown, active/offline child session. **AW-22…AW-25 PROPOSED — awaiting review**; underlying permission/security decisions unchanged. **No Figma frame or production backend.**
+**A-06 standalone HTML interactive draft created**, accessible from A-05 demo; [UX specification](./12-admin-suspend-restore-confirmation-wireframe.md). Test suspend/restore, required reason and acknowledgment, concurrent edit, revoked permission, network unknown, active/offline child session. **AW-22…AW-25 CONFIRMED on 2026-11-24 (D-064)**; underlying permission/security decisions unchanged. **No Figma frame or production backend.**
 
-**User reviewed and accepted A-03/A-07 layout-shift corrections** in the most recent response. This is **not interpreted as full approval of AW-17…AW-20 for A-07**, which remain PROPOSED until separately confirmed.
+**User reviewed and accepted A-03/A-07 layout-shift corrections** in the most recent response. This was **only a limited correction approval at the time**; a later explicit user message approved **all A-07** and **AW-17…AW-20** on 2026-11-24.
+
+
+## Phase 2.4 — A-06 and A-07 approvals (2026-11-24)
+
+**A-06 and A-07 HTML low-fi wireframes APPROVED.** A-07 **AW-17…AW-20 CONFIRMED** (D-063); A-06 **AW-22…AW-25 CONFIRMED** (D-064). User-approved Layout Stability rule D-062 / AW-21 remains global. **Offline unsynced-session operational handling is OPEN**, as are production email/token mechanics. Both screens still lack Figma frames; neither is implemented in backend. Next planned UX screen: **A-08 Admin Users & Role Management**.
