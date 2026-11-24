@@ -277,4 +277,15 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 
 **Phạm vi xác nhận:** AD-01 bảo vệ Super Admin cuối cùng; AD-02 không tự nâng quyền; AD-03 nhiều role có kiểm tra scope/context; AD-04 chống sửa đồng thời; AD-05 phiên trẻ an toàn khi khóa; AD-06 token dùng lại; AD-07 token hết hạn; AD-08 truy cập dữ liệu ngoài ticket; AD-09 reviewer ngoài quyền; AD-10 thu hồi quyền khi đang đăng nhập; AD-11 khôi phục khóa nhầm có audit; AD-12 yêu cầu xóa dữ liệu được xử lý theo privacy workflow.
 
-**Chưa được chốt:** từng ô trong permission matrix và các chi tiết như thời hạn token, cách xác thực/phục hồi Super Admin, chính sách khi offline hoặc quyền xem dữ liệu support cụ thể. Không tự động coi các đề xuất này là CONFIRMED.
+**Cập nhật trạng thái:** các ô permission matrix trước đây chưa được chốt, nay đã được người dùng duyệt ở **mục S**. Vẫn OPEN các chi tiết như thời hạn token, cách xác thực/phục hồi Super Admin, chính sách khi offline và điều kiện từng ô 🔒.
+
+
+## S. CONFIRMED — Admin Permission Matrix (2026-11-24)
+
+**Người dùng xác nhận rõ:** “Okay tôi đồng ý với ma trận phân quyền đã đề xuất”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-051 / ADM-PM-01 | **Toàn bộ ma trận phân quyền của 4 vai trò** tại [04 — Admin Portal](../ux-design/04-admin-portal.md), gồm các hành động tạo/khóa/khôi phục parent account, lời mời, quản lý Admin, duyệt nội dung, truy cập dữ liệu học sinh, audit; giữ nguyên các giá trị ✅ / ❌ / 🔒 như đề xuất. | **CONFIRMED** |
+
+**Ý nghĩa quyền:** ✅ được phép trong phạm vi bảo mật chung; ❌ bị cấm; 🔒 là **quyền có điều kiện, không tự động được cấp** và phải kiểm tra authorization, Resource Scope, Context Policy. Không ai được trực tiếp sửa raw attempts hay mastery. **Chưa chốt:** chính sách chi tiết đối với các ô 🔒, token expiry, MFA, bootstrap/recovery và triển khai cụ thể. Không thay đổi trạng thái `AD-01…AD-12 CONFIRMED`.
