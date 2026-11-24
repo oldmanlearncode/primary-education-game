@@ -5,7 +5,8 @@
 ## Flow F-01 — First-time setup + parent-assisted cold start
 
 ```text
-Open app → Adult entry/gate → Tạo hồ sơ bé
+Admin tạo parent account → Parent nhận lời mời/kích hoạt → Đăng nhập
+→ Adult entry/gate → Tạo hồ sơ bé
 → Thông tin lớp/khả năng/mục tiêu [có thể bỏ qua]
 → Tạo Parent Assessment (prior only)
 → Chọn bé → Child Hub
@@ -13,6 +14,8 @@ Open app → Adult entry/gate → Tạo hồ sơ bé
 → Learning Profile sơ bộ → Đề xuất hoạt động phù hợp
 ```
 **Edge:** phụ huynh khai cao/thấp → calibrate qua activity; không bắt trẻ làm lại kiến thức quá dễ; nếu khai báo trống vẫn có default discovery path. Nhiều bé dùng chung thiết bị: rõ hồ sơ đang chọn.
+
+**Giai đoạn đầu:** Không cho public sign-up / guest preview. Đối với parent chưa có tài khoản: hiển thị hướng dẫn liên hệ đơn vị quản trị hoặc trạng thái truy cập được cấp, không hiển thị form tự đăng ký.
 
 ## Flow F-02 — Explore subject and module
 
@@ -125,3 +128,15 @@ Question version invalidated
 ## Yêu cầu nối với wireframes
 
 Mỗi flow cần screen-ID trong [Screen Inventory](./03-screen-inventory.md), trạng thái success/error/empty/loading và link frame Figma khi đã vẽ. Tài liệu flow chưa phải prototype tương tác.
+
+
+## Admin flows (initial access model)
+
+**CONFIRMED:** admin provision/management, không self-registration. **DRAFT:** chi tiết UX. Xem [04 — Admin Portal](./04-admin-portal.md) cho A-F01 (tạo/invite parent), A-F02 (quản lý/suspend), A-F03 (lời mời lỗi/hết hạn), A-F04 (role changes), A-F05 (hỗ trợ tài khoản).
+
+## Parent onboarding — decision summary
+- **UX-06 CONFIRMED:** Luồng 5 bước nhẹ nhàng, optional fields có thể skip; phần activation được đặt trước onboarding.
+- **UX-07 CONFIRMED:** General Parent Assessment trước; hỏi thêm theo môn/module khi cần, không ép khai mọi kỹ năng ban đầu.
+- **UX-08 DEFERRED:** Guest Preview / public self-registration không thuộc initial rollout.
+- **UX-09 CONFIRMED:** Parent/family account chứa nhiều child profiles với dữ liệu tối thiểu.
+- **ON-01…ON-12 CONFIRMED về hướng xử lý** trong giới hạn admin-provisioned access; ON-04/05/06/10/11/12 vẫn được bảo toàn.
