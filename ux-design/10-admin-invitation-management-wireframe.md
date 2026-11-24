@@ -1,6 +1,6 @@
 # 10 — A-07 Invitation Management: UX Wireframe & Interactions
 
-> **2026-11-24 · HTML LOW-FI DRAFT / AWAITING REVIEW**  
+> **2026-11-24 · ✅ HTML LOW-FI APPROVED — AW-17…AW-20 CONFIRMED**  
 > Standalone interactive demo: `A-07-invitation-management.html` (conversation attachment). No server, no real email, no persistent audit. **Figma A-07 NOT CREATED**; A-03/A-04/A-05 remain HTML-only because of the Figma tool-call limit previously reported.
 
 ## 1. Scope and confirmed foundations
@@ -76,14 +76,14 @@ A-07 list → select invitation → resend / revoke
 
 **Limitations:** Mock support permission checkbox is **not** a grant of production access. All access control and action idempotency must be enforced on the server. The demo replaces invitation state in place for ease of review; a production audit/history model must preserve prior invitation events.
 
-## 6. Decisions for review — NOT CONFIRMED
+## 6. Approved UI decisions — CONFIRMED (2026-11-24)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-17** | Layout **KPI overview + searchable invitation table + selected detail + audit**, consistent with A-02/A-03/A-05. | **PROPOSED** |
-| **AW-18** | **Separate filters and badges** for Account Status, Token Status, Delivery Status; do not infer acceptance from a sent email. | **PROPOSED** UI (underlying AP-D01 CONFIRMED) |
-| **AW-19** | Resend and Revoke require **confirmation + reason**, visible only when permission, account status and token state permit. | **PROPOSED** UI (underlying scope/audit rules CONFIRMED) |
-| **AW-20** | Resend explicitly supersedes any still-valid activation token; send failures show **partial success** and preserve account; UI links back to A-05. | **PROPOSED** detail (underlying AP-02/AP-09 CONFIRMED) |
+| **AW-17** | Layout **KPI overview + searchable invitation table + selected detail + audit**, consistent with A-02/A-03/A-05. | **CONFIRMED** |
+| **AW-18** | **Separate filters and badges** for Account Status, Token Status, Delivery Status; do not infer acceptance from a sent email. | **CONFIRMED** UI (underlying AP-D01 CONFIRMED) |
+| **AW-19** | Resend and Revoke require **confirmation + reason**, visible only when permission, account status and token state permit. | **CONFIRMED** UI (underlying scope/audit rules CONFIRMED) |
+| **AW-20** | Resend explicitly supersedes any still-valid activation token; send failures show **partial success** and preserve account; UI links back to A-05. | **CONFIRMED** detail (underlying AP-02/AP-09 CONFIRMED) |
 
 **Still OPEN:** exact retry-vs-reissue semantics, resend frequency limits, notification provider delivery acknowledgments, token issuance/revocation transaction strategy, multi-channel support, and responsive state-specific frames.
 
@@ -91,7 +91,7 @@ A-07 list → select invitation → resend / revoke
 
 - **A-01/A-02:** Figma low-fi **APPROVED**.
 - **A-03/A-04/A-05:** HTML low-fi **APPROVED**; Figma frames **not created**.
-- **A-07:** HTML interactive **DRAFT / NEEDS REVIEW**, Figma frame **not created**.
+- **A-07:** HTML interactive low-fi **APPROVED**, Figma frame **not created**.
 - No product code, production authorization, or backend/email service delivered.
 
 Links: [Account Provisioning](./05-admin-account-provisioning.md), [A-05](./09-admin-parent-account-detail-wireframe.md), [Admin Permission Matrix](./04-admin-portal.md), [Screen Inventory](./03-screen-inventory.md).
@@ -105,3 +105,10 @@ Links: [Account Provisioning](./05-admin-account-provisioning.md), [A-05](./09-a
 ## 9. Review feedback: layout-shift correction accepted (2026-11-24)
 
 User: “Okay tôi thấy 2 bản chỉnh sửa đã ổn rồi. Tiếp tục thôi.” The **AW-21-based stabilization edits for A-03 and A-07 HTML demos are accepted** (fixed-size Eye button/selection state and stable table columns). This accepts the **specific refinements**, not necessarily the complete A-07 layout or **AW-17…AW-20**, which remain PROPOSED pending explicit review.
+
+
+## 10. Final approval record — 2026-11-24
+
+**D-063 / AW-APP-05 — CONFIRMED:** Người dùng: “Okay. Tôi đồng ý toàn bộ A06, các đề xuất AW-22 đến AW-25, tôi cũng đồng ý tất cả, các phần của A-07.” Đây là chấp thuận **toàn bộ A-07 HTML low-fi** và **AW-17…AW-20**; trước đó bản sửa Layout Shift A-07 đã được người dùng duyệt. Những ghi chú “AW-17…AW-20 còn PROPOSED” phía trên là **lịch sử trước phê duyệt**, không phải trạng thái hiện hành.
+
+**Không suy rộng:** Figma A-07 chưa tạo, dịch vụ email/token/backend chưa triển khai, exact retry/reissue, rate-limit và transaction policy vẫn OPEN; A-07 chỉ được duyệt về UX low-fi.
