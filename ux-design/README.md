@@ -78,4 +78,9 @@
 
 ## Phase 2.4 — A-05 Parent Account Detail (2026-11-24)
 
-**A-05 standalone HTML interactive wireframe CREATED — DRAFT / NEEDS REVIEW.** Demo linked from A-03, includes account states, confirmation reason, conditional action buttons, audit activity and in-progress child session alert. [A-05 UX Specification](./09-admin-parent-account-detail-wireframe.md). **AW-13…AW-16 remain PROPOSED**; A-05 has no Figma frame yet due to tool limit. A-01…A-04 approval status unchanged.
+**A-05 HTML LOW-FI APPROVED (2026-11-24).** Demo linked from A-03, includes account states, confirmation reason, conditional action buttons, audit activity and in-progress child session alert. [A-05 UX Specification](./09-admin-parent-account-detail-wireframe.md). **AW-13…AW-16 CONFIRMED**; A-05 has no Figma frame yet due to tool limit. A-01…A-04 approval status unchanged.
+
+
+### A-05 approval follow-up (2026-11-24)
+
+**A-05 Parent Account Detail approved at HTML low-fi level; AW-13…AW-16 CONFIRMED.** See [09 — A-05](./09-admin-parent-account-detail-wireframe.md) and decision **D-061**. **Next:** A-07 Invitation Management. Figma A-03/A-04/A-05 frames are still not created; prototype and backend remain future tasks.
