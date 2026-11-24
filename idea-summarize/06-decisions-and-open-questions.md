@@ -289,3 +289,19 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-051 / ADM-PM-01 | **Toàn bộ ma trận phân quyền của 4 vai trò** tại [04 — Admin Portal](../ux-design/04-admin-portal.md), gồm các hành động tạo/khóa/khôi phục parent account, lời mời, quản lý Admin, duyệt nội dung, truy cập dữ liệu học sinh, audit; giữ nguyên các giá trị ✅ / ❌ / 🔒 như đề xuất. | **CONFIRMED** |
 
 **Ý nghĩa quyền:** ✅ được phép trong phạm vi bảo mật chung; ❌ bị cấm; 🔒 là **quyền có điều kiện, không tự động được cấp** và phải kiểm tra authorization, Resource Scope, Context Policy. Không ai được trực tiếp sửa raw attempts hay mastery. **Chưa chốt:** chính sách chi tiết đối với các ô 🔒, token expiry, MFA, bootstrap/recovery và triển khai cụ thể. Không thay đổi trạng thái `AD-01…AD-12 CONFIRMED`.
+
+
+## T. CONFIRMED — Admin Account Provisioning UX (2026-11-24)
+
+**Người dùng:** “Okay. Tôi đã đọc tất cả các đề xuất. Hoàn toàn hợp lý. Tôi xác nhận đồng ý.” — xác nhận toàn bộ năm quyết định và mười edge case trong Phase 2.4.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-052 / AP-D01 | **Account Lifecycle tách Invitation Lifecycle**; phân biệt token state và delivery state, không tạo trùng account vì invitation lỗi/hết hạn. | **CONFIRMED** |
+| D-053 / AP-D02 | **Admin Dashboard theo permission**: widgets/dữ liệu theo role/scope, không mặc định toàn quyền. | **CONFIRMED** |
+| D-054 / AP-D03 | **Create Parent Account yêu cầu email tối thiểu**; display name/note tùy chọn, Admin không nhập dữ liệu trẻ hoặc mật khẩu. | **CONFIRMED** |
+| D-055 / AP-D04 | **Invitation mặc định 72 giờ, cấu hình được và single-use**; resend tuân thủ policy token đang hiệu lực. | **CONFIRMED** |
+| D-056 / AP-D05 | **Super Admin bắt buộc MFA**; Admin khác MFA tối thiểu với các thao tác nhạy cảm. | **CONFIRMED** |
+| D-057 / AP-01…AP-10 | **Toàn bộ 10 edge case Account Provisioning và phương án xử lý** đã được chấp thuận. | **CONFIRMED** |
+
+**Tài liệu chi tiết:** [05 — Admin Account Provisioning & Parent Activation](../ux-design/05-admin-account-provisioning.md). **Không mặc định chốt** MFA provider, invitation email infrastructure, exact resend/rate-limit, chính sách tài khoản offline hay wireframe; Phase 2 vẫn IN PROGRESS.
