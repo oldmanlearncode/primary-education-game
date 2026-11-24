@@ -72,7 +72,7 @@
 | A-04 | Create Parent Account | CORE | [HTML demo + spec](./08-admin-create-parent-account-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-09…AW-12 CONFIRMED; email required, display optional, invite toggle, partial success |
 | A-05 | Parent Account Detail | CORE | [UX spec + standalone HTML](./09-admin-parent-account-detail-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-13…AW-16 CONFIRMED: state-aware actions, reason confirmation, audit preview, child data minimization |
 | A-06 | Suspend / Restore Confirmation | CORE | Chưa | Kiểm soát quyền và audit |
-| A-07 | Invitations: status/resend/revoke | CORE | Chưa | Token hết hạn/thất bại |
+| A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **DRAFT; Figma NOT CREATED** | Token/delivery separated, resend/revoke reasons, permission + audit mock; AW-17…20 awaiting review |
 | A-08 | Admin User & Role Management | SUPPORT | Chưa | RBAC chưa chốt |
 | A-09 | Permission Change Confirmation | SUPPORT | Chưa | Hành động nhạy cảm |
 | A-10 | Admin Audit History | CORE | Chưa | Ai / lúc nào / vì sao |
