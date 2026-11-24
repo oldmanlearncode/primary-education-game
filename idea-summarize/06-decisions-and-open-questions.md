@@ -349,3 +349,15 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-061 / AW-APP-04** | Phê duyệt **A-05 HTML low-fi wireframe** cùng **AW-13…AW-16**: bố cục Account Overview/Invitation Summary/Audit Activity/Administrative Actions; xác nhận và lý do bắt buộc cho suspend/restore/disable; chỉ hiện số lượng child profiles và tách invitation token/delivery status; tài khoản DISABLED/CLOSED không khôi phục tức thì tại A-05. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** không tạo/duyệt Figma frame A-05; không có backend, persistence/audit thực tế hay server-side authorization từ bản demo. [Chi tiết A-05](../ux-design/09-admin-parent-account-detail-wireframe.md). **A-07 Invitation Management chưa thiết kế.**
+
+
+## Y. CONFIRMED — Global Layout Stability & AW-21 (2026-11-24)
+
+**Người dùng xác nhận:** “Okay thống nhất. Tôi muốn toàn bộ dự án áp dụng rule tránh Layout Shift, giải pháp có thể tuỳ tình huống. nhưng luôn luôn cố gắng tránh Layout Shift.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-062 / UX-GLOBAL-01** | **Toàn bộ Little Explorers** (Child World, Parent Portal, Admin Portal) phải **luôn chủ động hạn chế Layout Shift ngoài dự kiến**; giải pháp tùy tình huống, không ép một kỹ thuật; cân bằng khả năng truy cập và responsive. Áp dụng qua thiết kế, code review và QA. | **CONFIRMED** |
+| **AW-21** | Data Tables tránh giật cột: nút icon xem chi tiết kích thước ổn định, dùng highlight cho dòng đang xem, giữ chiều rộng cột; có nhãn và tương tác bàn phím. | **CONFIRMED** |
+
+**Chi tiết và acceptance checklist:** [11 — Global Layout Stability Guidelines](../ux-design/11-global-layout-stability-guidelines.md). **AW-17…AW-20 vẫn PROPOSED**, vì người dùng chỉ xác nhận AW-21 và rule toàn dự án. Không suy diễn rằng mọi màn đã đạt kiểm thử CLS.
