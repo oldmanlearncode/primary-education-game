@@ -71,7 +71,7 @@
 | A-03 | Parent Accounts: list/search/filter | CORE | [UX spec](./07-admin-parent-account-list-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-05…AW-08 confirmed; search/filter/sort/pagination/detail preview |
 | A-04 | Create Parent Account | CORE | [HTML demo + spec](./08-admin-create-parent-account-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-09…AW-12 CONFIRMED; email required, display optional, invite toggle, partial success |
 | A-05 | Parent Account Detail | CORE | [UX spec + standalone HTML](./09-admin-parent-account-detail-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-13…AW-16 CONFIRMED: state-aware actions, reason confirmation, audit preview, child data minimization |
-| A-06 | Suspend / Restore Confirmation | CORE | Chưa | Kiểm soát quyền và audit |
+| A-06 | Suspend / Restore Confirmation | CORE | [UX spec + HTML demo](./12-admin-suspend-restore-confirmation-wireframe.md) — **DRAFT; Figma NOT CREATED** | Account target/status, required reason, confirmation, session warning, conflict + permission test states |
 | A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **DRAFT; Figma NOT CREATED** | Token/delivery separated, resend/revoke reasons, permission + audit mock; AW-17…20 awaiting review |
 | A-08 | Admin User & Role Management | SUPPORT | Chưa | RBAC chưa chốt |
 | A-09 | Permission Change Confirmation | SUPPORT | Chưa | Hành động nhạy cảm |
