@@ -2,7 +2,18 @@
 
 > **Phase 2 UX Design · 2026-11-24 · DRAFT**  
 > **CONFIRMED:** Có Admin Portal; giai đoạn đầu tài khoản phụ huynh do admin cấp phát/quản lý; không mở tự đăng ký công khai.  
-> **PROPOSED:** Chi tiết vai trò, invitation, quyền truy cập, giao diện và quy trình vận hành dưới đây cần review trước wireframe.
+> **✅ CONFIRMED 2026-11-24:** Super Admin + Admin có phân quyền; least privilege đối với dữ liệu học sinh; audit thay đổi tài khoản/quyền; hướng kích hoạt bằng lời mời an toàn thay vì gửi mật khẩu; tách quyền account administration và content review.  
+> **PROPOSED:** Permission matrix cụ thể, kênh và vòng đời lời mời, UI chi tiết và triển khai xác thực vẫn cần review.
+
+## 0. Admin decisions — CONFIRMED
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| ADM-01 | **Super Admin + Admin có phân quyền**: có vai trò quản trị cao nhất và vai trò quản trị được cấp quyền theo nhiệm vụ. Số lượng Super Admin và quyền từng vai trò chưa chốt. | **CONFIRMED** |
+| ADM-02 | **Least privilege / tách quyền truy cập dữ liệu trẻ**: quản trị tài khoản không mặc nhiên đọc toàn bộ thông tin học tập của học sinh. | **CONFIRMED** |
+| ADM-03 | **Audit trail**: ghi nhận ai tạo, khóa, khôi phục tài khoản hoặc thay đổi quyền, cùng thời điểm và đối tượng tác động. | **CONFIRMED** |
+| ADM-04 | **Secure account activation bằng lời mời thay vì gửi mật khẩu** là hướng UX đã được chọn. Kênh gửi, expiry, token design và recovery vẫn cần quyết định. | **CONFIRMED — direction** |
+| ADM-05 | **Tách account admin và content reviewer**: quyền quản lý người dùng không tự động kèm quyền duyệt câu hỏi/chương trình học. | **CONFIRMED** |
 
 ## 1. Product boundaries
 
@@ -55,7 +66,7 @@ ADMIN PORTAL
     └── Notification / operational preferences
 ```
 
-**Không gộp quyền tạo tài khoản với quyền duyệt kiến thức một cách mặc định.** Có thể tách Account Admin / Content Reviewer / Support Operator ở giai đoạn thiết kế quyền, hiện chưa chốt chi tiết.
+**CONFIRMED:** Không gộp quyền tạo tài khoản với quyền duyệt kiến thức; **Super Admin + delegated Admin** là cấu trúc role cơ bản. **PROPOSED:** cụ thể hóa Account Admin / Content Reviewer / Support Operator, phân quyền đến từng action và giới hạn truy cập dữ liệu trẻ.
 
 ## 3. Admin flows (draft)
 
@@ -122,20 +133,20 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 - `E-08` — Parent Sign-in / Session Recovery (no public sign-up)
 - `E-09` — Invalid / Expired / Already Used Invitation
 
-## 5. Access & UX safety (proposed)
+## 5. Access & UX safety (CONFIRMED principles; details proposed)
 - Server-side role enforcement; hide buttons alone does not protect access.
 - No public registration endpoint in initial phase.
 - Admin's invitation token expires, single use and revocable; never expose account credentials in logs/emails.
 - Prefer MFA and extra verification for privilege changes.
-- Audit action actor/timestamp/target/reason, minimize children's PII.
+- **CONFIRMED:** audit ai tạo/khóa/khôi phục/thay quyền tài khoản (actor, timestamp, target; lý do đề xuất). Tối thiểu hóa PII của trẻ.
 - Rate limits, idempotency, and retry for invitation creation.
 - Suspend/revoke semantics and handling in-progress child sessions need policy.
 - Distinguish parent vs admin access and data permissions, including later guardian roles.
 - Plan transition for public registration **without** re-creating existing parent accounts.
 
-## 6. OPEN for detailed admin UX (not yet CONFIRMED)
-1. Initial admin role model: one Super Admin only or differentiated admins?
-2. Preferred invitation channel: email, manually provisioned credentials, or private activation link?
+## 6. OPEN for detailed admin UX (principles ADM-01…05 already CONFIRMED)
+1. Đã chốt Super Admin + Admin có phân quyền. Còn OPEN: số lượng Super Admin, cách bootstrap, ai được cấp/thu hồi role, quy tắc bảo vệ quản trị viên cuối cùng; ma trận permissions.
+2. Đã chọn nguyên tắc **lời mời kích hoạt an toàn, không gửi password**. Còn OPEN: kênh gửi (email/private link), hạn sử dụng, lời mời hết hạn/thu hồi và resend.
 3. Whether parent can recover password independently after admin provisioning.
 4. Who can link a child profile to another guardian?
 5. Account suspension behavior for ongoing child session and offline device.
