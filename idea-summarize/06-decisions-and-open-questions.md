@@ -236,3 +236,18 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-040 / ON-01…ON-12 | Đồng ý hướng xử lý 12 onboarding edge cases đã đề xuất; áp dụng trong bối cảnh tài khoản do admin cấp, không theo public sign-up. | **CONFIRMED** (cấp nguyên tắc) |
 
 **Ranh giới:** Admin chịu trách nhiệm cấp/quản lý account; phụ huynh vẫn có thể tự tạo/cập nhật **child profile** trong account đã cấp. Các phương thức invitation, recovery, admin roles, content reviewer và bảo mật vận hành trong [Admin Portal draft](../ux-design/04-admin-portal.md) còn **OPEN/PROPOSED**, chưa chốt cụ thể.
+
+
+## P. CONFIRMED — Admin roles, audit & secure activation (2026-11-24)
+
+**Người dùng đã xác nhận trực tiếp:** “Tôi đồng ý với Super Admin + phân quyền Admin” và bốn nguyên tắc phân quyền dữ liệu học sinh, audit, kích hoạt an toàn bằng lời mời, tách quyền quản lý tài khoản và kiểm duyệt nội dung.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-041 / ADM-01 | Mô hình **Super Admin + Admin có phân quyền**; không giả định mọi quản trị viên có quyền giống nhau. | **CONFIRMED** |
+| D-042 / ADM-02 | Admin quản lý tài khoản **không mặc nhiên** truy cập toàn bộ hồ sơ học tập nhạy cảm của trẻ; least privilege. | **CONFIRMED** |
+| D-043 / ADM-03 | **Audit log** cho thao tác tạo, khóa, khôi phục tài khoản và thay đổi quyền. | **CONFIRMED** |
+| D-044 / ADM-04 | Chọn hướng **gửi lời mời/kích hoạt an toàn thay cho gửi mật khẩu**; phương tiện gửi, token/expiry và khôi phục tài khoản chưa quyết định. | **CONFIRMED ở mức nguyên tắc** |
+| D-045 / ADM-05 | **Tách quyền quản lý account và quyền review/duyệt nội dung giáo dục**. | **CONFIRMED** |
+
+**Chưa chốt:** chi tiết phân quyền từng thao tác, cơ chế bootstrap và số lượng Super Admin, xác thực quản trị, kênh mời, xử lý tài khoản bị khóa trong phiên đang học, quyền hỗ trợ dữ liệu nhạy cảm. [Admin Portal](../ux-design/04-admin-portal.md) là bản draft UX, chưa phải thiết kế hoàn chỉnh.
