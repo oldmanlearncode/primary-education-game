@@ -223,4 +223,4 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 
 ## 10. A-04 Create Parent Account — HTML draft (2026-11-24)
 
-[UX spec](./08-admin-create-parent-account-wireframe.md). HTML interaction draft created; **pending user review**, not yet in Figma due to MCP call limit. Proposals AW-09…AW-12 remain unconfirmed (except underlying AP-D03/AP-02). No product code or email backend.
+[UX spec](./08-admin-create-parent-account-wireframe.md). HTML interaction wireframe **APPROVED by user 2026-11-24**, not yet in Figma due to MCP call limit. **AW-09…AW-12 CONFIRMED** (with underlying AP-D03/AP-02). No product code or email backend.
