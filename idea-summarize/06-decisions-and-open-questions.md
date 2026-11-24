@@ -264,4 +264,17 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-048 / ADM-D03 | **Cho phép Admin nhiều role**; tổng hợp quyền phải tiếp tục thỏa mãn phạm vi và ngữ cảnh. | **CONFIRMED** |
 | D-049 / ADM-D04 | **Chỉ Super Admin quản lý role/tài khoản Admin**; dữ liệu trẻ và các quyền nhạy cảm được bảo vệ bằng chính sách riêng. | **CONFIRMED** |
 
-**Chưa xác nhận:** các ô cụ thể trong permission matrix (ai được xem audit ở mức nào, ai duyệt nội dung...), các phương án **AD-01…AD-12** (chưa được người dùng đồng ý rõ), cơ chế bootstrap, MFA, invitation expiry, phục hồi tài khoản. Bảng và các EC được ghi **PROPOSED** tại [Admin Portal UX](../ux-design/04-admin-portal.md).
+**Chưa xác nhận:** các ô cụ thể trong permission matrix (ai được xem audit ở mức nào, ai duyệt nội dung...), cơ chế bootstrap, MFA, invitation expiry, phục hồi tài khoản. Bảng và các EC được ghi **PROPOSED** tại [Admin Portal UX](../ux-design/04-admin-portal.md).
+
+
+## R. CONFIRMED — Admin edge cases AD-01…AD-12 (2026-11-24)
+
+**Người dùng xác nhận rõ:** “AD-01…AD-12 tôi đồng ý với đề xuất”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-050 | **Toàn bộ 12 edge case AD-01…AD-12** và hướng xử lý trong [Admin Portal UX](../ux-design/04-admin-portal.md) được chấp thuận ở mức nguyên tắc. | **CONFIRMED** |
+
+**Phạm vi xác nhận:** AD-01 bảo vệ Super Admin cuối cùng; AD-02 không tự nâng quyền; AD-03 nhiều role có kiểm tra scope/context; AD-04 chống sửa đồng thời; AD-05 phiên trẻ an toàn khi khóa; AD-06 token dùng lại; AD-07 token hết hạn; AD-08 truy cập dữ liệu ngoài ticket; AD-09 reviewer ngoài quyền; AD-10 thu hồi quyền khi đang đăng nhập; AD-11 khôi phục khóa nhầm có audit; AD-12 yêu cầu xóa dữ liệu được xử lý theo privacy workflow.
+
+**Chưa được chốt:** từng ô trong permission matrix và các chi tiết như thời hạn token, cách xác thực/phục hồi Super Admin, chính sách khi offline hoặc quyền xem dữ liệu support cụ thể. Không tự động coi các đề xuất này là CONFIRMED.
