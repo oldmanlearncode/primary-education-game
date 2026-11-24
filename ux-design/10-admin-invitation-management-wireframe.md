@@ -95,3 +95,8 @@ A-07 list → select invitation → resend / revoke
 - No product code, production authorization, or backend/email service delivered.
 
 Links: [Account Provisioning](./05-admin-account-provisioning.md), [A-05](./09-admin-parent-account-detail-wireframe.md), [Admin Permission Matrix](./04-admin-portal.md), [Screen Inventory](./03-screen-inventory.md).
+
+
+## 8. Global layout stability rule applied (2026-11-24)
+
+**D-062 / UX-GLOBAL-01 and AW-21 CONFIRMED** by the user. A-07 demo fixed the `Xem` → `Đang xem` text expansion bug: fixed-size SVG Eye icon with accessible label/title and `aria-pressed`; selected row highlighted without changing column width; colgroup + fixed table layout with horizontal overflow for narrow viewports. See [11 — Global Layout Stability Guidelines](./11-global-layout-stability-guidelines.md). **AW-17…AW-20 remain PROPOSED**, and A-07 is still a draft pending layout/interaction approval.
