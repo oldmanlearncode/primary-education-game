@@ -1,6 +1,6 @@
 # 09 — A-05 Parent Account Detail: HTML wireframe & interactions
 
-> **Phase 2 UX · 2026-11-24 · DRAFT FOR REVIEW (NOT APPROVED).**
+> **Phase 2 UX · 2026-11-24 · ✅ HTML LOW-FI APPROVED — AW-13…AW-16 CONFIRMED.**
 >
 > Bản HTML độc lập: `A-05-parent-account-detail.html`, liên kết từ A-03. Có dữ liệu giả và các thao tác mô phỏng thuần trình duyệt; **không phải giao diện sản phẩm hay backend thật**. Chưa tạo Figma frame A-05.
 
@@ -74,20 +74,25 @@ Panel **Phòng thử nghiệm UX** cho chọn 5 account statuses, 4 role mẫu v
 | Audit empty/failed | Empty/error state, không tiết lộ audit ngoài quyền |
 | Mobile/tablet | Thẻ thông tin xếp dọc, thao tác rõ ràng |
 
-## 6. Các quyết định UI mới — CHƯA CONFIRMED
+## 6. Quyết định UI — ✅ CONFIRMED (2026-11-24)
 
 | ID | Đề xuất | Trạng thái |
 |---|---|---|
-| **AW-13** | A-05 chia thành **Account Overview + Invitation Summary + Audit Activity + Actions**, đồng bộ sidebar A-02/A-03/A-04. | **PROPOSED** |
-| **AW-14** | Khóa/khôi phục/vô hiệu hóa **chỉ tại A-05**, mỗi thao tác cần **dialog xác nhận + lý do bắt buộc**. | **PROPOSED** (audit và không one-click ở A-03 đã CONFIRMED) |
-| **AW-15** | Chỉ số lượng hồ sơ trẻ, không đưa chi tiết học tập vào A-05; dữ liệu lời mời hiển thị status token/delivery riêng. | **PROPOSED** về layout; privacy/AP-D01 đã CONFIRMED |
-| **AW-16** | Tài khoản `DISABLED` và `CLOSED` không khôi phục tức thì trên A-05; cần workflow riêng, tránh thao tác nhầm. | **PROPOSED** |
+| **AW-13** | A-05 chia thành **Account Overview + Invitation Summary + Audit Activity + Actions**, đồng bộ sidebar A-02/A-03/A-04. | **CONFIRMED** |
+| **AW-14** | Khóa/khôi phục/vô hiệu hóa **chỉ tại A-05**, mỗi thao tác cần **dialog xác nhận + lý do bắt buộc**. | **CONFIRMED** (audit và không one-click ở A-03 đã CONFIRMED) |
+| **AW-15** | Chỉ số lượng hồ sơ trẻ, không đưa chi tiết học tập vào A-05; dữ liệu lời mời hiển thị status token/delivery riêng. | **CONFIRMED** về layout; privacy/AP-D01 đã CONFIRMED |
+| **AW-16** | Tài khoản `DISABLED` và `CLOSED` không khôi phục tức thì trên A-05; cần workflow riêng, tránh thao tác nhầm. | **CONFIRMED** |
 
 ## 7. Tiến độ
 
 - **A-01/A-02:** Figma low-fi approved.
 - **A-03/A-04:** HTML low-fi approved, Figma frames chưa tạo.
-- **A-05:** HTML interactive draft **đang chờ review**, chưa có Figma frame.
+- **A-05:** HTML interactive low-fi **APPROVED**, chưa có Figma frame.
 - **A-07:** Invocation/Invitation Management chưa thiết kế chi tiết; button trong A-05 hiển thị placeholder.
 
 Liên kết: [A-03](./07-admin-parent-account-list-wireframe.md), [A-04](./08-admin-create-parent-account-wireframe.md), [Permission Matrix](./04-admin-portal.md), [Account Lifecycle](./05-admin-account-provisioning.md).
+
+
+## 8. Approval record — CONFIRMED
+
+**D-061 / AW-APP-04 (2026-11-24):** Chủ dự án xác nhận “Hợp lý, tôi đồng ý với các đề xuất trên.” — phê duyệt **A-05 HTML low-fidelity wireframe** và đồng ý **AW-13…AW-16**. Phê duyệt áp dụng cho layout và interaction mô phỏng (overview, invitation status, audit, action confirmation với lý do, quy trình riêng cho DISABLED/CLOSED). **Không có Figma frame A-05**, không có backend thật, không đồng nghĩa duyệt chi tiết kỹ thuật thực thi hay các màn chưa được dựng.
