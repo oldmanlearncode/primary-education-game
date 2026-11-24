@@ -1,6 +1,6 @@
 # 08 — A-04 Create Parent Account: Wireframe & Interaction Spec
 
-> **2026-11-24 · LOW-FI HTML DRAFT / NEEDS USER REVIEW**  
+> **2026-11-24 · ✅ LOW-FI HTML WIREFRAME APPROVED**  
 > Bản HTML tương tác: `A-04-create-parent-account.html` được cung cấp dưới dạng tệp đính kèm trong cuộc trò chuyện; chưa commit thành product code. **Figma frame A-04 CHƯA TẠO** do Figma MCP tool-call limit của gói Starter.  
 > **CONFIRMED trước đó:** AP-D03 chỉ yêu cầu email bắt buộc, display name optional, phụ huynh tự thiết lập mật khẩu; AP-D04 invitation 72 giờ cấu hình được, single-use; account status và invitation/delivery status tách biệt; AP-01…AP-10.
 
@@ -63,18 +63,23 @@ Khi email gửi thất bại, **không xóa account và không tạo lại accou
 - **ADM-PM-01:** only authorized account-management roles may create parent account.
 - **ADM-03:** audit actor, target, time and action; never log plaintext invitation tokens or passwords.
 
-## 7. Các lựa chọn UI mới cần review
+## 7. Các lựa chọn UI đã được duyệt (2026-11-24)
 
 | ID | Đề xuất | Status |
 |---|---|---|
-| **AW-09** | A-04 bố cục form chính và aside tóm tắt onboarding, nhất quán sidebar Admin | **PROPOSED** |
-| **AW-10** | Checkbox gửi invitation **bật mặc định**, được tắt để tạo account chờ và gửi sau | **PROPOSED** |
-| **AW-11** | Form chỉ cần email và tên hiển thị optional; feedback trạng thái create/send tách biệt | **Nội dung dữ liệu CONFIRMED AP-D03; bố cục/UI PROPOSED** |
-| **AW-12** | Với lỗi gửi invitation, hiển thị **partial success** và đường đến A-07 để retry, tránh tạo lại account | **Nguyên tắc CONFIRMED AP-02; UX copy/layout PROPOSED** |
+| **AW-09** | A-04 bố cục form chính và aside tóm tắt onboarding, nhất quán sidebar Admin | **CONFIRMED** |
+| **AW-10** | Checkbox gửi invitation **bật mặc định**, được tắt để tạo account chờ và gửi sau | **CONFIRMED** |
+| **AW-11** | Form chỉ cần email và tên hiển thị optional; feedback trạng thái create/send tách biệt | **CONFIRMED (data AP-D03 + UX layout)** |
+| **AW-12** | Với lỗi gửi invitation, hiển thị **partial success** và đường đến A-07 để retry, tránh tạo lại account | **CONFIRMED (principle AP-02 + UX copy/layout)** |
 
 ## 8. Hạn chế bản demo và bước tiếp theo
 
 - Standalone HTML chỉ có mock state tại browser. Data giả, không có persistence hoặc bảo mật thật.
 - A-03 được nối từ nút **Tạo tài khoản** sang A-04 trong hai file HTML local.
-- A-04 **chưa phải frame Figma** và **chưa được user approve**.
-- Cần review UI, sau đó A-05 Parent Account Detail và A-07 Invitation Management; cập nhật Figma khi hạn mức công cụ cho phép.
+- A-04 **chưa phải frame Figma**, nhưng **HTML low-fi layout đã được người dùng APPROVE**.
+- Đã duyệt UI; tiếp theo A-05 Parent Account Detail và A-07 Invitation Management; cập nhật Figma khi hạn mức công cụ cho phép.
+
+
+## 9. Approval record — CONFIRMED
+
+**D-060 / AW-APP-03 (2026-11-24):** Người dùng xác nhận: “Bố cục tôi thấy ổn rồi. các AW cần review đều đồng ý.” Bao gồm **duyệt A-04 low-fidelity HTML wireframe** và toàn bộ **AW-09, AW-10, AW-11, AW-12**. Giữ nguyên ranh giới: đây là duyệt giao diện và tương tác mô phỏng, **không** phải phê duyệt product code, backend/email integration hay Figma A-04 (chưa tạo).
