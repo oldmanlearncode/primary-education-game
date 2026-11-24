@@ -12,6 +12,9 @@
 | E-04 | Tạo/sửa hồ sơ và Parent Assessment | CORE | Một phần ở parent profiles | Cho skip/cập nhật |
 | E-05 | First module Discovery Assessment | CORE | Chưa | Không gọi “thi đầu vào” |
 | E-06 | Audio/accessibility preferences cho bé | SUPPORT | Chưa | Tương thích lứa tuổi |
+| E-07 | Invitation Acceptance / Parent Activation | CORE | Chưa | Chỉ tài khoản được admin cấp |
+| E-08 | Parent Sign-in / Recovery | CORE | Chưa | Không có self-registration công khai |
+| E-09 | Invitation Expired / Invalid / Already Used | CORE | Chưa | Hướng xử lý và liên hệ admin |
 
 ## 2. Child World
 
@@ -59,7 +62,26 @@
 | P-18 | Guardian roles / permissions | SUPPORT | Chưa | Conflicting guardians |
 | P-19 | Parent account/preferences | SUPPORT | Chưa | Accessibility + settings |
 
-## 4. UI states/overlays cần cho mọi luồng liên quan
+## 4. Admin Portal — 12 màn dự kiến
+
+| Screen ID | Màn hình / overlay | UX priority | Figma | Ghi chú |
+|---|---|---|---|---|
+| A-01 | Admin Sign-in / Session expired | CORE | Chưa | Quản trị riêng |
+| A-02 | Admin Operations Dashboard | CORE | Chưa | Không để lộ PII trẻ không cần |
+| A-03 | Parent Accounts: list/search/filter | CORE | Chưa | Trạng thái người dùng |
+| A-04 | Create Parent / Send Invitation | CORE | Chưa | Chặn account duplicate |
+| A-05 | Parent Account Detail | CORE | Chưa | Trạng thái, số child linked |
+| A-06 | Suspend / Restore Confirmation | CORE | Chưa | Kiểm soát quyền và audit |
+| A-07 | Invitations: status/resend/revoke | CORE | Chưa | Token hết hạn/thất bại |
+| A-08 | Admin User & Role Management | SUPPORT | Chưa | RBAC chưa chốt |
+| A-09 | Permission Change Confirmation | SUPPORT | Chưa | Hành động nhạy cảm |
+| A-10 | Admin Audit History | CORE | Chưa | Ai / lúc nào / vì sao |
+| A-11 | Access Recovery & Support | SUPPORT | Chưa | Không xem mật khẩu |
+| A-12 | Content Quality Operations | FUTURE | Chưa | Phạm vi TBD; có thể tách role |
+
+**Tổng số màn/overlay được kiểm kê: 57** (9 Entry + 17 Child + 19 Parent + 12 Admin); không đồng nghĩa toàn bộ thuộc MVP.
+
+## 5. UI states/overlays cần cho mọi luồng liên quan
 
 | UX State | Child | Parent | Ghi chú |
 |---|---|---|---|
@@ -75,7 +97,7 @@
 | Audio/reduced motion/large touch targets | ✅ | ✅ | Accessibility |
 | Content unavailable / curriculum version | ✅ | ✅ | Không tự mở nội dung chưa kiểm duyệt |
 
-## 5. Figma mapping hiện có
+## 6. Figma mapping hiện có
 
 **Figma:** https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ
 
@@ -86,7 +108,7 @@
 
 **Chưa wireframe** phần lớn màn entry, chi tiết đa môn, question review, adaptive flow, incident handling. Cần hoàn thiện trong giai đoạn 2.
 
-## 6. Những câu hỏi UX cần review
+## 7. Những câu hỏi UX cần review
 
 - Màn nào là full-screen, màn nào là modal/overlay? Ít điều hướng đối với bé lớp 1.
 - Parent Portal dùng chung ứng dụng hay web riêng?
@@ -94,3 +116,6 @@
 - Quá nhiều cảnh báo phụ huynh gây overload?
 - Multi-profile và parent gate có đủ rõ để tránh dữ liệu sai học sinh?
 - Bố trí UI theo nhóm tuổi, giọng nói hỗ trợ và tablet/desktop/mobile responsive.
+
+
+**Admin-specific UX states:** invitation pending/expired/revoked, account suspended, duplicate email, session expired, insufficient admin permission, audit recorded, send failure/retry, account has in-progress child session. Wireframe chưa có. [Chi tiết Admin Portal](./04-admin-portal.md).
