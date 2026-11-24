@@ -5,7 +5,8 @@
 > **✅ CONFIRMED 2026-11-24:** Super Admin + Admin có phân quyền; least privilege đối với dữ liệu học sinh; audit thay đổi tài khoản/quyền; hướng kích hoạt bằng lời mời an toàn thay vì gửi mật khẩu; tách quyền account administration và content review.  
 > **✅ CONFIRMED:** Hướng xử lý toàn bộ edge case **AD-01…AD-12** (nguyên tắc; chưa chốt exact policy/technical thresholds).  
 > **✅ CONFIRMED:** Ma trận phân quyền cụ thể bên dưới được người dùng phê duyệt ngày 2026-11-24, bao gồm các quyền ✅/❌/🔒.  
-> **OPEN:** Quy trình thực thi của các ô 🔒, thời hạn và kênh lời mời, xác thực, màn hình và thông số chính sách vẫn cần đặc tả.
+> **✅ CONFIRMED:** AP-D01…AP-D05 và AP-01…AP-10 cho Account Provisioning UX: phân biệt trạng thái account/invitation, dashboard theo quyền, email bắt buộc duy nhất, invitation mặc định 72 giờ single-use, MFA Super Admin. Xem [05 — Account Provisioning](./05-admin-account-provisioning.md).  
+> **OPEN:** Các ô 🔒, kênh gửi lời mời, MFA method, kỹ thuật triển khai và wireframe chi tiết.
 
 ## 0. Admin decisions — CONFIRMED
 
@@ -195,7 +196,7 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 
 ## 6. OPEN for detailed admin UX (principles ADM-01…05 already CONFIRMED)
 1. Đã chốt **bốn role**, chỉ Super Admin quản lý role Admin, RBAC + scope/context và hỗ trợ multi-role. Còn OPEN: số lượng Super Admin, bootstrap, cơ chế khôi phục quản trị viên cuối cùng và **điều kiện cụ thể để thực thi từng ô 🔒 của matrix đã CONFIRMED**.
-2. Đã chọn nguyên tắc **lời mời kích hoạt an toàn, không gửi password**. Còn OPEN: kênh gửi (email/private link), hạn sử dụng, lời mời hết hạn/thu hồi và resend.
+2. **AP-D04 CONFIRMED:** activation invitation mặc định 72 giờ (configurable), single-use; account/invitation/delivery status tách nhau. Còn OPEN: kênh gửi/đơn vị cung cấp, chính sách resend chi tiết và bảo mật triển khai.
 3. Whether parent can recover password independently after admin provisioning.
 4. Who can link a child profile to another guardian?
 5. Đã CONFIRMED hướng kết thúc phiên an toàn khi khóa tài khoản (AD-05); còn OPEN: chi tiết xử lý session đang chạy, offline, đồng bộ và mức độ khẩn cấp.
@@ -203,3 +204,8 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 7. Whether Content Reviewer belongs inside same admin app or separate console.
 
 These questions do **not** reopen the confirmed decision: **admin-provisioned accounts first, no open sign-up at launch**.
+
+
+## 7. Phase 2.4 — Account Provisioning UX decisions
+
+**AP-D01…AP-D05 + AP-01…AP-10 đã CONFIRMED** (2026-11-24). Trạng thái tài khoản và invitation độc lập; form tạo parent account chỉ bắt buộc email; dashboard theo permission; invitation hết hạn mặc định 72 giờ (có thể cấu hình), single-use; MFA bắt buộc cho Super Admin, Admin khác MFA tối thiểu khi thao tác nhạy cảm. Mười trường hợp AP-01…10 có hướng xử lý được chấp thuận. **Nguồn chuẩn:** [05 — Admin Account Provisioning UX & Parent Activation](./05-admin-account-provisioning.md).
