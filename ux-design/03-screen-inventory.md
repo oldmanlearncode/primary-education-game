@@ -66,8 +66,8 @@
 
 | Screen ID | Màn hình / overlay | UX priority | Figma | Ghi chú |
 |---|---|---|---|---|
-| A-01 | Admin Sign-in / Session expired | CORE | [Low-fi A-01](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-8) — DRAFT | Form login; MFA/error states chưa vẽ đủ |
-| A-02 | Admin Operations Dashboard | CORE | [Low-fi A-02](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-28) — DRAFT | Permission-aware Account Admin example; 3 role variants chưa vẽ |
+| A-01 | Admin Sign-in / Session expired | CORE | [Low-fi A-01](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-8) — APPROVED LOW-FI | Form login đã duyệt; MFA/error states chưa vẽ đủ |
+| A-02 | Admin Operations Dashboard | CORE | [Low-fi A-02](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-28) — APPROVED LOW-FI | Account Admin layout đã duyệt; 3 role variants chưa vẽ |
 | A-03 | Parent Accounts: list/search/filter | CORE | Chưa | Trạng thái người dùng |
 | A-04 | Create Parent / Send Invitation | CORE | Chưa | Chặn account duplicate |
 | A-05 | Parent Account Detail | CORE | Chưa | Trạng thái, số child linked |
