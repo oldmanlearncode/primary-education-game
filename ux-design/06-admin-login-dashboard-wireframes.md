@@ -1,7 +1,7 @@
 # 06 — Admin Wireframes: A-01 Login & A-02 Dashboard
 
-> **Phase 2 UX Design — 2026-11-24 · INITIAL WIREFRAME / IN REVIEW**  
-> Đã tạo **hai màn editable low-fidelity** trong Figma. Đây là cấu trúc UI để review, **không phải prototype tương tác**, chưa hoàn thành toàn bộ trạng thái và chưa có code.
+> **Phase 2 UX Design — 2026-11-24 · ✅ WIREFRAME BASELINE APPROVED**  
+> **Người dùng đã phê duyệt 2 wireframe A-01 và A-02** (2026-11-24) ở mức bố cục low-fidelity hiện có. **Chưa** đồng nghĩa phê duyệt tất cả trạng thái MFA/error, responsive/role variants, prototype tương tác hoặc code.
 
 **Figma:** [Admin Portal low-fi A-01 + A-02](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4)  
 **Figma frame ID:** Group `13:4`, `A-01 = 13:8`, `A-02 = 13:28`.  
@@ -93,17 +93,21 @@ Frame group: `05 — ADMIN PORTAL / WIREFRAMES · A-01 + A-02` ở vị trí ri�
 
 **Chưa có:** full set of error-state frames, MFA interaction screen, mobile responsive frames, hi-fi design system, functioning navigation and prototype hotspots. Những phần này nằm trong công việc UX tiếp theo, không đánh dấu completed.
 
-## 4. Các đề xuất cần review (chưa CONFIRMED)
+## 4. Quyết định wireframe đã được duyệt và các phần còn mở
 
 | ID | Đề xuất | Trạng thái |
 |---|---|---|
-| AW-01 | Desktop-first cho Admin Portal, sidebar bên trái và nội dung chính bên phải | PROPOSED |
-| AW-02 | A-02 sử dụng 1 dashboard shell theo permission với role-adaptive widgets, không tạo 4 dashboard độc lập | Hướng dashboard permission-aware **đã CONFIRMED (AP-D02)**; bố cục cụ thể PROPOSED |
-| AW-03 | A-01 dùng form email/password, MFA ở bước thứ hai; không chứa liên kết đăng ký mới | PROPOSED (MFA requirement CONFIRMED) |
-| AW-04 | Từ Dashboard ưu tiên hai CTA: tạo tài khoản phụ huynh và quản lý lời mời | PROPOSED |
+| AW-01 | Bố cục desktop-first trong 2 frame: A-01 login tập trung, A-02 sidebar trái và nội dung phải | **APPROVED as drawn** |
+| AW-02 | Bố cục A-02 Account Admin minh họa, shell dashboard theo permission | **APPROVED as drawn**; hướng permission-aware **CONFIRMED (AP-D02)**; các role variant chưa thiết kế |
+| AW-03 | A-01 email/password, không có self-sign-up; MFA được nhắc trong khung hiện có | **APPROVED as drawn**; màn MFA chi tiết chưa thiết kế; MFA requirement **CONFIRMED** |
+| AW-04 | Hai CTA trong A-02: tạo tài khoản phụ huynh và quản lý lời mời | **APPROVED as drawn** |
 
 ## 5. Các màn tiếp theo
 
 A-03 Parent Account List → A-04 Create Parent Account → A-07 Invitation Management → E-07 Parent Activation.
 
 **Nguồn quyết định:** [05 — Admin Account Provisioning](./05-admin-account-provisioning.md), [04 — Permission Matrix & Roles](./04-admin-portal.md), [06 — Product Decision Log](../idea-summarize/06-decisions-and-open-questions.md).
+
+## 6. UX approval record
+
+**D-058 / AW-APP-01 — CONFIRMED (2026-11-24):** Chủ dự án xác nhận: “Okay đồng ý với 2 wireframe đã vẽ.” Hai layout Figma **A-01 (13:8)** và **A-02 (13:28)** được phê duyệt theo bản low-fi hiện tại. Những trạng thái/chế độ chưa vẽ và interaction spec chưa duyệt riêng vẫn được giữ **IN PROGRESS**. Tiếp theo: A-03, A-04, A-07.
