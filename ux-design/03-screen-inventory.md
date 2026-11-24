@@ -70,7 +70,7 @@
 | A-02 | Admin Operations Dashboard | CORE | [Low-fi A-02](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-28) — APPROVED LOW-FI | Account Admin layout đã duyệt; 3 role variants chưa vẽ |
 | A-03 | Parent Accounts: list/search/filter | CORE | [UX spec](./07-admin-parent-account-list-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-05…AW-08 confirmed; search/filter/sort/pagination/detail preview |
 | A-04 | Create Parent Account | CORE | [HTML demo + spec](./08-admin-create-parent-account-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-09…AW-12 CONFIRMED; email required, display optional, invite toggle, partial success |
-| A-05 | Parent Account Detail | CORE | Chưa | Trạng thái, số child linked |
+| A-05 | Parent Account Detail | CORE | [UX spec + standalone HTML](./09-admin-parent-account-detail-wireframe.md) — **DRAFT; Figma NOT CREATED** | Account metadata, invitation summary, confirmation+reason, audit mock |
 | A-06 | Suspend / Restore Confirmation | CORE | Chưa | Kiểm soát quyền và audit |
 | A-07 | Invitations: status/resend/revoke | CORE | Chưa | Token hết hạn/thất bại |
 | A-08 | Admin User & Role Management | SUPPORT | Chưa | RBAC chưa chốt |
