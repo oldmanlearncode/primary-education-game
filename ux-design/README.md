@@ -108,3 +108,8 @@
 ## Phase 2.4 — A-06 and A-07 approvals (2026-11-24)
 
 **A-06 and A-07 HTML low-fi wireframes APPROVED.** A-07 **AW-17…AW-20 CONFIRMED** (D-063); A-06 **AW-22…AW-25 CONFIRMED** (D-064). User-approved Layout Stability rule D-062 / AW-21 remains global. **Offline unsynced-session operational handling is OPEN**, as are production email/token mechanics. Both screens still lack Figma frames; neither is implemented in backend. Next planned UX screen: **A-08 Admin Users & Role Management**.
+
+
+## Phase 2.4 — A-08 Admin User & Role Management (2026-11-24)
+
+**A-08 standalone HTML interactive LOW-FI DRAFT CREATED — AWAITING USER REVIEW.** Super Admin-only role/account management demo: searchable admin table, multi-role, pending activation, explicit confirmation+reason, MFA/error scenarios, last-Super protection, and stable table layout. [Specification 13](./13-admin-user-role-management-wireframe.md). **AW-26…AW-29 are PROPOSED**, no Figma A-08 frame and no production backend/authorization. A-01…A-07 remain approved as previously recorded.
