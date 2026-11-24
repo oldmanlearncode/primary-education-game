@@ -214,3 +214,8 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 ## 8. Wireframe update — A-01 & A-02 (2026-11-24)
 
 **Initial editable Figma low-fi frames created:** [A-01 Admin Login + A-02 Admin Dashboard](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). [UX interaction specification](./06-admin-login-dashboard-wireframes.md). **A-01 and A-02 low-fi layouts APPROVED by user 2026-11-24**; MFA, error, and other-role UI variants still pending. No product code/prototype created.
+
+
+## 9. A-03 Parent Account List (2026-11-24)
+
+[Đặc tả UX A-03](./07-admin-parent-account-list-wireframe.md) và bản HTML độc lập đã được tạo để review. **Draft, không phải Figma frame và chưa được phê duyệt**. Đã xác định tìm kiếm email/ID, lọc Account Status (khác Invitation Status), sort/pagination, bảng tối thiểu và View Detail. Các quyết định đề xuất AW-05…08 còn OPEN.
