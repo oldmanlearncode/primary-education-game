@@ -327,3 +327,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-059 / AW-APP-02** | Phê duyệt **A-03 HTML low-fi**: sidebar + search/filter toolbar + table; không khóa/khôi phục one-click; metadata tối thiểu; tìm kiếm/lọc/sort/phân trang theo scope, đồng ý AW-05…AW-08. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Giới hạn:** Không khẳng định có A-03 Figma frame (MCP tool limit); không duyệt sẵn A-04. [Spec A-03](../ux-design/07-admin-parent-account-list-wireframe.md).
+
+
+## W. CONFIRMED — A-04 Create Parent Account HTML wireframe (2026-11-24)
+
+**Người dùng xác nhận trực tiếp:** “Bố cục tôi thấy ổn rồi. các AW cần review đều đồng ý.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-060 / AW-APP-03** | Phê duyệt **A-04 HTML low-fi wireframe** và **AW-09…AW-12**: form chính có panel giải thích onboarding; invitation checkbox bật mặc định và có thể tắt; email bắt buộc/tên hiển thị tùy chọn; trạng thái tạo account/gửi lời mời tách biệt; invitation lỗi hiển thị partial success, giữ account và dẫn đến A-07 để gửi lại. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** chưa có frame A-04 trong Figma; demo frontend không phải hệ thống thật. Các trạng thái backend/xác thực, dịch vụ gửi email, chi tiết token và việc thiết kế A-05/A-07 vẫn OPEN. [A-04 UX Spec](../ux-design/08-admin-create-parent-account-wireframe.md).
