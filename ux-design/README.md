@@ -16,6 +16,7 @@
 2. [02 — User Flows](./02-user-flows.md) — onboarding, chọn môn, học, ôn, phụ huynh, corrections.
 3. [03 — Screen Inventory & UX States](./03-screen-inventory.md) — danh sách các màn/overlay và trạng thái để không sót edge case.
 4. [04 — Admin Portal](./04-admin-portal.md) — sitemap, flow, 12 màn admin; đăng ký do admin cấp phát.
+5. [05 — Admin Account Provisioning & Parent Activation](./05-admin-account-provisioning.md) — AP-D01…05 và AP-01…10 đã **CONFIRMED**; vòng đời account/invitation, kích hoạt và trạng thái UX.
 
 **✅ UX-01…UX-05 đã CONFIRMED**: hub-based Child World, bản đồ nhiều tầng, Parent Portal năm khu, truy cập hybrid và chuyển hồ sơ có xác nhận. [Chi tiết tại sitemap](./01-sitemap-information-architecture.md).
 
@@ -52,3 +53,8 @@
 ## Phase 2.3 — Permission Matrix approved (2026-11-24)
 
 **ADM-PM-01 / D-051 CONFIRMED:** toàn bộ matrix 4 role đã được phê duyệt, bao gồm các giá trị ✅/❌/🔒. Các ô 🔒 đòi hỏi scope/context/authorization riêng, không được coi là quyền truy cập mặc định. [Bảng đầy đủ tại Admin Portal](./04-admin-portal.md). Giai đoạn UX Design vẫn **IN PROGRESS**.
+
+
+## Phase 2.4 — Account Provisioning (2026-11-24)
+
+**AP-D01…AP-D05 và AP-01…AP-10 CONFIRMED**: account/invitation/delivery lifecycle tách biệt; dashboard theo permission; email bắt buộc duy nhất; invitation mặc định 72 giờ, có thể cấu hình và single-use; MFA bắt buộc Super Admin, Admin khác ít nhất cho thao tác nhạy cảm. Edge cases AP-01…10 được chốt hướng xử lý. [Tài liệu 05](./05-admin-account-provisioning.md). **Wireframes chưa triển khai**.
