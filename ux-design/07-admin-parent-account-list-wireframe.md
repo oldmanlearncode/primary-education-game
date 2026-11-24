@@ -105,3 +105,8 @@ Sau khi có khả năng ghi Figma trở lại, cần chuyển A-03 sang các lay
 ## 8. Approval record
 
 **D-059 / AW-APP-02 CONFIRMED (2026-11-24):** Người dùng: “Okay tôi nghĩ như vậy ổn rồi. Tiếp tục thôi.” — phê duyệt **A-03 HTML low-fi** và bốn đề xuất **AW-05…AW-08** vừa được đưa ra để review. **Không đồng nghĩa Figma A-03 đã được tạo**, và không duyệt trước A-04.
+
+
+## 9. Global layout stability applied (2026-11-24)
+
+**D-062 / AW-21 CONFIRMED:** A-03 HTML demo now uses fixed-size SVG Eye action and explicit column widths; maintains responsive horizontal scrolling. [Global guideline](./11-global-layout-stability-guidelines.md). Original A-03 wireframe approval remains in force; this is a consistency refinement.
