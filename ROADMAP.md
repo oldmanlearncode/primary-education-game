@@ -30,7 +30,7 @@ Bắt đầu tại [ux-design/README.md](./ux-design/README.md).
 
 ### Đầu ra cần phát triển
 1. **Information Architecture / Sitemap**: toàn bộ trải nghiệm của bé và phụ huynh.
-2. **User flows**: onboarding, discovery/cold start, chọn môn và nhiệm vụ, làm bài, chơi lại, recall, reward, parent review, approval, session correction, incident/correction, multiple profiles, time limit.
+2. **User flows**: admin provisioning / activation, onboarding, discovery/cold start, chọn môn và nhiệm vụ, làm bài, chơi lại, recall, reward, parent review, approval, session correction, incident/correction, multiple profiles, time limit.
 3. **Screen inventory & states**: danh sách màn hình, modal, overlay, empty/loading/offline/error/permission, theo nhóm tuổi và khả năng tiếp cận.
 4. **Wireframes**: hoàn thiện những màn còn thiếu trong Figma, duy trì mapping screen ↔ flow ↔ chức năng.
 5. **UX review**: xem lại với chủ dự án trước khi khóa baseline chuẩn bị Visual Design.
@@ -45,3 +45,8 @@ Bắt đầu tại [ux-design/README.md](./ux-design/README.md).
 
 ### Cách cập nhật Roadmap
 Chỉ đổi `IN PROGRESS` thành `COMPLETED` khi chủ dự án xác nhận điều kiện hoàn tất. Các thay đổi phạm vi phải được phản ánh vào tài liệu UX và decision log.
+
+
+### UX scope update — 2026-11-24
+
+**Đã CONFIRMED:** Giai đoạn đầu do **Admin cấp và quản lý tài khoản**, không mở public self-registration/guest preview. UX Design mở rộng thêm **Admin Portal** (account management, roles, audit, support) và các flow kích hoạt tài khoản được cấp. Xem [Admin Portal](./ux-design/04-admin-portal.md). Bản chi tiết admin vẫn cần review và wireframe; **Phase 2 IN PROGRESS**, Phase 1 status không thay đổi.
