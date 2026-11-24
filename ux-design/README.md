@@ -73,4 +73,4 @@
 
 ## Phase 2.4 — A-04 Create Parent Account (2026-11-24)
 
-**A-04 HTML interactive low-fi CREATED — AWAITING REVIEW.** Form email required + display name optional, checkbox gửi lời mời, các trạng thái duplicate/send failure/permission/network. [Specification](./08-admin-create-parent-account-wireframe.md). [A-03](./07-admin-parent-account-list-wireframe.md) đã được xác nhận AW-05…AW-08. **Figma A-03/A-04 chưa tạo vì Starter MCP call limit.** Không đánh dấu A-04 là APPROVED.
+**A-04 HTML LOW-FI APPROVED (2026-11-24).** Form email required + display name optional, checkbox gửi lời mời, các trạng thái duplicate/send failure/permission/network. [Specification](./08-admin-create-parent-account-wireframe.md). [A-03](./07-admin-parent-account-list-wireframe.md) đã được xác nhận AW-05…AW-08. **Figma A-03/A-04 chưa tạo vì Starter MCP call limit.** **AW-09…AW-12 CONFIRMED**; A-04 HTML low-fi approved, Figma frame vẫn chưa có.
