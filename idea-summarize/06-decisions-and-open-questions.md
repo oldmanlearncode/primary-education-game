@@ -305,3 +305,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-057 / AP-01…AP-10 | **Toàn bộ 10 edge case Account Provisioning và phương án xử lý** đã được chấp thuận. | **CONFIRMED** |
 
 **Tài liệu chi tiết:** [05 — Admin Account Provisioning & Parent Activation](../ux-design/05-admin-account-provisioning.md). **Không mặc định chốt** MFA provider, invitation email infrastructure, exact resend/rate-limit, chính sách tài khoản offline hay wireframe; Phase 2 vẫn IN PROGRESS.
+
+
+## U. CONFIRMED — First two Admin wireframes (2026-11-24)
+
+**Người dùng xác nhận:** “Okay đồng ý với 2 wireframe đã vẽ.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-058 / AW-APP-01 | **Phê duyệt hai low-fi wireframe A-01 Admin Login và A-02 Admin Dashboard** theo bố cục đã dựng ở [Figma](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). | **CONFIRMED — WIREFRAME APPROVED** |
+
+**Phạm vi:** Duyệt hai màn hình hiện có, **không** suy rộng sang các màn MFA, error/loading/session, role-specific variants, responsive hoặc prototype chưa vẽ. [UX detail](../ux-design/06-admin-login-dashboard-wireframes.md).
