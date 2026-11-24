@@ -16,6 +16,8 @@
 2. [02 — User Flows](./02-user-flows.md) — onboarding, chọn môn, học, ôn, phụ huynh, corrections.
 3. [03 — Screen Inventory & UX States](./03-screen-inventory.md) — danh sách các màn/overlay và trạng thái để không sót edge case.
 
+**✅ UX-01…UX-05 đã CONFIRMED**: hub-based Child World, bản đồ nhiều tầng, Parent Portal năm khu, truy cập hybrid và chuyển hồ sơ có xác nhận. [Chi tiết tại sitemap](./01-sitemap-information-architecture.md).
+
 ## Nguyên tắc UX
 
 - **Platform đa môn** (Toán, Tiếng Việt, TN&XH...), không giả định vào là màn Phép nhân.
@@ -32,4 +34,4 @@
 4. Review interaction và UX states với nhóm tuổi 1–2, 3, 4–5.
 5. Chốt baseline UX để bắt đầu Visual Design.
 
-**Status:** Các tài liệu UX là **INITIAL DRAFT** — chờ chủ dự án review; chỉ **giai đoạn UX Design đã bắt đầu** là được ghi IN PROGRESS.
+**Status:** **Information Architecture – năm quyết định điều hướng đã CONFIRMED**; sitemap thực tế vẫn cần tinh chỉnh, user flow/wireframe là **INITIAL DRAFT**. Phase 2 tiếp tục **IN PROGRESS**.
