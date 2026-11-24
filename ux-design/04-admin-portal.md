@@ -218,4 +218,9 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 
 ## 9. A-03 Parent Account List (2026-11-24)
 
-[Đặc tả UX A-03](./07-admin-parent-account-list-wireframe.md) và bản HTML độc lập đã được tạo để review. **Draft, không phải Figma frame và chưa được phê duyệt**. Đã xác định tìm kiếm email/ID, lọc Account Status (khác Invitation Status), sort/pagination, bảng tối thiểu và View Detail. Các quyết định đề xuất AW-05…08 còn OPEN.
+[Đặc tả UX A-03](./07-admin-parent-account-list-wireframe.md) và bản HTML độc lập đã được tạo để review. **A-03 HTML low-fi APPROVED 2026-11-24, nhưng không phải Figma frame**. Đã xác định tìm kiếm email/ID, lọc Account Status (khác Invitation Status), sort/pagination, bảng tối thiểu và View Detail. **AW-05…AW-08 CONFIRMED**.
+
+
+## 10. A-04 Create Parent Account — HTML draft (2026-11-24)
+
+[UX spec](./08-admin-create-parent-account-wireframe.md). HTML interaction draft created; **pending user review**, not yet in Figma due to MCP call limit. Proposals AW-09…AW-12 remain unconfirmed (except underlying AP-D03/AP-02). No product code or email backend.
