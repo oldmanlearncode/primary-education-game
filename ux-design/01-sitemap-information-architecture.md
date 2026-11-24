@@ -5,7 +5,9 @@
 ## 1. Sơ đồ tổng thể
 
 ```text
-APP ENTRY
+APP ENTRY (initial: admin-provisioned family account; no public sign-up)
+├─ Parent invitation acceptance / account activation
+├─ Parent sign-in / recovery
 ├─ Chọn/đổi hồ sơ bé (trẻ)
 ├─ Parent gate → Parent Portal (người giám hộ)
 └─ Child World
@@ -36,7 +38,7 @@ APP ENTRY
    ├─ Túi đồ
    ├─ Nhân vật (avatar, Milo)
    └─ Child UI status: offline, retry, age-appropriate guidance
-PARENT PORTAL
+PARENT PORTAL (parent account provisioned by admin)
 ├─ Tổng quan đa môn
 │  ├─ Môn học → Module → Kỹ năng / Mastery + Confidence + Recall
 │  ├─ Nhật ký học tập / Session History
@@ -105,3 +107,21 @@ PARENT PORTAL
 - Chuyển hồ sơ trên máy dùng chung: biểu hiện hồ sơ đang hoạt động, thông báo xác nhận và cách xử lý chọn nhầm.
 - Kỹ năng/ôn tập có cần màn “Lộ trình học tập” riêng cho trẻ, hay tích hợp vào Milo và các nhiệm vụ?
 - Toàn bộ wireframe, trạng thái offline/loading/error và kiểm thử UX vẫn **IN PROGRESS**.
+
+
+## 6. Admin Portal — bổ sung đã CONFIRMED về phạm vi
+
+**CONFIRMED:** Giai đoạn đầu, Admin tạo/quản lý tài khoản; **không mở tự đăng ký và Guest Preview**. Child/Parent/Admin là ba không gian có quyền riêng. Parent vẫn tạo hồ sơ cho con trong tài khoản được cấp. Xem [04 — Admin Portal](./04-admin-portal.md) để review sitemap, flow và màn hình cụ thể (chi tiết **DRAFT**).
+
+```text
+ADMIN PORTAL
+├── Admin Sign-in
+├── Operations Dashboard
+├── Parent Accounts (list / detail / create / invite / suspend)
+├── Invitations & Recovery
+├── Admin Roles & Permissions
+├── Audit / Support
+└── Content Quality Operations (scope TBD)
+```
+
+**UX-06, UX-07, UX-09:** tiếp nhận có cấu trúc ngắn, progressive assessment, profile thuộc tài khoản gia đình — CONFIRMED. **UX-08:** Guest Preview **DEFERRED**, không áp dụng trong onboarding hiện tại.
