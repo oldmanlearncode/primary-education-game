@@ -68,7 +68,7 @@
 |---|---|---|---|---|
 | A-01 | Admin Sign-in / Session expired | CORE | [Low-fi A-01](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-8) — APPROVED LOW-FI | Form login đã duyệt; MFA/error states chưa vẽ đủ |
 | A-02 | Admin Operations Dashboard | CORE | [Low-fi A-02](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-28) — APPROVED LOW-FI | Account Admin layout đã duyệt; 3 role variants chưa vẽ |
-| A-03 | Parent Accounts: list/search/filter | CORE | Chưa | Trạng thái người dùng |
+| A-03 | Parent Accounts: list/search/filter | CORE | [UX spec + HTML draft](./07-admin-parent-account-list-wireframe.md) — **DRAFT**; Figma chưa tạo | Search/filter/sort/pagination, xem chi tiết; cần review |
 | A-04 | Create Parent / Send Invitation | CORE | Chưa | Chặn account duplicate |
 | A-05 | Parent Account Detail | CORE | Chưa | Trạng thái, số child linked |
 | A-06 | Suspend / Restore Confirmation | CORE | Chưa | Kiểm soát quyền và audit |
