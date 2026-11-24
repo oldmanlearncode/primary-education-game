@@ -4,7 +4,8 @@
 > **CONFIRMED:** Có Admin Portal; giai đoạn đầu tài khoản phụ huynh do admin cấp phát/quản lý; không mở tự đăng ký công khai.  
 > **✅ CONFIRMED 2026-11-24:** Super Admin + Admin có phân quyền; least privilege đối với dữ liệu học sinh; audit thay đổi tài khoản/quyền; hướng kích hoạt bằng lời mời an toàn thay vì gửi mật khẩu; tách quyền account administration và content review.  
 > **✅ CONFIRMED:** Hướng xử lý toàn bộ edge case **AD-01…AD-12** (nguyên tắc; chưa chốt exact policy/technical thresholds).  
-> **PROPOSED:** Permission matrix cụ thể, kênh và vòng đời lời mời, UI chi tiết và triển khai xác thực vẫn cần review.
+> **✅ CONFIRMED:** Ma trận phân quyền cụ thể bên dưới được người dùng phê duyệt ngày 2026-11-24, bao gồm các quyền ✅/❌/🔒.  
+> **OPEN:** Quy trình thực thi của các ô 🔒, thời hạn và kênh lời mời, xác thực, màn hình và thông số chính sách vẫn cần đặc tả.
 
 ## 0. Admin decisions — CONFIRMED
 
@@ -27,9 +28,9 @@
 
 **Để tránh nhầm:** bốn quyết định là nguyên tắc kiến trúc phân quyền. Các quyền cụ thể theo từng hành động trong các bảng bên dưới là **PROPOSED** cho UX review, chưa được phê duyệt.
 
-### Permission matrix — bản đề xuất để review (NOT CONFIRMED)
+### Permission matrix — ✅ CONFIRMED (2026-11-24)
 
-Ký hiệu: ✅ được đề xuất cấp, ❌ không cấp, 🔒 chỉ được phép nếu có authorization/scope/context phù hợp.
+Ký hiệu đã chốt: ✅ được phép theo vai trò (vẫn phải qua kiểm soát bảo mật chung); ❌ không được phép; 🔒 chỉ được phép sau khi thỏa điều kiện authorization/resource scope/context tương ứng. **Không được coi 🔒 là quyền mặc định.**
 
 | Hành động | SUPER_ADMIN | ACCOUNT_ADMIN | CONTENT_REVIEWER | SUPPORT_OPERATOR |
 |---|:---:|:---:|:---:|:---:|
@@ -193,7 +194,7 @@ Admin thao tác khắc phục truy cập **không tự sửa mastery / classific
 - Plan transition for public registration **without** re-creating existing parent accounts.
 
 ## 6. OPEN for detailed admin UX (principles ADM-01…05 already CONFIRMED)
-1. Đã chốt **bốn role**, chỉ Super Admin quản lý role Admin, RBAC + scope/context và hỗ trợ multi-role. Còn OPEN: số lượng Super Admin, bootstrap, cơ chế khôi phục quản trị viên cuối cùng, **chi tiết từng permission trong matrix (PROPOSED)**.
+1. Đã chốt **bốn role**, chỉ Super Admin quản lý role Admin, RBAC + scope/context và hỗ trợ multi-role. Còn OPEN: số lượng Super Admin, bootstrap, cơ chế khôi phục quản trị viên cuối cùng và **điều kiện cụ thể để thực thi từng ô 🔒 của matrix đã CONFIRMED**.
 2. Đã chọn nguyên tắc **lời mời kích hoạt an toàn, không gửi password**. Còn OPEN: kênh gửi (email/private link), hạn sử dụng, lời mời hết hạn/thu hồi và resend.
 3. Whether parent can recover password independently after admin provisioning.
 4. Who can link a child profile to another guardian?
