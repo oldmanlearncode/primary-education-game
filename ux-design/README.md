@@ -46,4 +46,4 @@
 
 ## Phase 2.3 — Admin Permission Architecture (2026-11-24)
 
-**ADM-D01…ADM-D04 CONFIRMED:** bốn vai trò ban đầu (Super Admin / Account Admin / Content Reviewer / Support Operator); RBAC + Resource Scope + Context Policy; multi-role; chỉ Super Admin quản lý vai trò quản trị và kiểm soát truy cập nhạy cảm theo chính sách riêng. **Permission matrix chi tiết và AD-01…AD-12 vẫn PROPOSED**, chưa phê duyệt. [Admin Portal](./04-admin-portal.md).
+**ADM-D01…ADM-D04 CONFIRMED:** bốn vai trò ban đầu (Super Admin / Account Admin / Content Reviewer / Support Operator); RBAC + Resource Scope + Context Policy; multi-role; chỉ Super Admin quản lý vai trò quản trị và kiểm soát truy cập nhạy cảm theo chính sách riêng. **AD-01…AD-12 đã CONFIRMED** ở mức hướng xử lý; **permission matrix chi tiết vẫn PROPOSED**, chưa phê duyệt. [Admin Portal](./04-admin-portal.md).
