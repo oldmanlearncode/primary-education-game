@@ -17,6 +17,7 @@
 3. [03 — Screen Inventory & UX States](./03-screen-inventory.md) — danh sách các màn/overlay và trạng thái để không sót edge case.
 4. [04 — Admin Portal](./04-admin-portal.md) — sitemap, flow, 12 màn admin; đăng ký do admin cấp phát.
 5. [05 — Admin Account Provisioning & Parent Activation](./05-admin-account-provisioning.md) — AP-D01…05 và AP-01…10 đã **CONFIRMED**; vòng đời account/invitation, kích hoạt và trạng thái UX.
+6. [06 — Admin Login & Dashboard Wireframes](./06-admin-login-dashboard-wireframes.md) — **đã dựng low-fi A-01 và A-02 trong Figma**, chờ review layout và bổ sung state.
 
 **✅ UX-01…UX-05 đã CONFIRMED**: hub-based Child World, bản đồ nhiều tầng, Parent Portal năm khu, truy cập hybrid và chuyển hồ sơ có xác nhận. [Chi tiết tại sitemap](./01-sitemap-information-architecture.md).
 
@@ -58,3 +59,8 @@
 ## Phase 2.4 — Account Provisioning (2026-11-24)
 
 **AP-D01…AP-D05 và AP-01…AP-10 CONFIRMED**: account/invitation/delivery lifecycle tách biệt; dashboard theo permission; email bắt buộc duy nhất; invitation mặc định 72 giờ, có thể cấu hình và single-use; MFA bắt buộc Super Admin, Admin khác ít nhất cho thao tác nhạy cảm. Edge cases AP-01…10 được chốt hướng xử lý. [Tài liệu 05](./05-admin-account-provisioning.md). **Wireframes chưa triển khai**.
+
+
+## Phase 2.4 — Wireframe progress (2026-11-24)
+
+**A-01 Admin Login, A-02 Admin Dashboard: WIREFRAME DRAFT CREATED IN FIGMA**, [mở bản vẽ](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). Đang chờ review interaction/layout và bổ sung MFA/error/permission variants. **Chưa coi Phase 2 hoàn tất.**
