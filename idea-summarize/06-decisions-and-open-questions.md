@@ -204,3 +204,18 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 - [ux-design/README.md](../ux-design/README.md)
 
 **Tài liệu Phase 2 được khởi tạo**: sitemap, 12 core flows, screen inventory; hiện là UX draft cần review, **chưa chốt toàn bộ wireframe/Figma**.
+
+
+## N. CONFIRMED — Phase 2.1 UX Information Architecture (2026-11-24)
+
+**Người dùng đã trả lời:** “Okay tôi hoàn toàn đồng ý.” đối với năm phương án UX-01…UX-05 trong buổi thảo luận kiến trúc điều hướng.
+
+| ID | Quyết định UX | Trạng thái |
+|---|---|---|
+| D-029 / UX-01 | **B — Hub-Based Child Navigation:** Làng Khởi Đầu là hub, có quick navigation theo ngữ cảnh. | **CONFIRMED** |
+| D-030 / UX-02 | Bản đồ phân tầng **World → Subject → Module → Topic/Quest → Activity**, hiển thị linh hoạt theo nội dung. | **CONFIRMED** |
+| D-031 / UX-03 | **Parent Navigation-Based Dashboard** với năm khu: Dashboard, Learning Progress, Action Center, Learning History, Settings & Profiles. | **CONFIRMED** |
+| D-032 / UX-04 | **C — Hybrid access:** Parent Portal qua web và cổng adult gate trong app, nhưng **không bắt buộc làm hai ứng dụng ngay trong MVP**. | **CONFIRMED** |
+| D-033 / UX-05 | Cho phép trẻ đổi giữa hồ sơ đã được cấp quyền trên thiết bị, có xác nhận; cấu hình và quản lý hồ sơ cần Adult Gate. | **CONFIRMED** |
+
+**Nguồn chi tiết:** [ux-design/01-sitemap-information-architecture.md](../ux-design/01-sitemap-information-architecture.md). **Chưa coi Phase 2 hoàn tất:** các user flow chi tiết và các wireframe/interaction còn cần review.
