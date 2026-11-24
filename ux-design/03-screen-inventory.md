@@ -71,8 +71,8 @@
 | A-03 | Parent Accounts: list/search/filter | CORE | [UX spec](./07-admin-parent-account-list-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-05…AW-08 confirmed; search/filter/sort/pagination/detail preview |
 | A-04 | Create Parent Account | CORE | [HTML demo + spec](./08-admin-create-parent-account-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-09…AW-12 CONFIRMED; email required, display optional, invite toggle, partial success |
 | A-05 | Parent Account Detail | CORE | [UX spec + standalone HTML](./09-admin-parent-account-detail-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-13…AW-16 CONFIRMED: state-aware actions, reason confirmation, audit preview, child data minimization |
-| A-06 | Suspend / Restore Confirmation | CORE | [UX spec + HTML demo](./12-admin-suspend-restore-confirmation-wireframe.md) — **DRAFT; Figma NOT CREATED** | Account target/status, required reason, confirmation, session warning, conflict + permission test states |
-| A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **DRAFT; Figma NOT CREATED** | Token/delivery separated, resend/revoke reasons, permission + audit mock; AW-17…20 awaiting review |
+| A-06 | Suspend / Restore Confirmation | CORE | [UX spec + HTML demo](./12-admin-suspend-restore-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-22…AW-25 CONFIRMED; offline conflict policy OPEN |
+| A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-17…AW-20 CONFIRMED, AW-21 Layout Stability CONFIRMED |
 | A-08 | Admin User & Role Management | SUPPORT | Chưa | RBAC chưa chốt |
 | A-09 | Permission Change Confirmation | SUPPORT | Chưa | Hành động nhạy cảm |
 | A-10 | Admin Audit History | CORE | Chưa | Ai / lúc nào / vì sao |
@@ -118,6 +118,6 @@
 - Bố trí UI theo nhóm tuổi, giọng nói hỗ trợ và tablet/desktop/mobile responsive.
 
 
-**GLOBAL UX RULE D-062 (CONFIRMED):** always proactively minimize unexpected Layout Shift across all experiences; context-specific techniques, accessible responsive behavior. [11 — Guideline](./11-global-layout-stability-guidelines.md). **AW-21 CONFIRMED** for stable table action columns; A-07 still awaiting separate approval for AW-17…20.
+**GLOBAL UX RULE D-062 (CONFIRMED):** always proactively minimize unexpected Layout Shift across all experiences; context-specific techniques, accessible responsive behavior. [11 — Guideline](./11-global-layout-stability-guidelines.md). **AW-21 CONFIRMED** for stable table action columns; A-07 fully approved as HTML low-fi; AW-17…AW-20 CONFIRMED (D-063).
 
 **Admin-specific UX states:** invitation pending/expired/revoked, account suspended, duplicate email, session expired, insufficient admin permission, audit recorded, send failure/retry, account has in-progress child session. Wireframe chưa có. [Chi tiết Admin Portal](./04-admin-portal.md).
