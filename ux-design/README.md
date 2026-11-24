@@ -63,4 +63,4 @@
 
 ## Phase 2.4 — Wireframe progress (2026-11-24)
 
-**A-01 Admin Login, A-02 Admin Dashboard: WIREFRAME DRAFT CREATED IN FIGMA**, [mở bản vẽ](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). Đang chờ review interaction/layout và bổ sung MFA/error/permission variants. **Chưa coi Phase 2 hoàn tất.**
+**A-01 Admin Login, A-02 Admin Dashboard: LOW-FI WIREFRAMES APPROVED (2026-11-24)**, [mở bản vẽ](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). Đã duyệt bố cục hai màn hình; vẫn cần bổ sung MFA/error/permission variants, responsive và interaction states. **Chưa coi Phase 2 hoàn tất.**
