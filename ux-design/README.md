@@ -68,4 +68,9 @@
 
 ## Phase 2.4 — A-03 Parent Account List (2026-11-24)
 
-**A-03 UX DRAFT CREATED, NOT YET APPROVED:** đã có đặc tả và bản HTML low-fi tương tác để review (tìm kiếm/lọc/sắp xếp/phân trang/xem nhanh). [Đặc tả A-03](./07-admin-parent-account-list-wireframe.md). **Chưa có frame Figma A-03** vì Figma Starter MCP tool-call limit; sẽ đồng bộ khi có thể thao tác Figma. **A-01/A-02 vẫn APPROVED**, A-03 chưa CONFIRMED.
+**A-03 HTML LOW-FI APPROVED (2026-11-24):** đã có đặc tả và bản HTML low-fi tương tác để review (tìm kiếm/lọc/sắp xếp/phân trang/xem nhanh). [Đặc tả A-03](./07-admin-parent-account-list-wireframe.md). **Chưa có frame Figma A-03** vì Figma Starter MCP tool-call limit; sẽ đồng bộ khi có thể thao tác Figma. **A-01/A-02 và A-03 (HTML) đã APPROVED**; chỉ A-03 chưa đưa lên Figma.
+
+
+## Phase 2.4 — A-04 Create Parent Account (2026-11-24)
+
+**A-04 HTML interactive low-fi CREATED — AWAITING REVIEW.** Form email required + display name optional, checkbox gửi lời mời, các trạng thái duplicate/send failure/permission/network. [Specification](./08-admin-create-parent-account-wireframe.md). [A-03](./07-admin-parent-account-list-wireframe.md) đã được xác nhận AW-05…AW-08. **Figma A-03/A-04 chưa tạo vì Starter MCP call limit.** Không đánh dấu A-04 là APPROVED.
