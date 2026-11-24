@@ -140,3 +140,8 @@ Mỗi flow cần screen-ID trong [Screen Inventory](./03-screen-inventory.md), t
 - **UX-08 DEFERRED:** Guest Preview / public self-registration không thuộc initial rollout.
 - **UX-09 CONFIRMED:** Parent/family account chứa nhiều child profiles với dữ liệu tối thiểu.
 - **ON-01…ON-12 CONFIRMED về hướng xử lý** trong giới hạn admin-provisioned access; ON-04/05/06/10/11/12 vẫn được bảo toàn.
+
+
+## Phase 2.4 — A-F01 Provisioning → E-07 Parent Activation
+
+**CONFIRMED:** xem [05 — Account Provisioning UX](./05-admin-account-provisioning.md) cho AP-D01…AP-D05 và 10 edge cases AP-01…10. Luồng: Admin sign-in/MFA → permission-aware dashboard → parent account list → create with email → pending activation → send single-use configurable 72h invite → parent activates → parent onboarding. Account status, invitation token status và delivery status là các trục độc lập. Không self-registration.
