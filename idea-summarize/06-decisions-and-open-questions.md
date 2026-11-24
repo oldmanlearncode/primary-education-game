@@ -251,3 +251,17 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-045 / ADM-05 | **Tách quyền quản lý account và quyền review/duyệt nội dung giáo dục**. | **CONFIRMED** |
 
 **Chưa chốt:** chi tiết phân quyền từng thao tác, cơ chế bootstrap và số lượng Super Admin, xác thực quản trị, kênh mời, xử lý tài khoản bị khóa trong phiên đang học, quyền hỗ trợ dữ liệu nhạy cảm. [Admin Portal](../ux-design/04-admin-portal.md) là bản draft UX, chưa phải thiết kế hoàn chỉnh.
+
+
+## Q. CONFIRMED — Admin Permission Architecture (2026-11-24)
+
+**Người dùng xác nhận:** “Tôi hoàn toàn đồng ý về các role ban đầu, Mô hình phân quyền, vấn đề nhiều role và quản lý quyền nhạy cảm.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| D-046 / ADM-D01 | **Bốn role ban đầu:** `SUPER_ADMIN`, `ACCOUNT_ADMIN`, `CONTENT_REVIEWER`, `SUPPORT_OPERATOR`. | **CONFIRMED** |
+| D-047 / ADM-D02 | **RBAC + Resource Scope + Context Policy**, không dùng role đơn thuần để cấp quyền truy cập dữ liệu trẻ. | **CONFIRMED** |
+| D-048 / ADM-D03 | **Cho phép Admin nhiều role**; tổng hợp quyền phải tiếp tục thỏa mãn phạm vi và ngữ cảnh. | **CONFIRMED** |
+| D-049 / ADM-D04 | **Chỉ Super Admin quản lý role/tài khoản Admin**; dữ liệu trẻ và các quyền nhạy cảm được bảo vệ bằng chính sách riêng. | **CONFIRMED** |
+
+**Chưa xác nhận:** các ô cụ thể trong permission matrix (ai được xem audit ở mức nào, ai duyệt nội dung...), các phương án **AD-01…AD-12** (chưa được người dùng đồng ý rõ), cơ chế bootstrap, MFA, invitation expiry, phục hồi tài khoản. Bảng và các EC được ghi **PROPOSED** tại [Admin Portal UX](../ux-design/04-admin-portal.md).
