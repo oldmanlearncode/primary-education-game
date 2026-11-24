@@ -42,3 +42,8 @@
 ## Phase 2.2 — Parent Onboarding & Admin Scope (2026-11-24)
 
 **CONFIRMED:** UX-06 onboarding ngắn và optional skip; UX-07 progressive parent assessment; UX-09 family-owned child profiles; **UX-10/11** initial admin-provisioned accounts và bổ sung Admin Portal; ON-01…ON-12 theo hướng xử lý đã đề xuất, điều chỉnh cho mô hình cấp phát. **UX-08 DEFERRED**: không mở Guest Preview hoặc public sign-up lúc đầu. **ADM-01…ADM-05 CONFIRMED:** Super Admin + delegated Admin; hạn chế quyền xem dữ liệu trẻ; audit; lời mời kích hoạt an toàn; tách content review. Chi tiết permission matrix, invitation, recovery **vẫn PROPOSED / needs UX review**.
+
+
+## Phase 2.3 — Admin Permission Architecture (2026-11-24)
+
+**ADM-D01…ADM-D04 CONFIRMED:** bốn vai trò ban đầu (Super Admin / Account Admin / Content Reviewer / Support Operator); RBAC + Resource Scope + Context Policy; multi-role; chỉ Super Admin quản lý vai trò quản trị và kiểm soát truy cập nhạy cảm theo chính sách riêng. **Permission matrix chi tiết và AD-01…AD-12 vẫn PROPOSED**, chưa phê duyệt. [Admin Portal](./04-admin-portal.md).
