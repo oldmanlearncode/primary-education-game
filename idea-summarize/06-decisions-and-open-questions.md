@@ -186,3 +186,21 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | D-025 / MA-01…MA-08 | **Toàn bộ tám edge case** và cách xử lý tại tài liệu 11 đã được người dùng chấp nhận. | **CONFIRMED** |
 
 **Ranh giới:** Đã xác nhận nguyên tắc; chưa lựa chọn thuật toán rule-based/BKT/IRT, ngưỡng evidence và confidence, số bậc mastery cuối cùng, cách hiệu chỉnh mô hình hoặc timeline/MVP. Tài liệu vẫn nằm trong `idea-summarize/`.
+
+
+## M. Roadmap 7 giai đoạn & chuyển sang UX Design (2026-11-24)
+
+**Người dùng xác nhận** Product Design giai đoạn 1 đã đủ để chuyển sang giai đoạn 2 và yêu cầu đưa roadmap vào repo, tạo README giới thiệu, tiếp tục cập nhật trong suốt vòng đời dự án.
+
+| ID | Nội dung quyết định | Trạng thái |
+|---|---|---|
+| D-026 | **7 giai đoạn:** (1) Product Design — yêu cầu/mục tiêu học/game loop; (2) UX Design — user flow/sitemap/wireframe toàn bộ màn; (3) Visual Design — design system/nhân vật/bản đồ/UI kit; (4) Prototype — Rừng Bảng Nhân 2; (5) Learning Design — question bank/hints/recall algorithm; (6) Playtesting — nhiều nhóm tuổi; (7) MVP — Phép Nhân/rewards/village/parents. | **CONFIRMED** |
+| D-027 | **Phase 1 COMPLETED ở mức Product Discovery baseline**; chuyển sang **Phase 2 UX Design IN PROGRESS**. | **CONFIRMED** |
+| D-028 | Root `README.md` là điểm giới thiệu/trạng thái hiện hành của dự án, sẽ cập nhật sau các cột mốc đáng kể; `ROADMAP.md` lưu 7 giai đoạn. | **CONFIRMED** |
+
+**Không đánh đồng Phase 1 completed với mọi PRD/thuật toán đã viết xong**. Các phần cần kiểm chứng vẫn thuộc những giai đoạn tương ứng. Tài liệu:
+- [ROADMAP.md](../ROADMAP.md)
+- [README.md](../README.md)
+- [ux-design/README.md](../ux-design/README.md)
+
+**Tài liệu Phase 2 được khởi tạo**: sitemap, 12 core flows, screen inventory; hiện là UX draft cần review, **chưa chốt toàn bộ wireframe/Figma**.
