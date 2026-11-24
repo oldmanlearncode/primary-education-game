@@ -64,3 +64,8 @@
 ## Phase 2.4 — Wireframe progress (2026-11-24)
 
 **A-01 Admin Login, A-02 Admin Dashboard: LOW-FI WIREFRAMES APPROVED (2026-11-24)**, [mở bản vẽ](https://www.figma.com/design/sC9vpDkKAruU3dgV7shCAJ?node-id=13-4). Đã duyệt bố cục hai màn hình; vẫn cần bổ sung MFA/error/permission variants, responsive và interaction states. **Chưa coi Phase 2 hoàn tất.**
+
+
+## Phase 2.4 — A-03 Parent Account List (2026-11-24)
+
+**A-03 UX DRAFT CREATED, NOT YET APPROVED:** đã có đặc tả và bản HTML low-fi tương tác để review (tìm kiếm/lọc/sắp xếp/phân trang/xem nhanh). [Đặc tả A-03](./07-admin-parent-account-list-wireframe.md). **Chưa có frame Figma A-03** vì Figma Starter MCP tool-call limit; sẽ đồng bộ khi có thể thao tác Figma. **A-01/A-02 vẫn APPROVED**, A-03 chưa CONFIRMED.
