@@ -96,3 +96,10 @@
 ## Global UX rule — layout stability (2026-11-24)
 
 **D-062 / UX-GLOBAL-01 + AW-21 CONFIRMED.** Avoid unexpected Layout Shift across Child World, Parent Portal and Admin Portal. A-07/A-03 HTML table demos updated with fixed-size icon button and stable columns. [Full guidance and acceptance criteria](./11-global-layout-stability-guidelines.md). **AW-17…AW-20 are still PROPOSED; A-07 still AWAITING REVIEW.**
+
+
+## Phase 2.4 — A-06 Confirmation wireframe (2026-11-24)
+
+**A-06 standalone HTML interactive draft created**, accessible from A-05 demo; [UX specification](./12-admin-suspend-restore-confirmation-wireframe.md). Test suspend/restore, required reason and acknowledgment, concurrent edit, revoked permission, network unknown, active/offline child session. **AW-22…AW-25 PROPOSED — awaiting review**; underlying permission/security decisions unchanged. **No Figma frame or production backend.**
+
+**User reviewed and accepted A-03/A-07 layout-shift corrections** in the most recent response. This is **not interpreted as full approval of AW-17…AW-20 for A-07**, which remain PROPOSED until separately confirmed.
