@@ -3,6 +3,8 @@
 > **IN PROGRESS · Bắt đầu 2026-11-24**  
 > Mục tiêu: thiết kế **đầy đủ kiến trúc thông tin, user flow, wireframe tất cả màn hình** của Little Explorers trước khi bước sang Visual Design.
 
+**GLOBAL UX RULE — CONFIRMED D-062:** toàn bộ các màn cần chủ động hạn chế **Unexpected Layout Shift**, chọn giải pháp theo ngữ cảnh, không áp đặt một CSS technique. [Đọc guideline + checklist](./11-global-layout-stability-guidelines.md). Đây là rule áp dụng cho mọi wireframe và implementation, bao gồm những màn đã duyệt.
+
 ## Đầu vào đã có
 
 - [Product Discovery & confirmed decisions](../idea-summarize/README.md)
@@ -89,3 +91,8 @@
 ## Phase 2.4 — A-07 Invitation Management (2026-11-24)
 
 **A-07 standalone interactive HTML low-fi CREATED — DRAFT / AWAITING REVIEW.** Search and filter separate token/delivery states, role-aware resend/revoke, confirmation reason, audit history, simulator for email delivery failure/concurrency/permission revocation/network. [A-07 UX specification](./10-admin-invitation-management-wireframe.md). **AW-17…AW-20 PROPOSED, not CONFIRMED**. Linked A-03/A-04/A-05 HTML demos now navigate to A-07. **Figma frame A-07 NOT CREATED**; previous Starter MCP tool quota issue remains unresolved. A-01…A-05 approvals unchanged.
+
+
+## Global UX rule — layout stability (2026-11-24)
+
+**D-062 / UX-GLOBAL-01 + AW-21 CONFIRMED.** Avoid unexpected Layout Shift across Child World, Parent Portal and Admin Portal. A-07/A-03 HTML table demos updated with fixed-size icon button and stable columns. [Full guidance and acceptance criteria](./11-global-layout-stability-guidelines.md). **AW-17…AW-20 are still PROPOSED; A-07 still AWAITING REVIEW.**
