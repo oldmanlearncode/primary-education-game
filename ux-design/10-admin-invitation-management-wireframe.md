@@ -100,3 +100,8 @@ Links: [Account Provisioning](./05-admin-account-provisioning.md), [A-05](./09-a
 ## 8. Global layout stability rule applied (2026-11-24)
 
 **D-062 / UX-GLOBAL-01 and AW-21 CONFIRMED** by the user. A-07 demo fixed the `Xem` → `Đang xem` text expansion bug: fixed-size SVG Eye icon with accessible label/title and `aria-pressed`; selected row highlighted without changing column width; colgroup + fixed table layout with horizontal overflow for narrow viewports. See [11 — Global Layout Stability Guidelines](./11-global-layout-stability-guidelines.md). **AW-17…AW-20 remain PROPOSED**, and A-07 is still a draft pending layout/interaction approval.
+
+
+## 9. Review feedback: layout-shift correction accepted (2026-11-24)
+
+User: “Okay tôi thấy 2 bản chỉnh sửa đã ổn rồi. Tiếp tục thôi.” The **AW-21-based stabilization edits for A-03 and A-07 HTML demos are accepted** (fixed-size Eye button/selection state and stable table columns). This accepts the **specific refinements**, not necessarily the complete A-07 layout or **AW-17…AW-20**, which remain PROPOSED pending explicit review.
