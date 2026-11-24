@@ -84,3 +84,8 @@
 ### A-05 approval follow-up (2026-11-24)
 
 **A-05 Parent Account Detail approved at HTML low-fi level; AW-13…AW-16 CONFIRMED.** See [09 — A-05](./09-admin-parent-account-detail-wireframe.md) and decision **D-061**. **Next:** A-07 Invitation Management. Figma A-03/A-04/A-05 frames are still not created; prototype and backend remain future tasks.
+
+
+## Phase 2.4 — A-07 Invitation Management (2026-11-24)
+
+**A-07 standalone interactive HTML low-fi CREATED — DRAFT / AWAITING REVIEW.** Search and filter separate token/delivery states, role-aware resend/revoke, confirmation reason, audit history, simulator for email delivery failure/concurrency/permission revocation/network. [A-07 UX specification](./10-admin-invitation-management-wireframe.md). **AW-17…AW-20 PROPOSED, not CONFIRMED**. Linked A-03/A-04/A-05 HTML demos now navigate to A-07. **Figma frame A-07 NOT CREATED**; previous Starter MCP tool quota issue remains unresolved. A-01…A-05 approvals unchanged.
