@@ -229,3 +229,8 @@ These questions do **not** reopen the confirmed decision: **admin-provisioned ac
 ## 11. A-05 Parent Account Detail — HTML draft (2026-11-24)
 
 [A-05 UX specification](./09-admin-parent-account-detail-wireframe.md). Standalone HTML interaction draft created with state-aware Account actions, reason confirmation, audit preview, invitation summary and safe-session warning. **AW-13…AW-16 CONFIRMED; A-05 HTML low-fi APPROVED by user 2026-11-24**. **Figma frame NOT CREATED**, no backend implementation.
+
+
+## 12. A-07 Invitation Management — HTML draft (2026-11-24)
+
+[A-07 UX spec](./10-admin-invitation-management-wireframe.md). Interactive HTML mock exists: invitation list, distinct account/token/delivery statuses, controlled resend/revoke, reason confirmation, role/scope simulator, mock audit and negative states. **AW-17…AW-20 PROPOSED**, awaiting user review. **Figma A-07 NOT CREATED**, no real mail, tokens, backend authorization or persistence.
