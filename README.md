@@ -60,6 +60,12 @@ Hệ thống phân biệt **Mastery**, **Confidence** và **Review Status**, cũ
 
 > Các chính sách/thuật toán chi tiết, công nghệ và ngưỡng đánh giá **chưa được chọn**; đây là định hướng thiết kế, không phải tuyên bố về các chức năng đã chạy.
 
+## 🔐 Phân hệ người dùng & chính sách cấp tài khoản
+
+Giai đoạn vận hành ban đầu gồm **Child World**, **Parent Portal** và **Admin Portal**. **Admin cấp phát/quản lý tài khoản phụ huynh**; phụ huynh sử dụng tài khoản được cấp để tạo hồ sơ cho con và thiết lập mục tiêu. **Chưa mở tự đăng ký công khai hoặc Guest Preview**. Các tính năng này có thể nghiên cứu ở giai đoạn mở rộng khi sản phẩm và hạ tầng sẵn sàng.
+
+[Khám phá Admin Portal UX](./ux-design/04-admin-portal.md)
+
 ## 👨‍👩‍👧 Parent-Guided Learning
 
 Phụ huynh không chỉ xem dashboard. Định hướng được thống nhất:
@@ -104,7 +110,7 @@ primary-education-game/
 ├── README.md                  # Giới thiệu & trạng thái dự án
 ├── ROADMAP.md                 # 7 giai đoạn phát triển
 ├── idea-summarize/            # Ý tưởng, quyết định đã chốt, edge cases
-└── ux-design/                 # Giai đoạn 2: IA, user flows, screen inventory
+└── ux-design/                 # Giai đoạn 2: Child/Parent/Admin IA, flows, screens
 ```
 
 - [Kho ý tưởng và tài liệu Product Discovery](./idea-summarize/README.md)
