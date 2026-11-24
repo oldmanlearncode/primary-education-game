@@ -118,4 +118,6 @@
 - Bố trí UI theo nhóm tuổi, giọng nói hỗ trợ và tablet/desktop/mobile responsive.
 
 
+**GLOBAL UX RULE D-062 (CONFIRMED):** always proactively minimize unexpected Layout Shift across all experiences; context-specific techniques, accessible responsive behavior. [11 — Guideline](./11-global-layout-stability-guidelines.md). **AW-21 CONFIRMED** for stable table action columns; A-07 still awaiting separate approval for AW-17…20.
+
 **Admin-specific UX states:** invitation pending/expired/revoked, account suspended, duplicate email, session expired, insufficient admin permission, audit recorded, send failure/retry, account has in-progress child session. Wireframe chưa có. [Chi tiết Admin Portal](./04-admin-portal.md).
