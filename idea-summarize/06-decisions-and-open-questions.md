@@ -338,3 +338,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-060 / AW-APP-03** | Phê duyệt **A-04 HTML low-fi wireframe** và **AW-09…AW-12**: form chính có panel giải thích onboarding; invitation checkbox bật mặc định và có thể tắt; email bắt buộc/tên hiển thị tùy chọn; trạng thái tạo account/gửi lời mời tách biệt; invitation lỗi hiển thị partial success, giữ account và dẫn đến A-07 để gửi lại. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** chưa có frame A-04 trong Figma; demo frontend không phải hệ thống thật. Các trạng thái backend/xác thực, dịch vụ gửi email, chi tiết token và việc thiết kế A-05/A-07 vẫn OPEN. [A-04 UX Spec](../ux-design/08-admin-create-parent-account-wireframe.md).
+
+
+## X. CONFIRMED — A-05 Parent Account Detail HTML wireframe (2026-11-24)
+
+**Người dùng xác nhận:** “Hợp lý, tôi đồng ý với các đề xuất trên.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-061 / AW-APP-04** | Phê duyệt **A-05 HTML low-fi wireframe** cùng **AW-13…AW-16**: bố cục Account Overview/Invitation Summary/Audit Activity/Administrative Actions; xác nhận và lý do bắt buộc cho suspend/restore/disable; chỉ hiện số lượng child profiles và tách invitation token/delivery status; tài khoản DISABLED/CLOSED không khôi phục tức thì tại A-05. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** không tạo/duyệt Figma frame A-05; không có backend, persistence/audit thực tế hay server-side authorization từ bản demo. [Chi tiết A-05](../ux-design/09-admin-parent-account-detail-wireframe.md). **A-07 Invitation Management chưa thiết kế.**
