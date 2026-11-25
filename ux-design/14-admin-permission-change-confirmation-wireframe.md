@@ -1,6 +1,6 @@
 # 14 — A-09 Permission Change Confirmation: UX Wireframe
 
-> **2026-11-25 · HTML LOW-FIDELITY DRAFT / NEEDS REVIEW**
+> **2026-11-25 · ✅ HTML LOW-FIDELITY APPROVED — AW-30…AW-33 CONFIRMED**
 >
 > Bản HTML tương tác độc lập: `A-09-permission-change-confirmation.html` đính kèm cuộc trò chuyện. **Chưa có A-09 Figma frame; chưa tích hợp với A-08 bằng route/real API.** Đây là bước xác nhận thay đổi role của Admin từ A-08, không phải trang cấu hình quyền mới.
 
@@ -66,14 +66,14 @@ A-09 is best implemented as **dialog/overlay launched from A-08** with a readabl
 - **No actual authorization, session invalidation, persistence, MFA or backend change.**
 - Layout stability: reserved notification region; stable side-by-side panels; overlay doesn't push page content; responsive stacking.
 
-## 6. New UX proposals for review — NOT CONFIRMED
+## 6. Approved UX proposals — CONFIRMED (2026-11-25)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-30** | A-09 is an **explicit confirmation overlay** from A-08, with target identity and side-by-side role diff: Added vs Removed. | **PROPOSED** |
-| **AW-31** | Require **reason, target-impact acknowledgement and MFA** before role change; preserve a stable, informative failure state. | **PROPOSED** UX (core AW-28/AP-D05 CONFIRMED) |
-| **AW-32** | Show distinct recovery UI for **permission revoked, concurrency conflict, MFA expiry, unknown network result**; no blind retry. | **PROPOSED** (underlying AD-04/AD-10 CONFIRMED) |
-| **AW-33** | Warn about **active-session access impact** and highlight last-Super-Admin protection and no-op/self-edit invalid states before confirmation. | **PROPOSED** UX (underlying AD-01/02 CONFIRMED) |
+| **AW-30** | A-09 is an **explicit confirmation overlay** from A-08, with target identity and side-by-side role diff: Added vs Removed. | **CONFIRMED** |
+| **AW-31** | Require **reason, target-impact acknowledgement and MFA** before role change; preserve a stable, informative failure state. | **CONFIRMED** UX (core AW-28/AP-D05 CONFIRMED) |
+| **AW-32** | Show distinct recovery UI for **permission revoked, concurrency conflict, MFA expiry, unknown network result**; no blind retry. | **CONFIRMED** (underlying AD-04/AD-10 CONFIRMED) |
+| **AW-33** | Warn about **active-session access impact** and highlight last-Super-Admin protection and no-op/self-edit invalid states before confirmation. | **CONFIRMED** UX (underlying AD-01/02 CONFIRMED) |
 
 ## 7. Open questions and limits
 
@@ -86,7 +86,12 @@ A-09 is best implemented as **dialog/overlay launched from A-08** with a readabl
 ## 8. Progress
 
 - A-01…A-08: approved low-fi (Figma for A-01/02; standalone HTML for A-03…A-08).
-- **A-09:** standalone HTML low-fi **DRAFT / AWAITING REVIEW**; no Figma frame, no production feature.
+- **A-09:** standalone HTML low-fi **APPROVED**; no Figma frame, no production feature.
 - A-10 Audit History: next planned screen.
 
 **References:** [A-08](./13-admin-user-role-management-wireframe.md), [Admin Permission Matrix](./04-admin-portal.md), [Layout Stability](./11-global-layout-stability-guidelines.md), [Decision Log](../idea-summarize/06-decisions-and-open-questions.md).
+
+
+## 9. Approval record — CONFIRMED (2026-11-25)
+
+**D-066 / AW-APP-08:** Người dùng: “Tốt, tôi đồng ý và xác nhận tất cả các đề xuất mới của ông”. Chấp thuận **toàn bộ wireframe HTML low-fi A-09** và bốn đề xuất **AW-30…AW-33**: dialog xác nhận mở từ A-08 hiển thị role diff, xác nhận lý do/tác động/MFA, phản hồi lỗi theo loại và cảnh báo session/last Super Admin. **Figma A-09 chưa tạo**, chưa có backend / MFA thật / audit persistence. Những chính sách chi tiết về provider MFA, session invalidation và transaction vẫn OPEN; không tự coi bản demo đã vượt qua kiểm thử bảo mật thực tế.
