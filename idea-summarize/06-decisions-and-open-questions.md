@@ -386,3 +386,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-065 / AW-APP-07** | Phê duyệt **A-08 HTML low-fi** và **AW-26…AW-29**: Admin list + detail panel có filter và audit preview; tạo Admin bằng email + chọn nhiều role + tên tùy chọn, không nhập mật khẩu thay; thay đổi quyền/trạng thái cần xác nhận, lý do, acknowledgement và MFA; bảo vệ Super Admin cuối cùng, không cho tự sửa role tại A-08 và giải thích các nút bị khóa. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** A-08 Figma frame chưa tạo; backend, activation, MFA và audit chưa triển khai. Các lựa chọn chi tiết về invitation Admin, khả năng delegated Admin xem danh sách read-only, cơ chế khôi phục Super Admin cuối cùng và A-09 vẫn **OPEN**. [Spec A-08](../ux-design/13-admin-user-role-management-wireframe.md).
+
+
+## AB. CONFIRMED — A-09 Permission Change Confirmation HTML wireframe (2026-11-25)
+
+**Người dùng xác nhận:** “Tốt, tôi đồng ý và xác nhận tất cả các đề xuất mới của ông”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-066 / AW-APP-08** | Phê duyệt **A-09 HTML low-fi** và **AW-30…AW-33**: modal xác nhận từ A-08 so sánh role thêm/thu hồi; lý do, xác nhận tác động và MFA; lỗi quyền/concurrency/MFA expiry/network được xử lý riêng; cảnh báo ảnh hưởng phiên đăng nhập, bảo vệ Super Admin cuối cùng và chặn tự sửa role. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** Figma A-09 chưa tạo; chưa có MFA thật, backend, audit persistence hoặc final policy về invalidation session. Các mục này vẫn **OPEN**. [Chi tiết A-09](../ux-design/14-admin-permission-change-confirmation-wireframe.md). Tiếp theo **A-10 Admin Audit History**.
