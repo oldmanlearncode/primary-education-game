@@ -112,4 +112,9 @@
 
 ## Phase 2.4 — A-08 Admin User & Role Management (2026-11-24)
 
-**A-08 standalone HTML interactive LOW-FI DRAFT CREATED — AWAITING USER REVIEW.** Super Admin-only role/account management demo: searchable admin table, multi-role, pending activation, explicit confirmation+reason, MFA/error scenarios, last-Super protection, and stable table layout. [Specification 13](./13-admin-user-role-management-wireframe.md). **AW-26…AW-29 are PROPOSED**, no Figma A-08 frame and no production backend/authorization. A-01…A-07 remain approved as previously recorded.
+**A-08 HTML LOW-FI APPROVED (2026-11-25).** Super Admin-only role/account management demo: searchable admin table, multi-role, pending activation, explicit confirmation+reason, MFA/error scenarios, last-Super protection, and stable table layout. [Specification 13](./13-admin-user-role-management-wireframe.md). **AW-26…AW-29 CONFIRMED (D-065)**, no Figma A-08 frame and no production backend/authorization. A-01…A-07 remain approved as previously recorded.
+
+
+## Phase 2.4 — A-08 approval (2026-11-25)
+
+**A-08 Admin User & Role Management APPROVED at HTML low-fi level**; **AW-26…AW-29 CONFIRMED** per D-065. [UX spec](./13-admin-user-role-management-wireframe.md). Figma A-08 not created; backend role enforcement, invitation activation, MFA provider and Super Admin emergency recovery not yet implemented/fully defined. Next: **A-09 Permission Change Confirmation**.
