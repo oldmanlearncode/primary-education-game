@@ -258,4 +258,9 @@ User approved the **A-08 HTML low-fi wireframe** and **AW-26…AW-29** (D-065). 
 
 ## 17. A-09 Permission Change Confirmation — HTML draft (2026-11-25)
 
-[UX specification](./14-admin-permission-change-confirmation-wireframe.md). A-09 is a role-change confirmation interaction launched conceptually from A-08, with role-set diff, target identity, reason, acknowledgement and MFA mock; test labs cover revoked permission, conflict, last Super Admin, network unknown and session impact. **AW-30…AW-33 PROPOSED** pending user approval; Figma frame not created and server policies not implemented.
+[UX specification](./14-admin-permission-change-confirmation-wireframe.md). A-09 is a role-change confirmation interaction launched conceptually from A-08, with role-set diff, target identity, reason, acknowledgement and MFA mock; test labs cover revoked permission, conflict, last Super Admin, network unknown and session impact. **AW-30…AW-33 CONFIRMED; A-09 HTML low-fi APPROVED (2026-11-25)**; Figma frame not created and server policies not implemented.
+
+
+## 18. A-09 approval (2026-11-25)
+
+User approved A-09 HTML low-fi and AW-30…AW-33 (D-066). [UX spec](./14-admin-permission-change-confirmation-wireframe.md). MFA is a mock; policy/provider details, server-side authorization and session invalidation implementation remain OPEN. Next: A-10 Audit History.
