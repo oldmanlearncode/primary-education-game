@@ -248,4 +248,9 @@ User explicitly approved both wireframes and the associated AW suggestions. **A-
 
 ## 15. A-08 Admin Users & Roles — HTML draft (2026-11-24)
 
-[UX spec — A-08](./13-admin-user-role-management-wireframe.md). Standalone interactive HTML low-fi created: Super Admin-only create/disable and assign/revoke Admin roles, multi-role, target confirmation, reason/audit mock, viewer role simulation, last active Super Admin guard, concurrency/MFA/permission-revoked states. **AW-26…AW-29 PROPOSED**. **Demo does not set final Admin activation or MFA technical policies.** Figma A-08 NOT CREATED; no actual backend or audit persistence.
+[UX spec — A-08](./13-admin-user-role-management-wireframe.md). Standalone interactive HTML low-fi created: Super Admin-only create/disable and assign/revoke Admin roles, multi-role, target confirmation, reason/audit mock, viewer role simulation, last active Super Admin guard, concurrency/MFA/permission-revoked states. **AW-26…AW-29 CONFIRMED, A-08 HTML low-fi APPROVED (2026-11-25)**. **Demo does not set final Admin activation or MFA technical policies.** Figma A-08 NOT CREATED; no actual backend or audit persistence.
+
+
+## 16. A-08 approval — 2026-11-25
+
+User approved the **A-08 HTML low-fi wireframe** and **AW-26…AW-29** (D-065). This does not approve unfinished A-09 or close technical OPEN items for Admin invitations/MFA/last Super Admin recovery. [Specification](./13-admin-user-role-management-wireframe.md).
