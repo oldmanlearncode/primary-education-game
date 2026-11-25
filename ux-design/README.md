@@ -118,3 +118,8 @@
 ## Phase 2.4 — A-08 approval (2026-11-25)
 
 **A-08 Admin User & Role Management APPROVED at HTML low-fi level**; **AW-26…AW-29 CONFIRMED** per D-065. [UX spec](./13-admin-user-role-management-wireframe.md). Figma A-08 not created; backend role enforcement, invitation activation, MFA provider and Super Admin emergency recovery not yet implemented/fully defined. Next: **A-09 Permission Change Confirmation**.
+
+
+## Phase 2.4 — A-09 Permission Change Confirmation (2026-11-25)
+
+**A-09 HTML low-fi interactive DRAFT created; awaiting user review.** Includes before/after role diff, modal confirmation with mandatory reason + acknowledgement + simulated MFA, last Super Admin guard, conflict/revoked permissions/network/MFA-expired scenarios. [A-09 specification](./14-admin-permission-change-confirmation-wireframe.md). **AW-30…AW-33 PROPOSED**, not yet approved. **Figma A-09 NOT CREATED**, no real backend/authorization/MFA. A-01…A-08 approval statuses unchanged. Next candidate: A-10 Audit History.
