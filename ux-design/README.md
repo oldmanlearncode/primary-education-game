@@ -128,3 +128,8 @@
 ## Phase 2.4 — A-09 approval (2026-11-25)
 
 **A-09 Permission Change Confirmation HTML low-fi APPROVED; AW-30…AW-33 CONFIRMED** as decision **D-066**. [Specification](./14-admin-permission-change-confirmation-wireframe.md). A-09 still lacks Figma frame; backend MFA, session invalidation, audit and conflict validation remain implementation work. **Next UX screen: A-10 Admin Audit History.**
+
+
+## Phase 2.4 — A-10 Admin Audit History (2026-11-25)
+
+**A-10 standalone HTML interactive low-fi DRAFT created, awaiting review.** Mock event table, before/after event detail, filter/date/search/pagination, role+scope+ticket simulation, explicit denied/network states and globally approved Layout Shift prevention. [UX specification](./15-admin-audit-history-wireframe.md). **AW-34…AW-37 PROPOSED (not approved)**. The 🔒 audit permissions are still conditioned on role/scope/context policy; demo fixtures must not be mistaken for the final authorization matrix. **Figma A-10 NOT CREATED**, no real audit backend or immutable storage. A-01…A-09 approvals unchanged.
