@@ -375,3 +375,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 **Ranh giới:** A-06/A-07 chưa có Figma frame, không có API hay backend thật. **Quy tắc xử lý khi thiết bị offline chưa đồng bộ là OPEN**; AW-25 duyệt cảnh báo và xử lý UX thận trọng, không chốt chính sách chặn/hoãn/cho phép thao tác. Các quyết định kỹ thuật rate-limit, token retry/reissue và transaction boundary vẫn OPEN.
 
 **Specs:** [A-06](../ux-design/12-admin-suspend-restore-confirmation-wireframe.md) · [A-07](../ux-design/10-admin-invitation-management-wireframe.md).
+
+
+## AA. CONFIRMED — A-08 Admin User & Role Management (2026-11-25)
+
+**Người dùng xác nhận:** “Tốt rồi, tôi đồng ý với màn hình và các đề xuất của ông.”
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-065 / AW-APP-07** | Phê duyệt **A-08 HTML low-fi** và **AW-26…AW-29**: Admin list + detail panel có filter và audit preview; tạo Admin bằng email + chọn nhiều role + tên tùy chọn, không nhập mật khẩu thay; thay đổi quyền/trạng thái cần xác nhận, lý do, acknowledgement và MFA; bảo vệ Super Admin cuối cùng, không cho tự sửa role tại A-08 và giải thích các nút bị khóa. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** A-08 Figma frame chưa tạo; backend, activation, MFA và audit chưa triển khai. Các lựa chọn chi tiết về invitation Admin, khả năng delegated Admin xem danh sách read-only, cơ chế khôi phục Super Admin cuối cùng và A-09 vẫn **OPEN**. [Spec A-08](../ux-design/13-admin-user-role-management-wireframe.md).
