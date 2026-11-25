@@ -254,3 +254,8 @@ User explicitly approved both wireframes and the associated AW suggestions. **A-
 ## 16. A-08 approval — 2026-11-25
 
 User approved the **A-08 HTML low-fi wireframe** and **AW-26…AW-29** (D-065). This does not approve unfinished A-09 or close technical OPEN items for Admin invitations/MFA/last Super Admin recovery. [Specification](./13-admin-user-role-management-wireframe.md).
+
+
+## 17. A-09 Permission Change Confirmation — HTML draft (2026-11-25)
+
+[UX specification](./14-admin-permission-change-confirmation-wireframe.md). A-09 is a role-change confirmation interaction launched conceptually from A-08, with role-set diff, target identity, reason, acknowledgement and MFA mock; test labs cover revoked permission, conflict, last Super Admin, network unknown and session impact. **AW-30…AW-33 PROPOSED** pending user approval; Figma frame not created and server policies not implemented.
