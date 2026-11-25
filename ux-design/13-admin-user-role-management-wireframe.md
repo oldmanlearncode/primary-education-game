@@ -1,6 +1,6 @@
 # 13 — A-08 Admin User & Role Management: UX Wireframe
 
-> **Phase 2 UX · 2026-11-24 · HTML LOW-FI DRAFT / AWAITING USER REVIEW**  
+> **Phase 2 UX · 2026-11-24 · ✅ HTML LOW-FI APPROVED — AW-26…AW-29 CONFIRMED**  
 > Interactive standalone artifact: `A-08-admin-user-role-management.html` in the conversation. **No Figma frame A-08 created.** Demo only: no real API, invitations, MFA, user authorization, session invalidation or persistent audit.
 
 ## 1. Confirmed principles and guardrails
@@ -69,14 +69,14 @@ Simulated fault modes: permission revoked before submit, concurrency conflict, n
 - **Audit and account state:** `DISABLED`, `SUSPENDED`, `PENDING_ACTIVATION` have distinct meanings. This demo's Admin-specific state transitions are **not production-lifecycle decisions**.
 - **Scope/privacy:** Admin-management permissions do not imply permission to inspect child records, raw attempts, mastery or family data.
 
-## 6. Proposed AW items — awaiting explicit approval
+## 6. Approved AW items — CONFIRMED (2026-11-25)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-26** | Use a permission-aware **Admin list + detail panel** with role/status filters, stable icon actions, and scoped audit preview. | **PROPOSED** |
-| **AW-27** | New Admin UX: required email + multi-role selection + optional name; initial pending activation, no direct password entry. | **PROPOSED** |
-| **AW-28** | Changes to Admin roles or account status require target review, reason, explicit acknowledgment and MFA; present conflicts/revoked permissions separately. | **PROPOSED** UI (MFA/permissions/audit principles CONFIRMED) |
-| **AW-29** | Protect the last active Super Admin in UI; avoid self-editing Admin roles in A-08; explain disabled actions. | **PROPOSED** UI (AD-01/AD-02 principles CONFIRMED) |
+| **AW-26** | Use a permission-aware **Admin list + detail panel** with role/status filters, stable icon actions, and scoped audit preview. | **CONFIRMED** |
+| **AW-27** | New Admin UX: required email + multi-role selection + optional name; initial pending activation, no direct password entry. | **CONFIRMED** |
+| **AW-28** | Changes to Admin roles or account status require target review, reason, explicit acknowledgment and MFA; present conflicts/revoked permissions separately. | **CONFIRMED** UX (MFA/permissions/audit principles CONFIRMED) |
+| **AW-29** | Protect the last active Super Admin in UI; avoid self-editing Admin roles in A-08; explain disabled actions. | **CONFIRMED** UX (AD-01/AD-02 principles CONFIRMED) |
 
 ## 7. Items not decided by this wireframe
 
@@ -91,8 +91,15 @@ Simulated fault modes: permission revoked before submit, concurrency conflict, n
 ## 8. Current status
 
 - **A-01…A-07 HTML/Figma low-fi approved**, Figma for A-03…A-07 not created.
-- **A-08 DRAFT** (HTML low-fi); **AW-26…AW-29 PROPOSED**.
+- **A-08 APPROVED** (HTML low-fi); **AW-26…AW-29 CONFIRMED**.
 - **Global Layout Shift minimization D-062 CONFIRMED**.
 - Next UX screen: **A-09 Permission Change Confirmation** after A-08 review.
 
 Sources: [A-06](./12-admin-suspend-restore-confirmation-wireframe.md), [Permission Matrix](./04-admin-portal.md), [Decision Log](../idea-summarize/06-decisions-and-open-questions.md).
+
+
+## 9. Approval record — CONFIRMED (2026-11-25)
+
+**D-065 / AW-APP-07:** Người dùng: “Tốt rồi, tôi đồng ý với màn hình và các đề xuất của ông.” — xác nhận **toàn bộ HTML low-fi A-08** và **AW-26…AW-29** (danh sách + panel, tạo Admin email/đa role, xác nhận + lý do + MFA, bảo vệ Super Admin cuối cùng và không tự sửa role ở A-08).
+
+**Ranh giới:** chỉ duyệt bố cục/tương tác wireframe; chưa có A-08 Figma frame, production API, email activation, MFA thật hoặc audit bền vững. **Không coi việc duyệt AW-27 là chốt hạ tầng invitation Admin hoặc quy trình khôi phục Super Admin cuối cùng.** Các vấn đề OPEN mục 7 vẫn còn mở. Màn tiếp theo: **A-09 Permission Change Confirmation**.
