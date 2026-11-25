@@ -264,3 +264,8 @@ User approved the **A-08 HTML low-fi wireframe** and **AW-26…AW-29** (D-065). 
 ## 18. A-09 approval (2026-11-25)
 
 User approved A-09 HTML low-fi and AW-30…AW-33 (D-066). [UX spec](./14-admin-permission-change-confirmation-wireframe.md). MFA is a mock; policy/provider details, server-side authorization and session invalidation implementation remain OPEN. Next: A-10 Audit History.
+
+
+## 19. A-10 Admin Audit History — HTML low-fi draft (2026-11-25)
+
+[A-10 UX specification](./15-admin-audit-history-wireframe.md). Local HTML demo: read-only, permission-aware audit list and details, counters from authorized rows, filters including date/outcome/action, mock role/scope/ticket visibility and negative states. **AW-34…AW-37 PROPOSED**, pending user review. Exact 🔒 permission scope, retention, immutable logging, export rules and backend authentication remain OPEN; no Figma frame.
