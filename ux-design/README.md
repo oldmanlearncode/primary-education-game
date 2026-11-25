@@ -122,4 +122,9 @@
 
 ## Phase 2.4 — A-09 Permission Change Confirmation (2026-11-25)
 
-**A-09 HTML low-fi interactive DRAFT created; awaiting user review.** Includes before/after role diff, modal confirmation with mandatory reason + acknowledgement + simulated MFA, last Super Admin guard, conflict/revoked permissions/network/MFA-expired scenarios. [A-09 specification](./14-admin-permission-change-confirmation-wireframe.md). **AW-30…AW-33 PROPOSED**, not yet approved. **Figma A-09 NOT CREATED**, no real backend/authorization/MFA. A-01…A-08 approval statuses unchanged. Next candidate: A-10 Audit History.
+**A-09 HTML LOW-FI APPROVED (2026-11-25).** Includes before/after role diff, modal confirmation with mandatory reason + acknowledgement + simulated MFA, last Super Admin guard, conflict/revoked permissions/network/MFA-expired scenarios. [A-09 specification](./14-admin-permission-change-confirmation-wireframe.md). **AW-30…AW-33 CONFIRMED (D-066)**. **Figma A-09 NOT CREATED**, no real backend/authorization/MFA. A-01…A-08 approval statuses unchanged. Next candidate: A-10 Audit History.
+
+
+## Phase 2.4 — A-09 approval (2026-11-25)
+
+**A-09 Permission Change Confirmation HTML low-fi APPROVED; AW-30…AW-33 CONFIRMED** as decision **D-066**. [Specification](./14-admin-permission-change-confirmation-wireframe.md). A-09 still lacks Figma frame; backend MFA, session invalidation, audit and conflict validation remain implementation work. **Next UX screen: A-10 Admin Audit History.**
