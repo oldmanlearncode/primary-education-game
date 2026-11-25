@@ -73,7 +73,7 @@
 | A-05 | Parent Account Detail | CORE | [UX spec + standalone HTML](./09-admin-parent-account-detail-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-13…AW-16 CONFIRMED: state-aware actions, reason confirmation, audit preview, child data minimization |
 | A-06 | Suspend / Restore Confirmation | CORE | [UX spec + HTML demo](./12-admin-suspend-restore-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-22…AW-25 CONFIRMED; offline conflict policy OPEN |
 | A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-17…AW-20 CONFIRMED, AW-21 Layout Stability CONFIRMED |
-| A-08 | Admin User & Role Management | SUPPORT | [HTML draft + UX spec](./13-admin-user-role-management-wireframe.md) — **DRAFT; Figma NOT CREATED** | Multi-role, Super Admin-only management, MFA/conflict/last Super Admin simulations; AW-26…AW-29 awaiting review |
+| A-08 | Admin User & Role Management | SUPPORT | [HTML wireframe + UX spec](./13-admin-user-role-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-26…AW-29 CONFIRMED; multi-role, Super Admin-only management, MFA/conflict/last Super Admin guard |
 | A-09 | Permission Change Confirmation | SUPPORT | Chưa | Hành động nhạy cảm |
 | A-10 | Admin Audit History | CORE | Chưa | Ai / lúc nào / vì sao |
 | A-11 | Access Recovery & Support | SUPPORT | Chưa | Không xem mật khẩu |
