@@ -138,3 +138,8 @@
 ## Phase 2.4 — A-10 approval (2026-11-27)
 
 **A-10 Admin Audit History HTML low-fi APPROVED; AW-34…AW-37 CONFIRMED** per decision **D-067**. [A-10 UX spec](./15-admin-audit-history-wireframe.md). Permission scope details for 🔒, audit retention, immutable storage, data redaction/export remain OPEN. Figma A-10 not created, no backend integration. **Next: A-11 Access Recovery & Support.**
+
+
+## Phase 2.4 — A-11 Access Recovery & Support (2026-11-27)
+
+**A-11 HTML interactive low-fi DRAFT created — awaiting review.** Includes ticket list and details, access/scope simulator, safe guidance/resolve mock, delivery failure, expired invite, account suspension and Admin MFA recovery escalation. [UX specification](./16-admin-access-recovery-support-wireframe.md). **AW-38…AW-41 PROPOSED, not yet approved.** Recovery-provider settings, self-service password reset, delegated Support permissions and Super Admin emergency recovery remain OPEN. **Figma A-11 NOT CREATED, no backend/email delivery.** A-01…A-10 approvals unchanged.
