@@ -284,3 +284,8 @@ User confirmed the A-10 HTML low-fi wireframe and AW-34…AW-37 as D-067. The ap
 ## 22. A-11 approval — 2026-11-27
 
 User approved A-11 HTML low-fi and AW-38…AW-41 as decision D-068. Scoped support, separated recovery cases, secure confirmation and error handling are accepted at UX level. Self-service password flow, exact SUPPORT_OPERATOR 🔒 permissions, Admin MFA recovery, token/notification and backend implementation remain OPEN. [A-11 UX spec](./16-admin-access-recovery-support-wireframe.md). Next A-12 is FUTURE/scope review, not automatically MVP.
+
+
+## 23. A-12 Content Quality Operations — HTML draft (2026-11-27)
+
+[UX specification A-12](./17-admin-content-quality-operations-wireframe.md). Standalone HTML demo provides question report queue, topic/severity/status filters, question source and correct-answer review, severity and aggregate impact display, triage/quarantine/proposed correction/resolve states, content reviewer authorization lab, conflict/revoked permission and multi-question incident warnings. **AW-42…AW-45 PROPOSED**, awaiting review. **A-12 remains FUTURE/scope review**, not automatically MVP; its production correction engine, parent notification, content versioning, and exact conditional 🔒 access scopes remain OPEN. No Figma frame or backend.
