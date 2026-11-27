@@ -176,3 +176,8 @@ The V2 demo is **UX-only**, no real learning-outcome recalculation. **AW-42…AW
 | **AW-47 (revised)** | Keep **report state history hidden by default** in the main panel. Show an explicit **“Xem lịch sử xử lý báo cáo” button** opening a scoped popup table of transitions; each row opens an optional reason/justification popup. Link to canonical audit in backend. | **PROPOSED** |
 
 **Approval boundary:** A-12 V4, **AW-42…AW-48 remain DRAFT / PROPOSED**; user feedback is not treated as final approval. A-12 remains FUTURE / scope review, not automatically MVP. Figma A-12 and backend remain not implemented.
+
+
+## 11. Minor UX refinement — V5 column label (2026-11-27) — DRAFT
+
+Following user screenshot feedback, renamed the Eye-action table header from **“Lý do”** to **“Chi tiết”** in both the **Lịch sử xử lý báo cáo** dialog and **Toàn bộ Audit** dialog. This more accurately represents an action that opens a popup with event metadata **and** the reason. Only the header text changed; icon, popup behavior, records and layout remain unchanged. Updated conversation artifact: `A-12-content-quality-operations-v5.html`. **A-12 and AW-42…AW-48 remain DRAFT / PROPOSED**, pending explicit approval.
