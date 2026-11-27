@@ -1,0 +1,5 @@
+# 19 — Progressive Disclosure
+**CONFIRMED — D-070 / UX-GLOBAL-02 / AFR-D01, 2026-11-27.** Applies to Child World, Parent Portal and Admin Portal.
+Show essential task information first; expose secondary detail on demand via appropriate dialogs, drawers, expansion or separate views. Never hide critical warnings, primary actions, consent, learning instructions or information needed for informed decisions. Preserve context, focus and state on closing details; label controls clearly, support keyboard and responsive use. Authorization applies to hidden information too: UI concealment is not security. Use D-062 to minimize unexpected layout shifts; intentional expansion is acceptable.
+Examples: A-12 history popup and per-event Chi tiết; recent Audit preview plus full scoped history; parent progress summary plus detailed learning evidence; child-friendly hints on demand without hiding necessary instructions.
+Acceptance: primary task understandable without opening secondary details; clear discovery; no extra clicks for essential information; correct scope, focus return, responsive layout and regression checks. Exact component choices depend on context.
