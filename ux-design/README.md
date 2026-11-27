@@ -148,3 +148,8 @@
 ## Phase 2.4 — A-11 approval (2026-11-27)
 
 **A-11 Access Recovery & Support HTML low-fi APPROVED; AW-38…AW-41 CONFIRMED** (D-068). [Specification](./16-admin-access-recovery-support-wireframe.md). Figma A-11 remains not created; recovery infrastructure, conditional support scopes and Super Admin MFA recovery remain OPEN. **Next UX screen: A-12 Content Quality Operations**, previously marked FUTURE/scope review; do not assume it is MVP.
+
+
+## Phase 2.4 — A-12 Content Quality Operations (2026-11-27)
+
+**A-12 HTML low-fi DRAFT created; awaiting user review.** Review queue, source/answer detail, risk severity, triage/quarantine/correction status flow, aggregated session impact and bulk-error warning, role/scope simulation and mock audit. [UX specification](./17-admin-content-quality-operations-wireframe.md). **AW-42…AW-45 PROPOSED, NOT APPROVED.** A-12 remains **FUTURE / scope review**, so drawing it does not add it to MVP. Child raw attempts/mastery are not edited; no real recomputation/notification happens. Figma A-12 NOT CREATED; no backend. A-01…A-11 remain approved. After A-12 review, review all 12 Admin low-fi screens, outstanding policies and Figma sync backlog.
