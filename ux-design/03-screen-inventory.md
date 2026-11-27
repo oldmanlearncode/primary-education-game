@@ -76,7 +76,7 @@
 | A-08 | Admin User & Role Management | SUPPORT | [HTML wireframe + UX spec](./13-admin-user-role-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-26…AW-29 CONFIRMED; multi-role, Super Admin-only management, MFA/conflict/last Super Admin guard |
 | A-09 | Permission Change Confirmation | SUPPORT | [HTML wireframe + UX spec](./14-admin-permission-change-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-30…AW-33 CONFIRMED; role diff, reason, acknowledgement, MFA mock, conflict/security states |
 | A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-34…AW-37 CONFIRMED: scoped read-only events, filters, sanitized detail, stable table |
-| A-11 | Access Recovery & Support | SUPPORT | Chưa | Không xem mật khẩu |
+| A-11 | Access Recovery & Support | SUPPORT | [HTML wireframe + UX spec](./16-admin-access-recovery-support-wireframe.md) — **DRAFT; Figma NOT CREATED** | Ticket list, parent/admin recovery categories, scope-aware support, no password/MFA reset bypass; AW-38…AW-41 PROPOSED |
 | A-12 | Content Quality Operations | FUTURE | Chưa | Phạm vi TBD; có thể tách role |
 
 **Tổng số màn/overlay được kiểm kê: 57** (9 Entry + 17 Child + 19 Parent + 12 Admin); không đồng nghĩa toàn bộ thuộc MVP.
