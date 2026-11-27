@@ -163,3 +163,8 @@ User requested a reason/justification view **at each state transition**, without
 ## Current Admin Portal approval (2026-11-27)
 
 **A-12 V5 HTML low-fi APPROVED; AW-42…AW-48 CONFIRMED (D-069). All 12/12 Admin Portal low-fi screens A-01…A-12 APPROVED.** This supersedes historical draft notes above. V5 includes corrected-answer editor and separate result impact preview, on-demand processing history and per-transition details, six recent audit records and full searchable/filterable/paginated audit. [Spec A-12](./17-admin-content-quality-operations-wireframe.md). **A-12 remains FUTURE/scope review, not automatically MVP**; Figma and production implementation remain undone. Next: Admin Portal UX Final Review; this is not completion of Phase 2 globally.
+
+
+## Admin Portal UX Final Review (2026-11-27)
+
+[18 — Admin Portal UX Final Review](./18-admin-portal-final-review.md): review findings, integration and QA gaps, open policy gates, proposed common UI and progressive disclosure, Figma backlog. **REVIEW DRAFT / awaiting user approval**. All 12 existing low-fi approvals remain unchanged; no new decisions confirmed. Phase 2 remains IN PROGRESS.
