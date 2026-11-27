@@ -268,4 +268,9 @@ User approved A-09 HTML low-fi and AW-30…AW-33 (D-066). [UX spec](./14-admin-p
 
 ## 19. A-10 Admin Audit History — HTML low-fi draft (2026-11-25)
 
-[A-10 UX specification](./15-admin-audit-history-wireframe.md). Local HTML demo: read-only, permission-aware audit list and details, counters from authorized rows, filters including date/outcome/action, mock role/scope/ticket visibility and negative states. **AW-34…AW-37 PROPOSED**, pending user review. Exact 🔒 permission scope, retention, immutable logging, export rules and backend authentication remain OPEN; no Figma frame.
+[A-10 UX specification](./15-admin-audit-history-wireframe.md). Local HTML demo: read-only, permission-aware audit list and details, counters from authorized rows, filters including date/outcome/action, mock role/scope/ticket visibility and negative states. **AW-34…AW-37 CONFIRMED; A-10 HTML low-fi APPROVED (2026-11-27)**. Exact 🔒 permission scope, retention, immutable logging, export rules and backend authentication remain OPEN; no Figma frame.
+
+
+## 20. A-10 approval — 2026-11-27
+
+User confirmed the A-10 HTML low-fi wireframe and AW-34…AW-37 as D-067. The approval is for UX, not server-side 🔒 policy, audit retention, immutable storage or data export. [A-10 specification](./15-admin-audit-history-wireframe.md). Next UX screen: A-11 Access Recovery & Support.
