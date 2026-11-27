@@ -397,3 +397,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-066 / AW-APP-08** | Phê duyệt **A-09 HTML low-fi** và **AW-30…AW-33**: modal xác nhận từ A-08 so sánh role thêm/thu hồi; lý do, xác nhận tác động và MFA; lỗi quyền/concurrency/MFA expiry/network được xử lý riêng; cảnh báo ảnh hưởng phiên đăng nhập, bảo vệ Super Admin cuối cùng và chặn tự sửa role. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** Figma A-09 chưa tạo; chưa có MFA thật, backend, audit persistence hoặc final policy về invalidation session. Các mục này vẫn **OPEN**. [Chi tiết A-09](../ux-design/14-admin-permission-change-confirmation-wireframe.md). Tiếp theo **A-10 Admin Audit History**.
+
+
+## AC. CONFIRMED — A-10 Admin Audit History HTML wireframe (2026-11-27)
+
+**Người dùng xác nhận:** “Okay tôi đồng ý và xác nhận màn hình này và các đề xuất”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-067 / AW-APP-09** | Phê duyệt **A-10 HTML low-fi** và **AW-34…AW-37**: bảng Audit read-only cùng thống kê, tìm kiếm/bộ lọc và chi tiết sự kiện; metadata trước/sau được lọc dữ liệu nhạy cảm; quyền xem áp dụng trên totals/list/detail theo role + scope + context; hạn chế Layout Shift bằng icon và độ rộng cột ổn định. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** Chưa có frame Figma A-10 hoặc backend audit; chưa chốt policy chi tiết cho các ô 🔒, retention, export, redaction/immutable storage. [Spec A-10](../ux-design/15-admin-audit-history-wireframe.md). **Tiếp theo: A-11 Access Recovery & Support.**
