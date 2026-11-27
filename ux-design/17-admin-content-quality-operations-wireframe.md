@@ -1,6 +1,6 @@
 # 17 — A-12 Content Quality Operations: UX Wireframe
 
-> **2026-11-27 · HTML LOW-FI DRAFT / AWAITING REVIEW**  
+> **2026-11-27 · ✅ HTML LOW-FI V5 APPROVED — AW-42…AW-48 CONFIRMED**  
 > Standalone interactive demo: `A-12-content-quality-operations.html` attached in conversation. **No Figma A-12 frame**, no real review backend, notification service or learning-evidence updates. **A-12 remains FUTURE / scope review**, not automatically included in MVP.
 
 ## 1. Confirmed decisions reused
@@ -69,12 +69,12 @@ Close report after approval and verification
 | Correction pending | Cannot directly edit raw attempts/mastery; only advance mock report state |
 | Empty/search no match | Clear no-results state and stable layout |
 
-## 5. Proposals for review — NOT CONFIRMED
+## 5. Approved UX proposals — CONFIRMED (2026-11-27)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-42** | A-12 layout: permission-aware question-report queue, filters, selected report review detail, aggregated impact and audit preview. | **PROPOSED** |
-| **AW-43** | Review progression `NEW → TRIAGED → QUARANTINED / CORRECTION_PENDING → RESOLVED`, with separate safety quarantine and explicit professional review. Exact backend state machine OPEN. | **PROPOSED** |
+| **AW-42** | A-12 layout: permission-aware question-report queue, filters, selected report review detail, aggregated impact and audit preview. | **CONFIRMED** |
+| **AW-43** | Review progression `NEW → TRIAGED → QUARANTINED / CORRECTION_PENDING → RESOLVED`, with separate safety quarantine and explicit professional review. Exact backend state machine OPEN. | **CONFIRMED** |
 | **AW-44** | Before closing a confirmed content defect, require **impact assessment and correction workflow** for already-used questions; keep raw learning evidence immutable, calculate amendments in a separate auditable process and notify parents as appropriate. | **PROPOSED UX**, EC-03 principle CONFIRMED |
 | **AW-45** | Context-specific role/scope controls, mandatory reason/acknowledgement, bulk-error escalation, conflict/network/permission states and Layout Shift minimization. | **PROPOSED UX**, underlying security/layout principles CONFIRMED |
 
@@ -92,7 +92,7 @@ Close report after approval and verification
 ## 7. Current progress and approval boundary
 
 - **A-01…A-11:** low-fidelity UX approved (Figma A-01/A-02; other HTML low-fi).
-- **A-12:** HTML interactive low-fi **DRAFT / NEEDS REVIEW**, AW-42…AW-45 PROPOSED.
+- **A-12:** HTML interactive low-fi **V5 APPROVED**, AW-42…AW-48 CONFIRMED.
 - Completing A-12 review will complete the **current 12-screen Admin Portal inventory at low-fi level**, **not** the full product UX phase or all outstanding technical decisions.
 - No Figma frame for A-12 and no functional content-moderation backend delivered.
 
@@ -181,3 +181,22 @@ The V2 demo is **UX-only**, no real learning-outcome recalculation. **AW-42…AW
 ## 11. Minor UX refinement — V5 column label (2026-11-27) — DRAFT
 
 Following user screenshot feedback, renamed the Eye-action table header from **“Lý do”** to **“Chi tiết”** in both the **Lịch sử xử lý báo cáo** dialog and **Toàn bộ Audit** dialog. This more accurately represents an action that opens a popup with event metadata **and** the reason. Only the header text changed; icon, popup behavior, records and layout remain unchanged. Updated conversation artifact: `A-12-content-quality-operations-v5.html`. **A-12 and AW-42…AW-48 remain DRAFT / PROPOSED**, pending explicit approval.
+
+
+## 12. FINAL APPROVAL — D-069 / A-12 V5 (2026-11-27)
+
+**User:** “OK rồi, đồng ý với màn hình này và xác nhận các đề xuất của ông”. User explicitly approves **A-12 HTML V5 low-fi UX and AW-42…AW-48**. Earlier DRAFT/PROPOSED statements in the V1–V5 iteration history are **historical and superseded**.
+
+| ID | Confirmed UX scope | Status |
+|---|---|---|
+| AW-42 | Scoped question report queue, filters, review detail, aggregate impact, audit preview | **CONFIRMED** |
+| AW-43 | Triage vs quarantine distinct; review lifecycle separated from serving eligibility | **CONFIRMED** |
+| AW-44 | Impact assessment, separately approved auditable learning-evidence amendment, preserve original attempts, parent notice when appropriate | **CONFIRMED** |
+| AW-45 | Role/scope checks, reasons, bulk-error escalation, errors/conflicts and layout stability | **CONFIRMED** |
+| AW-46 | Explicit corrected answer/explanation, new question version; distinct historical learning-result correction flow | **CONFIRMED** |
+| AW-47 | On-demand report history popup; each transition has **Chi tiết** to inspect its reason/justification | **CONFIRMED** |
+| AW-48 | Six recent audits as preview; full audit with pagination, subject/severity filters and search by IDs/questions/topic/message/reason | **CONFIRMED** |
+
+**V5 UI refinement:** use **Chi tiết**, not **Lý do**, as Eye-action column header in report history and full audit. 
+
+**Boundaries:** 12/12 Admin Portal screens **APPROVED at low-fidelity UX level**, not full Phase 2 completion. A-12 remains **FUTURE / scope review**, not automatically MVP. No Figma A-12, backend, real recalculation, notification or immutable audit implementation. Detailed risk and policy rules remain OPEN. Next: **Admin Portal UX Final Review**.
