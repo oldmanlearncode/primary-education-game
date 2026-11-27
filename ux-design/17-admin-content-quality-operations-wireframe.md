@@ -156,3 +156,23 @@ The V2 demo is **UX-only**, no real learning-outcome recalculation. **AW-42…AW
 | **AW-48** | The recent-audit preview is limited to six, **full audit is not**: offer **Xem toàn bộ Audit** with pagination, search by event/report/question/topic/message/reason, filter by subject and severity, scope-safe results and details. | **PROPOSED** |
 
 **Implementation status:** Standalone file `A-12-content-quality-operations-v3.html` created and JS syntax checked, with fixture history, action reason popups, 18 seeded audit events, paginated full-history overlay, role/scope gating and stable columns/buttons. V3 is UX simulation only. **A-12 remains DRAFT; AW-42…AW-48 are NOT CONFIRMED**, pending explicit review. A-12 remains FUTURE/scope-review, not automatically MVP.
+
+
+## 10. Reviewer feedback — V4 progressive disclosure (2026-11-27) — DRAFT / NOT APPROVED
+
+**Feedback:** User requested that **Lịch sử xử lý báo cáo** should NOT be rendered as an inline timeline within the crowded Question Review & Impact panel. Instead, show **a button**, which opens a popup similar to **Xem toàn bộ Audit**; within the popup, the user may inspect the reasons for each transition on demand.
+
+**Implemented in HTML V4:** `A-12-content-quality-operations-v4.html` (conversation attachment).
+
+- In the Question Review & Impact panel, replace the always-visible transition history list with one action: **“Xem lịch sử xử lý báo cáo (N)”**. Count `N` is the number of steps for the selected authorized report, visible without rendering their full details.
+- On click, open an **on-demand, wide dialog** with a stable table: timestamp, prior → new status, action, actor, fixed-width **Eye** control to show the transition's reason/justification.
+- The **reason popup** appears over the history dialog. Dismissing it returns to the history dialog; Escape closes only the topmost open dialog.
+- Zero-history state remains readable in the popup. On role/scope change or revoked access, close dialog and hide report details; no cross-scope history disclosure. The full Audit browser and its filters/pagination are **unchanged**.
+- Use D-062 stable dimensions (fixed-size icon buttons, table columns) and mobile horizontal overflow. Native focus trapping, screen-reader and keyboard audit, production CLS remain future accessibility/QA work.
+- Browser smoke-tested V4: open/close history, seeded QR-106 two transitions, nested reason modal, Escape for topmost modal, full Audit browser; no JS page errors in test.
+
+| ID | Updated proposal | Status |
+|---|---|---|
+| **AW-47 (revised)** | Keep **report state history hidden by default** in the main panel. Show an explicit **“Xem lịch sử xử lý báo cáo” button** opening a scoped popup table of transitions; each row opens an optional reason/justification popup. Link to canonical audit in backend. | **PROPOSED** |
+
+**Approval boundary:** A-12 V4, **AW-42…AW-48 remain DRAFT / PROPOSED**; user feedback is not treated as final approval. A-12 remains FUTURE / scope review, not automatically MVP. Figma A-12 and backend remain not implemented.
