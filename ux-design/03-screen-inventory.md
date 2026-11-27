@@ -75,7 +75,7 @@
 | A-07 | Invitations: status/resend/revoke | CORE | [UX spec + HTML wireframe](./10-admin-invitation-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-17…AW-20 CONFIRMED, AW-21 Layout Stability CONFIRMED |
 | A-08 | Admin User & Role Management | SUPPORT | [HTML wireframe + UX spec](./13-admin-user-role-management-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-26…AW-29 CONFIRMED; multi-role, Super Admin-only management, MFA/conflict/last Super Admin guard |
 | A-09 | Permission Change Confirmation | SUPPORT | [HTML wireframe + UX spec](./14-admin-permission-change-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-30…AW-33 CONFIRMED; role diff, reason, acknowledgement, MFA mock, conflict/security states |
-| A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **DRAFT; Figma NOT CREATED** | Scoped read-only events, search/date/action/outcome filters, detail diff, denied/error states; AW-34…AW-37 PROPOSED |
+| A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-34…AW-37 CONFIRMED: scoped read-only events, filters, sanitized detail, stable table |
 | A-11 | Access Recovery & Support | SUPPORT | Chưa | Không xem mật khẩu |
 | A-12 | Content Quality Operations | FUTURE | Chưa | Phạm vi TBD; có thể tách role |
 
