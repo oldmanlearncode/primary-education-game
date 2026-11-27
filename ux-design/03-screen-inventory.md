@@ -77,7 +77,7 @@
 | A-09 | Permission Change Confirmation | SUPPORT | [HTML wireframe + UX spec](./14-admin-permission-change-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-30…AW-33 CONFIRMED; role diff, reason, acknowledgement, MFA mock, conflict/security states |
 | A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-34…AW-37 CONFIRMED: scoped read-only events, filters, sanitized detail, stable table |
 | A-11 | Access Recovery & Support | SUPPORT | [HTML wireframe + UX spec](./16-admin-access-recovery-support-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-38…AW-41 CONFIRMED; scoped recovery tickets, no credential exposure or locked-account bypass |
-| A-12 | Content Quality Operations | FUTURE | Chưa | Phạm vi TBD; có thể tách role |
+| A-12 | Content Quality Operations | FUTURE / scope review | [HTML wireframe + UX spec](./17-admin-content-quality-operations-wireframe.md) — **DRAFT; Figma NOT CREATED** | Question reports, triage/quarantine, correction/impact preview, role/scope controls; AW-42…AW-45 PROPOSED; not automatically MVP |
 
 **Tổng số màn/overlay được kiểm kê: 57** (9 Entry + 17 Child + 19 Parent + 12 Admin); không đồng nghĩa toàn bộ thuộc MVP.
 
