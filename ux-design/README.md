@@ -142,4 +142,9 @@
 
 ## Phase 2.4 — A-11 Access Recovery & Support (2026-11-27)
 
-**A-11 HTML interactive low-fi DRAFT created — awaiting review.** Includes ticket list and details, access/scope simulator, safe guidance/resolve mock, delivery failure, expired invite, account suspension and Admin MFA recovery escalation. [UX specification](./16-admin-access-recovery-support-wireframe.md). **AW-38…AW-41 PROPOSED, not yet approved.** Recovery-provider settings, self-service password reset, delegated Support permissions and Super Admin emergency recovery remain OPEN. **Figma A-11 NOT CREATED, no backend/email delivery.** A-01…A-10 approvals unchanged.
+**A-11 HTML interactive low-fi DRAFT created — awaiting review.** Includes ticket list and details, access/scope simulator, safe guidance/resolve mock, delivery failure, expired invite, account suspension and Admin MFA recovery escalation. [UX specification](./16-admin-access-recovery-support-wireframe.md). **AW-38…AW-41 CONFIRMED (D-068).** Recovery-provider settings, self-service password reset, delegated Support permissions and Super Admin emergency recovery remain OPEN. **Figma A-11 NOT CREATED, no backend/email delivery.** A-01…A-10 approvals unchanged.
+
+
+## Phase 2.4 — A-11 approval (2026-11-27)
+
+**A-11 Access Recovery & Support HTML low-fi APPROVED; AW-38…AW-41 CONFIRMED** (D-068). [Specification](./16-admin-access-recovery-support-wireframe.md). Figma A-11 remains not created; recovery infrastructure, conditional support scopes and Super Admin MFA recovery remain OPEN. **Next UX screen: A-12 Content Quality Operations**, previously marked FUTURE/scope review; do not assume it is MVP.
