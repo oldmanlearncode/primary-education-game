@@ -1,6 +1,6 @@
 # 15 — A-10 Admin Audit History: UX Wireframe & Interactions
 
-> **2026-11-25 · HTML LOW-FI DRAFT / AWAITING USER REVIEW**  
+> **2026-11-25 · ✅ HTML LOW-FI APPROVED — AW-34…AW-37 CONFIRMED**  
 > Interactive HTML supplied in conversation as `A-10-admin-audit-history.html`. **No Figma A-10 frame created, no backend audit/log access, no product code.** Demo has entirely synthetic records.
 
 ## 1. Confirmed foundations
@@ -72,14 +72,14 @@ Admin shell
 | Browser zoom / narrow viewport | Horizontal scrolling without hiding action column, accessible full value details |
 | Same actor with multiple roles | Effective scope must be computed using permissions + resource/context, not mere role label |
 
-## 6. Proposed decisions — NOT CONFIRMED
+## 6. Approved UX decisions — CONFIRMED (2026-11-27)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-34** | A-10 uses **read-only Audit Table + Filters + Selected Event Detail**, with summary counters only for authorized scope. | **PROPOSED** |
-| **AW-35** | Search and filter by actor/target/action/outcome/time; before/after **sanitized metadata** in detail; no edit/delete action on audit. | **PROPOSED** (audit principle already confirmed) |
-| **AW-36** | Permission-aware **role + resource scope + context** filtering for event list **and totals and details**, explicit denial/error states and support ticket scoping. | **PROPOSED** UI (D-051/AD-08 underlying decisions CONFIRMED) |
-| **AW-37** | Stable fixed-width icon action and table sizing; clear accessible selection; keep event details from causing reflow in the table. | **PROPOSED** A-10 application of globally CONFIRMED D-062 / AW-21 |
+| **AW-34** | A-10 uses **read-only Audit Table + Filters + Selected Event Detail**, with summary counters only for authorized scope. | **CONFIRMED** |
+| **AW-35** | Search and filter by actor/target/action/outcome/time; before/after **sanitized metadata** in detail; no edit/delete action on audit. | **CONFIRMED** (audit principle already confirmed) |
+| **AW-36** | Permission-aware **role + resource scope + context** filtering for event list **and totals and details**, explicit denial/error states and support ticket scoping. | **CONFIRMED** UX (D-051/AD-08 underlying decisions CONFIRMED) |
+| **AW-37** | Stable fixed-width icon action and table sizing; clear accessible selection; keep event details from causing reflow in the table. | **CONFIRMED** A-10 application of globally CONFIRMED D-062 / AW-21 |
 
 ## 7. Not yet decided
 
@@ -93,6 +93,13 @@ Admin shell
 ## 8. Approval boundary
 
 **A-01…A-09: low-fi APPROVED** (A-01/A-02 have Figma; A-03…A-09 approved HTML).  
-**A-10: HTML LOW-FI DRAFT, pending user review**. No actual data, no live auth, no audit backend, no Figma frame. Next planned UX: **A-11 Access Recovery & Support**.
+**A-10: HTML LOW-FI APPROVED (2026-11-27)**. No actual data, no live auth, no audit backend, no Figma frame. Next planned UX: **A-11 Access Recovery & Support**.
 
 References: [Admin Portal Permission Matrix](./04-admin-portal.md), [Global Layout Stability](./11-global-layout-stability-guidelines.md), [A-09](./14-admin-permission-change-confirmation-wireframe.md), [Screen Inventory](./03-screen-inventory.md), [Decision Log](../idea-summarize/06-decisions-and-open-questions.md).
+
+
+## 9. Approval record — CONFIRMED (2026-11-27)
+
+**D-067 / AW-APP-09:** Người dùng: “Okay tôi đồng ý và xác nhận màn hình này và các đề xuất”. Phê duyệt **toàn bộ A-10 HTML low-fi wireframe** và **AW-34…AW-37**: bảng audit read-only + filter + detail, trước/sau thay đổi đã lọc dữ liệu, quyền xem kiểm soát theo role/scope/context trên thống kê/danh sách/chi tiết, icon/trạng thái chọn ổn định chống Layout Shift.
+
+**Ranh giới:** A-10 chưa có frame Figma, backend thực tế, immutable audit storage hay permissions thực thi. Việc duyệt UX **không chốt** quy tắc chi tiết cho các ô 🔒, retention, export hoặc redaction policy; các mục này vẫn OPEN. Tiếp theo: **A-11 Access Recovery & Support**.
