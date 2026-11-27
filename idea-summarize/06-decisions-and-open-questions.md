@@ -430,3 +430,8 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-069 / AW-APP-11** | Chốt **A-12 V5 HTML low-fi** cùng **AW-42…AW-48**: queue và panel review; Triage khác Quarantine; sửa đáp án/giải thích qua version mới, đánh giá lại ảnh hưởng phiên học theo quy trình độc lập không sửa raw attempts; kiểm soát role/scope/incident; **Xem lịch sử xử lý báo cáo** ở popup có từng nút **Chi tiết**; sáu Audit gần nhất chỉ là preview, full Audit hỗ trợ filter/search/pagination. | **CONFIRMED — HTML LOW-FI APPROVED** |
 
 **Trạng thái:** **12/12 màn Admin Portal A-01…A-12 đã được duyệt ở mức UX low-fi**. A-12 vẫn **FUTURE / scope review**, không tự động nằm trong MVP. Figma A-03…A-12, nội dung hệ thống backend, quy tắc tính lại điểm/mastery, quyền 🔒, thông báo và audit retention còn OPEN. [A-12 spec](../ux-design/17-admin-content-quality-operations-wireframe.md). Bước kế tiếp: Admin Portal UX Final Review.
+
+
+## 2026-11-27 — D-070 / UX-GLOBAL-02 / AFR-D01…AFR-D04
+
+**CONFIRMED by user:** all four AFR proposals; especially Progressive Disclosure: “không hiển thị mọi thông tin ngay từ đầu; cho phép người dùng mở chi tiết khi cần”. Global guideline [19 — Progressive Disclosure](../ux-design/19-global-progressive-disclosure-guidelines.md). AP-F01 review accepted; AP-F02 component baseline delivered for review [20 — Admin UI Components](../ux-design/20-admin-ui-components.md). AP-F03…08 pending; existing 12 low-fi approvals unchanged; no MVP scope changes or production implementation.
