@@ -153,3 +153,8 @@
 ## Phase 2.4 — A-12 Content Quality Operations (2026-11-27)
 
 **A-12 HTML low-fi DRAFT created; awaiting user review.** Review queue, source/answer detail, risk severity, triage/quarantine/correction status flow, aggregated session impact and bulk-error warning, role/scope simulation and mock audit. [UX specification](./17-admin-content-quality-operations-wireframe.md). **AW-42…AW-45 PROPOSED, NOT APPROVED.** A-12 remains **FUTURE / scope review**, so drawing it does not add it to MVP. Child raw attempts/mastery are not edited; no real recomputation/notification happens. Figma A-12 NOT CREATED; no backend. A-01…A-11 remain approved. After A-12 review, review all 12 Admin low-fi screens, outstanding policies and Figma sync backlog.
+
+
+## A-12 V3 review iteration (2026-11-27)
+
+User requested a reason/justification view **at each state transition**, without inspecting global audit, and a way to browse **all older audit events**, beyond the six-item preview, with paging, subject/severity filters and search by IDs/question/topic/message. New HTML low-fi `A-12-content-quality-operations-v3.html` provides both. **AW-47 and AW-48 PROPOSED, awaiting explicit user approval**; prior AW-42…AW-46 and A-12 remain DRAFT. [Specification 17](./17-admin-content-quality-operations-wireframe.md). No backend/persistent audit or scope policy implementation.
