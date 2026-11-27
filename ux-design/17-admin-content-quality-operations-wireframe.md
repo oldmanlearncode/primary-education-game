@@ -125,3 +125,34 @@ The updated standalone HTML `A-12-content-quality-operations-v2.html` is now lin
 - **AW-46 (PROPOSED):** A-12 must have an explicit correction editor (old/new answer and explanation, immutable new question version) **and** a distinct post-correction impact-assessment/amendment-approval step before a confirmed defect can be fully resolved. Quarantine/triage must be described separately; production should track review and serving states independently. User feedback identified this omission; the detailed solution remains pending user approval.
 
 The V2 demo is **UX-only**, no real learning-outcome recalculation. **AW-42…AW-45 and AW-46 remain PROPOSED; A-12 remains DRAFT / NOT APPROVED**.
+
+
+## 9. Reviewer feedback and UX V3 (2026-11-27) — DRAFT / NOT APPROVED
+
+**User feedback:** “Các lý do và căn cứ xử lý chưa có chỗ hiển thị ngoài Audit, như vậy sẽ rất phức tạp nếu phải đi check từng Audit. Đề xuất có phương án hiển thị lý do theo từng bước chuyển trạng thái (có thể có một button để hiển thị popup, khi nào người dùng muốn check thì mới click vào xem, ko cần hiển thị tất cả sẵn). Audit đang hiển thị 6 cái mới nhất, những cái cũ hơn nếu người dùng muốn check thì làm thế nào xem -> đề xuất có phương án xem full audit với phân trang và filter theo môn, mức độ, tìm mã/câu hỏi/chủ đề/nội dung message.”
+
+### A. Per-report transition history (V3)
+
+- In the selected **Question Review & Impact** details, include a **Lịch sử xử lý báo cáo** timeline with each `from_status → to_status`, action, actor and timestamp.
+- Each transition gets a fixed-layout **Xem lý do** action. Click opens an on-demand modal showing **full reason and professional justification**, event metadata and exact transition. Avoid placing every long reason inline.
+- The reason is **captured at submit-time** together with the transition record. It is no longer discoverable only through the global audit feed.
+- One event should have a stable reference connecting its report workflow transition and append-only audit entry. **Demo V3 keeps both in RAM but does not implement a backend reference, immutable log or transaction atomicity.**
+- Role/scope/context filtering applies to transition reasons too, not only the table; no sensitive data can be fetched solely by guessed event ID.
+
+### B. Global audit browser with paging and filters (V3)
+
+- Sidebar card shows **six most recent authorized events only**, plus **Xem toàn bộ Audit** button.
+- Full audit browser is an overlay with **pagination (six rows per demo page)**; **never truncate the actual event history to six**.
+- Search across event/report ID, question ID, topic, audit message **and reason**; filter by **subject** and **severity**. Default is all authorized events in the current mock scope. Detail `Xem lý do` is available from full audit rows too.
+- Real backend must enforce permission/scope/context **prior to count, filter, pagination or details**. On scope change / revocation, hide unauthorized records, including counts and reasons.
+- Browser pagination here is in-memory. Production calls for server-side cursor-based pagination or another stable strategy, consistent sort order, retention and indexes (OPEN).
+- Keep selected row, filters and overlay dimensions stable to honor D-062; keyboard focus trapping/accessibility and measured CLS are still for production QA.
+
+### Proposed new decisions (NOT CONFIRMED)
+
+| ID | Proposal | Status |
+|---|---|---|
+| **AW-47** | Each content-report state transition stores a **reviewable reason/justification**, visible on-demand through **Xem lý do** popup in a per-report timeline; maintain a canonical linkage to the global audit event and enforce its access scope. | **PROPOSED** |
+| **AW-48** | The recent-audit preview is limited to six, **full audit is not**: offer **Xem toàn bộ Audit** with pagination, search by event/report/question/topic/message/reason, filter by subject and severity, scope-safe results and details. | **PROPOSED** |
+
+**Implementation status:** Standalone file `A-12-content-quality-operations-v3.html` created and JS syntax checked, with fixture history, action reason popups, 18 seeded audit events, paginated full-history overlay, role/scope gating and stable columns/buttons. V3 is UX simulation only. **A-12 remains DRAFT; AW-42…AW-48 are NOT CONFIRMED**, pending explicit review. A-12 remains FUTURE/scope-review, not automatically MVP.
