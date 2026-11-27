@@ -158,3 +158,8 @@
 ## A-12 V3 review iteration (2026-11-27)
 
 User requested a reason/justification view **at each state transition**, without inspecting global audit, and a way to browse **all older audit events**, beyond the six-item preview, with paging, subject/severity filters and search by IDs/question/topic/message. New HTML low-fi `A-12-content-quality-operations-v3.html` provides both. **AW-47 and AW-48 PROPOSED, awaiting explicit user approval**; prior AW-42…AW-46 and A-12 remain DRAFT. [Specification 17](./17-admin-content-quality-operations-wireframe.md). No backend/persistent audit or scope policy implementation.
+
+
+## Current Admin Portal approval (2026-11-27)
+
+**A-12 V5 HTML low-fi APPROVED; AW-42…AW-48 CONFIRMED (D-069). All 12/12 Admin Portal low-fi screens A-01…A-12 APPROVED.** This supersedes historical draft notes above. V5 includes corrected-answer editor and separate result impact preview, on-demand processing history and per-transition details, six recent audit records and full searchable/filterable/paginated audit. [Spec A-12](./17-admin-content-quality-operations-wireframe.md). **A-12 remains FUTURE/scope review, not automatically MVP**; Figma and production implementation remain undone. Next: Admin Portal UX Final Review; this is not completion of Phase 2 globally.
