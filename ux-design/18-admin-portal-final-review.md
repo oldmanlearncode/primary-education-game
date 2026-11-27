@@ -1,5 +1,5 @@
 # 18 — Admin Portal UX Final Review
-> 2026-11-27 · REVIEW DRAFT / awaiting user approval. All 12 low-fi screens remain approved (D-058…D-069); this review does not reopen approvals or finalize Phase 2/MVP.
+> 2026-11-27 · REVIEW APPROVED — AFR-D01…AFR-D04 CONFIRMED; remediation in progress. All 12 low-fi screens remain approved (D-058…D-069); this review does not reopen approvals or finalize Phase 2/MVP.
 
 ## Evidence and limitations
 Reviewed screen inventory 03, admin architecture 04, provisioning 05, specs 07–17, README and decision log. Inspected ten actual HTML files A-03…A-12 (A-12 V5); node --check passed all ten inline scripts. Static link inspection found six broken relative links in A-08/A-10/A-11 to A-03 and A-07 because files are split between directories. No full browser interaction regression, measured CLS, accessibility audit or live Figma inspection was performed in this review. A-01/02 approval and limitations are documented in inventory, not independently visually verified. No backend security claims.
@@ -12,7 +12,7 @@ Reviewed screen inventory 03, admin architecture 04, provisioning 05, specs 07�
 | AFR-03 | P1 | Complete A-01 MFA/session/error variants and A-02 dashboard variants for the other three roles (inventory explicitly incomplete). |
 | AFR-04 | P1 | Verify exact conditional permissions before implementation: list, counts, detail, actions and audit must all use scope/context. Preserve D-051; no automatic Super Admin content approval or child data access. |
 | AFR-05 | P1 | Reconcile current documentation: admin architecture table still says Chưa for all 12; historical PROPOSED labels coexist with later approvals; A-12 header links original HTML instead of V5. Preserve dated history, make current status explicit. |
-| AFR-06 | P2 | Standardize progressive disclosure (on-demand history/detail dialogs; audit preview plus full scoped history); proposed global rule, not yet confirmed. |
+| AFR-06 | P2 | Standardize progressive disclosure (on-demand history/detail dialogs; audit preview plus full scoped history); global rule confirmed by D-070. |
 | AFR-07 | P1 | Browser regression: narrow viewport, keyboard/focus, dialogs, long Vietnamese labels, loading/error/selection, CLS; no blanket pass yet. |
 | AFR-08 | P2 | Figma backlog A-03…A-12; A-01/02 variants; previous MCP limit documented, current quota not tested. |
 
@@ -26,11 +26,16 @@ Reviewed screen inventory 03, admin architecture 04, provisioning 05, specs 07�
 ## Open decision gates
 Before detailed implementation: conditional authorization policies, last Super Admin bootstrap/recovery, admin MFA recovery, parent self-service password reset, offline/active child session behavior, audit retention/redaction/export, admin invitation/state policy, content quarantine/severity/batch correction, learning amendments and notification policies. A-12 FUTURE requires separate scope decision; EC-03 confirmed correction obligation must have a viable operational path even if A-12 not MVP. Do not infer policies from mock fixtures.
 
-## New proposals (PROPOSED)
+## Approved proposals (CONFIRMED)
 - AFR-D01: Standardize common Admin UI patterns and progressive disclosure; propose generalizing on-demand detail/history across product when appropriate.
 - AFR-D02: Consolidated prototype package and cross-screen regression before Admin UX handoff.
 - AFR-D03: Maintain a current-status register separate from historical review notes and prioritize security/business policy gates before backend.
 - AFR-D04: Figma sync and accessibility/layout QA backlog; no premature full Phase 2 completion.
 
 ## Handoff gate
-12/12 approved layouts, but consolidated prototype and review findings remain OPEN. No product code or approved decision changed. Next: user review of priorities and proposals, then remediation and remaining product UX screens.
+12/12 approved layouts, but consolidated prototype and review findings remain OPEN. No product code or approved decision changed. Next: remediation and remaining product UX screens. AP-F02 component baseline created, awaiting review.
+
+
+## 2026-11-27 — D-070 / UX-GLOBAL-02 / AFR-D01…AFR-D04
+
+**CONFIRMED by user:** all four AFR proposals; especially Progressive Disclosure: “không hiển thị mọi thông tin ngay từ đầu; cho phép người dùng mở chi tiết khi cần”. Global guideline [19 — Progressive Disclosure](./19-global-progressive-disclosure-guidelines.md). AP-F01 review accepted; AP-F02 component baseline delivered for review [20 — Admin UI Components](./20-admin-ui-components.md). AP-F03…08 pending; existing 12 low-fi approvals unchanged; no MVP scope changes or production implementation.
