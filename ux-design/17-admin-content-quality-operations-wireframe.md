@@ -97,3 +97,31 @@ Close report after approval and verification
 - No Figma frame for A-12 and no functional content-moderation backend delivered.
 
 Links: [Admin Portal & Permission Matrix](./04-admin-portal.md), [Screen Inventory](./03-screen-inventory.md), [A-10 Audit](./15-admin-audit-history-wireframe.md), [Global Layout Stability](./11-global-layout-stability-guidelines.md), [Decision Log](../idea-summarize/06-decisions-and-open-questions.md).
+
+
+## 8. Reviewer feedback and UX V2 correction (2026-11-27) — DRAFT, NOT YET APPROVED
+
+**Feedback:** User asked why no visible step to fix wrong answer, e.g. `2 × 4 = ?` has saved answer `6` but correct answer `8`, and what distinguishes **Triage** from **Quarantine**. This is a **request for design correction and explanation**, **not approval** of A-12 or AW-42…AW-45.
+
+### Triage vs quarantine: two independent concerns
+
+- **Triage** = inspect/verify a reported defect, classify impact, severity, ownership, and next step. A question can remain under review; triage itself does not change the question or stop serving it.
+- **Quarantine** = make a risky question/version ineligible for **new sessions**. Quarantine is a protective serving-policy action, not a fix or evidence reassessment. It may be initiated before complete triage when clearly unsafe/wrong; must be authorized and audited. Already-started/offline sessions require an additional content-policy mechanism (OPEN).
+- Production should **not conflate workflow and serving status**: recommended separate `review_status` from `serving_status`, rather than a single ambiguous status field. Earlier low-fi states `NEW/TRIAGED/QUARANTINED/CORRECTION_PENDING/RESOLVED` are illustrative, not final backend schema.
+
+### A-12 V2 correction editor and separate impact step
+
+The updated standalone HTML `A-12-content-quality-operations-v2.html` is now linked in the conversation. The local flow illustrates:
+
+1. **Triage** and optionally **Quarantine** original `questionId=Q-MUL-0021` v1, stored answer `6`.
+2. **Propose Correction** with explicit editable **correct answer `8`** and **explanation `2 × 4 = 8`**, saved as an **in-memory proposed v2** without overwriting v1.
+3. **Assess learning impact** separately: show the estimated 37 related sessions, create an *in-memory mock amendment preview*. The preview does not contain per-child scores and is not a computed grade adjustment.
+4. **Approve/close content review** only after the proposed correction and impact preview exist. Closing in demo represents an updated **mock content version only**; it does **not** publish to real sessions, recalculate grades/mastery, grant/withdraw rewards, or notify parents.
+
+**Required real system flow not implemented in HTML:** create immutable versioned correction; find actual affected attempts by question version; re-evaluate original answers with verified new answer; build proposed learning-evidence amendments (with version links, provenance, reason, approval); decide impacts to mastery/spaced repetition/rewards; notify parents; audit and retry idempotently; handle multiple wrong questions via incident/batch workflow. The original attempts and old grading evidence remain unchanged. Correction of displayed answer and correction of historical results are **two distinct workflows**.
+
+### Additional V2 design proposal — NOT CONFIRMED
+
+- **AW-46 (PROPOSED):** A-12 must have an explicit correction editor (old/new answer and explanation, immutable new question version) **and** a distinct post-correction impact-assessment/amendment-approval step before a confirmed defect can be fully resolved. Quarantine/triage must be described separately; production should track review and serving states independently. User feedback identified this omission; the detailed solution remains pending user approval.
+
+The V2 demo is **UX-only**, no real learning-outcome recalculation. **AW-42…AW-45 and AW-46 remain PROPOSED; A-12 remains DRAFT / NOT APPROVED**.
