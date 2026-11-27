@@ -77,7 +77,7 @@
 | A-09 | Permission Change Confirmation | SUPPORT | [HTML wireframe + UX spec](./14-admin-permission-change-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-30…AW-33 CONFIRMED; role diff, reason, acknowledgement, MFA mock, conflict/security states |
 | A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-34…AW-37 CONFIRMED: scoped read-only events, filters, sanitized detail, stable table |
 | A-11 | Access Recovery & Support | SUPPORT | [HTML wireframe + UX spec](./16-admin-access-recovery-support-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-38…AW-41 CONFIRMED; scoped recovery tickets, no credential exposure or locked-account bypass |
-| A-12 | Content Quality Operations | FUTURE / scope review | [HTML wireframe + UX spec](./17-admin-content-quality-operations-wireframe.md) — **DRAFT; Figma NOT CREATED** | Question reports, triage/quarantine, correction/impact preview, role/scope controls; AW-42…AW-45 PROPOSED; not automatically MVP |
+| A-12 | Content Quality Operations | FUTURE / scope review | [HTML wireframe + UX spec](./17-admin-content-quality-operations-wireframe.md) — **DRAFT; Figma NOT CREATED** | Question reports, triage/quarantine, correction/impact preview, role/scope controls; AW-42…AW-48 PROPOSED; not automatically MVP |
 
 **Tổng số màn/overlay được kiểm kê: 57** (9 Entry + 17 Child + 19 Parent + 12 Admin); không đồng nghĩa toàn bộ thuộc MVP.
 
@@ -121,3 +121,6 @@
 **GLOBAL UX RULE D-062 (CONFIRMED):** always proactively minimize unexpected Layout Shift across all experiences; context-specific techniques, accessible responsive behavior. [11 — Guideline](./11-global-layout-stability-guidelines.md). **AW-21 CONFIRMED** for stable table action columns; A-07 fully approved as HTML low-fi; AW-17…AW-20 CONFIRMED (D-063).
 
 **Admin-specific UX states:** invitation pending/expired/revoked, account suspended, duplicate email, session expired, insufficient admin permission, audit recorded, send failure/retry, account has in-progress child session. Wireframe chưa có. [Chi tiết Admin Portal](./04-admin-portal.md).
+
+
+**A-12 V3 (2026-11-27) — DRAFT, NOT APPROVED:** added per-report state transition timeline and on-demand reason modal; full audit browser with 6-event preview, unrestricted historical list, pagination and subject/severity/search filters. **AW-47…AW-48 PROPOSED**, alongside AW-42…AW-46. [Specification](./17-admin-content-quality-operations-wireframe.md). Scope stays FUTURE.
