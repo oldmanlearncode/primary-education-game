@@ -408,3 +408,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-067 / AW-APP-09** | Phê duyệt **A-10 HTML low-fi** và **AW-34…AW-37**: bảng Audit read-only cùng thống kê, tìm kiếm/bộ lọc và chi tiết sự kiện; metadata trước/sau được lọc dữ liệu nhạy cảm; quyền xem áp dụng trên totals/list/detail theo role + scope + context; hạn chế Layout Shift bằng icon và độ rộng cột ổn định. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** Chưa có frame Figma A-10 hoặc backend audit; chưa chốt policy chi tiết cho các ô 🔒, retention, export, redaction/immutable storage. [Spec A-10](../ux-design/15-admin-audit-history-wireframe.md). **Tiếp theo: A-11 Access Recovery & Support.**
+
+
+## AD. CONFIRMED — A-11 Access Recovery & Support HTML wireframe (2026-11-27)
+
+**Người dùng xác nhận:** “Okay, Tôi hoàn toàn đồng ý với các đề xuất và màn hình A-11”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-068 / AW-APP-10** | Phê duyệt **A-11 HTML low-fi** và **AW-38…AW-41**: ticket list/filter/detail + audit theo scope; phân loại Password Reset / Expired Invite / Delivery Failure / Locked Account / Admin-MFA Recovery; thao tác có xác minh quyền, lý do và acknowledgement, không lộ mật khẩu/token hoặc bypass khóa; feedback tách biệt cho các lỗi gửi, hết hạn, quyền, conflict, network. | **CONFIRMED — HTML WIREFRAME APPROVED** |
+
+**Ranh giới:** A-11 chưa có Figma frame, backend/email thật. Self-service password reset, quyền hỗ trợ 🔒 cụ thể, quy trình Super Admin/MFA recovery, token policy và rate limit vẫn **OPEN**. [A-11 UX Spec](../ux-design/16-admin-access-recovery-support-wireframe.md). **A-12 Content Quality Operations** là màn FUTURE/scope review, chưa mặc nhiên thuộc MVP.
