@@ -419,3 +419,14 @@ Xem [08 — Consolidated Review](./08-consolidated-review.md) để duyệt tậ
 | **D-068 / AW-APP-10** | Phê duyệt **A-11 HTML low-fi** và **AW-38…AW-41**: ticket list/filter/detail + audit theo scope; phân loại Password Reset / Expired Invite / Delivery Failure / Locked Account / Admin-MFA Recovery; thao tác có xác minh quyền, lý do và acknowledgement, không lộ mật khẩu/token hoặc bypass khóa; feedback tách biệt cho các lỗi gửi, hết hạn, quyền, conflict, network. | **CONFIRMED — HTML WIREFRAME APPROVED** |
 
 **Ranh giới:** A-11 chưa có Figma frame, backend/email thật. Self-service password reset, quyền hỗ trợ 🔒 cụ thể, quy trình Super Admin/MFA recovery, token policy và rate limit vẫn **OPEN**. [A-11 UX Spec](../ux-design/16-admin-access-recovery-support-wireframe.md). **A-12 Content Quality Operations** là màn FUTURE/scope review, chưa mặc nhiên thuộc MVP.
+
+
+## AE. CONFIRMED — A-12 Content Quality Operations V5 (2026-11-27)
+
+**Người dùng xác nhận:** “OK rồi, đồng ý với màn hình này và xác nhận các đề xuất của ông”.
+
+| ID | Quyết định | Trạng thái |
+|---|---|---|
+| **D-069 / AW-APP-11** | Chốt **A-12 V5 HTML low-fi** cùng **AW-42…AW-48**: queue và panel review; Triage khác Quarantine; sửa đáp án/giải thích qua version mới, đánh giá lại ảnh hưởng phiên học theo quy trình độc lập không sửa raw attempts; kiểm soát role/scope/incident; **Xem lịch sử xử lý báo cáo** ở popup có từng nút **Chi tiết**; sáu Audit gần nhất chỉ là preview, full Audit hỗ trợ filter/search/pagination. | **CONFIRMED — HTML LOW-FI APPROVED** |
+
+**Trạng thái:** **12/12 màn Admin Portal A-01…A-12 đã được duyệt ở mức UX low-fi**. A-12 vẫn **FUTURE / scope review**, không tự động nằm trong MVP. Figma A-03…A-12, nội dung hệ thống backend, quy tắc tính lại điểm/mastery, quyền 🔒, thông báo và audit retention còn OPEN. [A-12 spec](../ux-design/17-admin-content-quality-operations-wireframe.md). Bước kế tiếp: Admin Portal UX Final Review.
