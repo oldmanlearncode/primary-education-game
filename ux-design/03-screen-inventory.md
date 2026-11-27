@@ -77,7 +77,7 @@
 | A-09 | Permission Change Confirmation | SUPPORT | [HTML wireframe + UX spec](./14-admin-permission-change-confirmation-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-30…AW-33 CONFIRMED; role diff, reason, acknowledgement, MFA mock, conflict/security states |
 | A-10 | Admin Audit History | CORE | [HTML wireframe + UX spec](./15-admin-audit-history-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-34…AW-37 CONFIRMED: scoped read-only events, filters, sanitized detail, stable table |
 | A-11 | Access Recovery & Support | SUPPORT | [HTML wireframe + UX spec](./16-admin-access-recovery-support-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-38…AW-41 CONFIRMED; scoped recovery tickets, no credential exposure or locked-account bypass |
-| A-12 | Content Quality Operations | FUTURE / scope review | [HTML wireframe + UX spec](./17-admin-content-quality-operations-wireframe.md) — **DRAFT; Figma NOT CREATED** | Question reports, triage/quarantine, correction/impact preview, role/scope controls; AW-42…AW-48 PROPOSED; not automatically MVP |
+| A-12 | Content Quality Operations | FUTURE / scope review | [UX spec + V5 HTML](./17-admin-content-quality-operations-wireframe.md) — **APPROVED HTML LOW-FI; Figma NOT CREATED** | AW-42…AW-48 CONFIRMED; correction + impact, report history popup, full audit; not automatically MVP |
 
 **Tổng số màn/overlay được kiểm kê: 57** (9 Entry + 17 Child + 19 Parent + 12 Admin); không đồng nghĩa toàn bộ thuộc MVP.
 
@@ -124,3 +124,6 @@
 
 
 **A-12 V3 (2026-11-27) — DRAFT, NOT APPROVED:** added per-report state transition timeline and on-demand reason modal; full audit browser with 6-event preview, unrestricted historical list, pagination and subject/severity/search filters. **AW-47…AW-48 PROPOSED**, alongside AW-42…AW-46. [Specification](./17-admin-content-quality-operations-wireframe.md). Scope stays FUTURE.
+
+
+**CURRENT A-12 STATUS (2026-11-27):** V5 HTML LOW-FI **APPROVED**, AW-42…AW-48 **CONFIRMED** under D-069; earlier V3 draft text above is historical. **12/12 Admin Portal low-fi wireframes approved**, Figma A-03…A-12 not yet created. A-12 FUTURE/scope review, no MVP commitment. [Spec](./17-admin-content-quality-operations-wireframe.md).
