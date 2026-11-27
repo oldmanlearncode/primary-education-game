@@ -132,4 +132,9 @@
 
 ## Phase 2.4 — A-10 Admin Audit History (2026-11-25)
 
-**A-10 standalone HTML interactive low-fi DRAFT created, awaiting review.** Mock event table, before/after event detail, filter/date/search/pagination, role+scope+ticket simulation, explicit denied/network states and globally approved Layout Shift prevention. [UX specification](./15-admin-audit-history-wireframe.md). **AW-34…AW-37 PROPOSED (not approved)**. The 🔒 audit permissions are still conditioned on role/scope/context policy; demo fixtures must not be mistaken for the final authorization matrix. **Figma A-10 NOT CREATED**, no real audit backend or immutable storage. A-01…A-09 approvals unchanged.
+**A-10 HTML LOW-FI APPROVED (2026-11-27).** Mock event table, before/after event detail, filter/date/search/pagination, role+scope+ticket simulation, explicit denied/network states and globally approved Layout Shift prevention. [UX specification](./15-admin-audit-history-wireframe.md). **AW-34…AW-37 CONFIRMED (D-067)**. The 🔒 audit permissions are still conditioned on role/scope/context policy; demo fixtures must not be mistaken for the final authorization matrix. **Figma A-10 NOT CREATED**, no real audit backend or immutable storage. A-01…A-09 approvals unchanged.
+
+
+## Phase 2.4 — A-10 approval (2026-11-27)
+
+**A-10 Admin Audit History HTML low-fi APPROVED; AW-34…AW-37 CONFIRMED** per decision **D-067**. [A-10 UX spec](./15-admin-audit-history-wireframe.md). Permission scope details for 🔒, audit retention, immutable storage, data redaction/export remain OPEN. Figma A-10 not created, no backend integration. **Next: A-11 Access Recovery & Support.**
