@@ -274,3 +274,8 @@ User approved A-09 HTML low-fi and AW-30…AW-33 (D-066). [UX spec](./14-admin-p
 ## 20. A-10 approval — 2026-11-27
 
 User confirmed the A-10 HTML low-fi wireframe and AW-34…AW-37 as D-067. The approval is for UX, not server-side 🔒 policy, audit retention, immutable storage or data export. [A-10 specification](./15-admin-audit-history-wireframe.md). Next UX screen: A-11 Access Recovery & Support.
+
+
+## 21. A-11 Access Recovery & Support — HTML draft (2026-11-27)
+
+[A-11 UX specification](./16-admin-access-recovery-support-wireframe.md). Standalone HTML mock for ticket-based access recovery, filters, incident types, limited scope and audit; mock failed delivery/expired invitation/conflict/permission states. **AW-38…AW-41 PROPOSED**, pending approval. Parent account suspension cannot be bypassed by password reset. Super Admin/MFA recovery implementation is a separately controlled workflow and remains OPEN. No Figma frame, backend recovery service or real email dispatch.
