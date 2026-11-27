@@ -288,4 +288,9 @@ User approved A-11 HTML low-fi and AW-38…AW-41 as decision D-068. Scoped suppo
 
 ## 23. A-12 Content Quality Operations — HTML draft (2026-11-27)
 
-[UX specification A-12](./17-admin-content-quality-operations-wireframe.md). Standalone HTML demo provides question report queue, topic/severity/status filters, question source and correct-answer review, severity and aggregate impact display, triage/quarantine/proposed correction/resolve states, content reviewer authorization lab, conflict/revoked permission and multi-question incident warnings. **AW-42…AW-45 PROPOSED**, awaiting review. **A-12 remains FUTURE/scope review**, not automatically MVP; its production correction engine, parent notification, content versioning, and exact conditional 🔒 access scopes remain OPEN. No Figma frame or backend.
+[UX specification A-12](./17-admin-content-quality-operations-wireframe.md). Standalone HTML demo provides question report queue, topic/severity/status filters, question source and correct-answer review, severity and aggregate impact display, triage/quarantine/proposed correction/resolve states, content reviewer authorization lab, conflict/revoked permission and multi-question incident warnings. **AW-42…AW-48 CONFIRMED; A-12 V5 HTML LOW-FI APPROVED (D-069, 2026-11-27)**. **A-12 remains FUTURE/scope review**, not automatically MVP; its production correction engine, parent notification, content versioning, and exact conditional 🔒 access scopes remain OPEN. No Figma frame or backend.
+
+
+## 24. A-12 V5 approval — 2026-11-27
+
+**A-12 Content Quality Operations V5 approved at HTML low-fi level; AW-42…AW-48 CONFIRMED** (D-069). Content correction versioning vs historical evidence impact, triage vs quarantine, on-demand report history, and full audit browser accepted as UX. [A-12 spec](./17-admin-content-quality-operations-wireframe.md). **All 12/12 Admin Portal screens approved at low-fi level only**. A-12 retains FUTURE/scope-review categorization; Figma and unresolved business/security policies remain open. Next: Admin Portal UX Final Review.
