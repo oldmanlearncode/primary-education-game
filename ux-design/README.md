@@ -168,3 +168,8 @@ User requested a reason/justification view **at each state transition**, without
 ## Admin Portal UX Final Review (2026-11-27)
 
 [18 — Admin Portal UX Final Review](./18-admin-portal-final-review.md): review findings, integration and QA gaps, open policy gates, proposed common UI and progressive disclosure, Figma backlog. **REVIEW DRAFT / awaiting user approval**. All 12 existing low-fi approvals remain unchanged; no new decisions confirmed. Phase 2 remains IN PROGRESS.
+
+
+## 2026-11-27 — D-070 / UX-GLOBAL-02 / AFR-D01…AFR-D04
+
+**CONFIRMED by user:** all four AFR proposals; especially Progressive Disclosure: “không hiển thị mọi thông tin ngay từ đầu; cho phép người dùng mở chi tiết khi cần”. Global guideline [19 — Progressive Disclosure](./19-global-progressive-disclosure-guidelines.md). AP-F01 review accepted; AP-F02 component baseline delivered for review [20 — Admin UI Components](./20-admin-ui-components.md). AP-F03…08 pending; existing 12 low-fi approvals unchanged; no MVP scope changes or production implementation.
