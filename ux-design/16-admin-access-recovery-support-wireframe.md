@@ -1,6 +1,6 @@
 # 16 — A-11 Access Recovery & Support: UX Wireframe
 
-> **2026-11-27 · HTML LOW-FI DRAFT / AWAITING REVIEW**  
+> **2026-11-27 · ✅ HTML LOW-FI APPROVED — AW-38…AW-41 CONFIRMED**  
 > Local interactive HTML: `A-11-access-recovery-support.html` (conversation artifact). **No Figma frame A-11 created**; no backend, real emails, recovery tokens or MFA implementation.
 
 ## 1. Purpose
@@ -67,14 +67,14 @@ Demo action behavior:
 | Loading / slow network | Reserve stable skeleton dimensions (future production implementation) |
 | Sensitive audit | No plaintext passwords, raw reset tokens, MFA codes or learning records |
 
-## 6. Proposals for review — NOT CONFIRMED
+## 6. Approved UX proposals — CONFIRMED (2026-11-27)
 
 | ID | Proposal | Status |
 |---|---|---|
-| **AW-38** | A-11 uses **permission-aware ticket list + filter toolbar + selected ticket detail + scoped audit preview**, with summary counts only in scope. | **PROPOSED** |
-| **AW-39** | Recovery types are **Password Reset, Expired Invite, Delivery Failure, Locked Account, Admin/MFA Recovery**, each with its own safe handling and escalation. | **PROPOSED** UX categorization |
-| **AW-40** | Help actions require **scope authorization, reason and explicit acknowledgment**; never expose/set password or reset/MFA secrets; cannot bypass suspension. | **PROPOSED** UX (underlying security decisions CONFIRMED) |
-| **AW-41** | Display independent feedback for **failed delivery, expired token, permission lost, concurrent edit and unknown network outcome**, preserving account and avoiding repeated issuance. | **PROPOSED** UX; same principles as prior approved recovery edge cases |
+| **AW-38** | A-11 uses **permission-aware ticket list + filter toolbar + selected ticket detail + scoped audit preview**, with summary counts only in scope. | **CONFIRMED** |
+| **AW-39** | Recovery types are **Password Reset, Expired Invite, Delivery Failure, Locked Account, Admin/MFA Recovery**, each with its own safe handling and escalation. | **CONFIRMED** UX categorization |
+| **AW-40** | Help actions require **scope authorization, reason and explicit acknowledgment**; never expose/set password or reset/MFA secrets; cannot bypass suspension. | **CONFIRMED** UX (underlying security decisions CONFIRMED) |
+| **AW-41** | Display independent feedback for **failed delivery, expired token, permission lost, concurrent edit and unknown network outcome**, preserving account and avoiding repeated issuance. | **CONFIRMED** UX; same principles as prior approved recovery edge cases |
 
 ## 7. Still OPEN / implementation boundaries
 
@@ -87,8 +87,15 @@ Demo action behavior:
 ## 8. Progress
 
 - **A-01…A-10:** APPROVED low-fidelity.
-- **A-11:** HTML interactive low-fi **DRAFT / NEEDS REVIEW**, no Figma frame.
+- **A-11:** HTML interactive low-fi **APPROVED**, no Figma frame.
 - **A-12:** Content Quality Operations not yet designed; scope was originally marked FUTURE.
 - **D-062/AW-21:** global Layout Stability guideline remains CONFIRMED.
 
 References: [Admin Portal](./04-admin-portal.md), [Account Provisioning](./05-admin-account-provisioning.md), [A-07 Invitations](./10-admin-invitation-management-wireframe.md), [A-10 Audit](./15-admin-audit-history-wireframe.md), [Screen Inventory](./03-screen-inventory.md).
+
+
+## 9. Approval record — CONFIRMED (2026-11-27)
+
+**D-068 / AW-APP-10:** Người dùng: “Okay, Tôi hoàn toàn đồng ý với các đề xuất và màn hình A-11”. Phê duyệt **A-11 HTML low-fi wireframe** và **AW-38…AW-41**: danh sách ticket với filter, chi tiết, audit theo scope; nhóm nghiệp vụ recovery tách biệt; thao tác có quyền/lý do/acknowledgement, không để lộ credential/token hoặc bỏ qua trạng thái khóa; phản hồi riêng lỗi email/token/permission/concurrency/network, bảo vệ account khi delivery thất bại.
+
+**Giới hạn:** Duyệt UX, không chốt những chính sách kỹ thuật còn OPEN ở mục 7 (quy trình tự phục hồi của parent, quyền SUPPORT_OPERATOR có điều kiện, Admin/MFA emergency recovery, token thời hạn, rate-limit, audit/backend). Chưa có Figma A-11 hay dịch vụ thực.
